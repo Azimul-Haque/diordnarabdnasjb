@@ -115,7 +115,7 @@ class _OTPScreenState extends State<OTPScreen> {
               cursor: cursor,
               showCursor: true,
               onTap: () {
-                print('Tap: Tapping...');
+                // print('Tap: Tapping...');
               },
               onCompleted: (pin) async {
                 // print('Working...');
