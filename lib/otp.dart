@@ -127,7 +127,7 @@ class _OTPScreenState extends State<OTPScreen> {
                     if (value.user != null) {
                       if (value.user!.displayName == null) {
                         print('ekhane API chalano hobe!');
-                        this._postAddUser(value.user);
+                        _postAddUser(value.user);
                         print(value.user!.phoneNumber);
                       } else {
                         print(value.user!.displayName);
