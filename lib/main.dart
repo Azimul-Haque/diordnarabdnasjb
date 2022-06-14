@@ -76,6 +76,7 @@ class _InitializerWidgetState extends State<InitializerWidget> {
     _auth = FirebaseAuth.instance;
     uid = _auth.currentUser?.uid ?? '0';
     isLoading = false;
+    configOneSignal();
   }
 
   @override
