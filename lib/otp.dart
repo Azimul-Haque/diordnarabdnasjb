@@ -220,9 +220,7 @@ class _OTPScreenState extends State<OTPScreen> {
         print(response);
       }
     } catch (_) {
-      // print(_);
-      Navigator.of(context, rootNavigator: true).pop();
-      _showSnackbar("ইন্টারনেট সংযোগ চালু করুন।");
+      // catch e kichu korini ekhono...
     }
   }
 }
