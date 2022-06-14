@@ -199,33 +199,33 @@ class _OTPScreenState extends State<OTPScreen> {
       'mobile': user.phoneNumber,
     };
     print(data);
-    // try {
-    //   FocusScope.of(context).unfocus(); // hide the keyboard
-    //   http.Response response = await http.post(
-    //     'https://killa.com.bd/onesignal/contact/api',
-    //     headers: <String, String>{
-    //       'Content-Type': 'application/json; charset=utf-8',
-    //       'Accept': 'application/json',
-    //     },
-    //     body: jsonEncode(data),
-    //   );
-    //   print(response.statusCode);
-    //   if (response.statusCode == 200) {
-    //     var body = json.decode(response.body);
-    //     if (body["success"] == true) {
-    //       // print(body);
-    //       Navigator.of(context, rootNavigator: true).pop();
-    //       this._showToast('আপনার মতামত সার্ভারে পাঠানো হয়েছে। ধন্যবাদ!');
-    //       Navigator.pop(context);
-    //     }
-    //   } else {
-    //     Navigator.of(context, rootNavigator: true).pop();
-    //     _showSnackbar("সমস্যা হচ্ছে, আবার চেষ্টা করুন।");
-    //   }
-    // } catch (_) {
-    //   // print(_);
-    //   Navigator.of(context, rootNavigator: true).pop();
-    //   _showSnackbar("ইন্টারনেট সংযোগ চালু করুন।");
-    // }
+    try {
+      FocusScope.of(context).unfocus(); // hide the keyboard
+      http.Response response = await http.post(
+        'https://killa.com.bd/onesignal/contact/api',
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=utf-8',
+          'Accept': 'application/json',
+        },
+        body: jsonEncode(data),
+      );
+      print(response.statusCode);
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print(body);
+          Navigator.of(context, rootNavigator: true).pop();
+          this._showToast('আপনার মতামত সার্ভারে পাঠানো হয়েছে। ধন্যবাদ!');
+          Navigator.pop(context);
+        }
+      } else {
+        Navigator.of(context, rootNavigator: true).pop();
+        _showSnackbar("সমস্যা হচ্ছে, আবার চেষ্টা করুন।");
+      }
+    } catch (_) {
+      // print(_);
+      Navigator.of(context, rootNavigator: true).pop();
+      _showSnackbar("ইন্টারনেট সংযোগ চালু করুন।");
+    }
   }
 }
