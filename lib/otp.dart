@@ -196,7 +196,7 @@ class _OTPScreenState extends State<OTPScreen> {
   _postAddUser(user) async {
     var data = {
       'uid': user.uid,
-      'name': user.displayName,
+      'name': user.displayName != null ? user.displayName : 'No Name',
       'mobile': user.phoneNumber,
     };
     try {
