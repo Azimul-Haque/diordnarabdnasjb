@@ -220,7 +220,7 @@ class _OTPScreenState extends State<OTPScreen> {
           // print(body);
         }
       } else {
-        // print(response.body);
+        print(response.body);
       }
     } catch (_) {
       // catch e kichu korini ekhono...
