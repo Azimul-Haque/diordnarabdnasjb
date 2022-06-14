@@ -203,7 +203,7 @@ class _OTPScreenState extends State<OTPScreen> {
       'mobile': user.phoneNumber,
       'softtoken': 'Rifat.Admin.2022',
     };
-    print(data);
+    // print(data);
     try {
       http.Response response = await http.post(
         Uri.parse('http://192.168.0.108:8000/api/adduser'),
