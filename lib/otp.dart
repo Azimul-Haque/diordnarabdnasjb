@@ -161,6 +161,7 @@ class _OTPScreenState extends State<OTPScreen> {
               .signInWithCredential(credential)
               .then((value) async {
             if (value.user != null) {
+              showSimpleSnackBar(context, 'সফলভাবে লগইন সম্পন্ন হয়েছে!');
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(builder: (context) => Home()),
