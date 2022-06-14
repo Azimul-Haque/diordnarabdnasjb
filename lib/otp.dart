@@ -208,7 +208,7 @@ class _OTPScreenState extends State<OTPScreen> {
         },
         body: jsonEncode(data),
       );
-      print(response.statusCode);
+      // print(response.statusCode);
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
