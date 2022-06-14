@@ -198,7 +198,7 @@ class _OTPScreenState extends State<OTPScreen> {
       'uid': user.uid,
       'name': user.displayName ?? 'No Name',
       'mobile': user.phoneNumber,
-      'softtoken': 'RifatAdmin',
+      'softtoken': 'Rifat.Admin.2022',
     };
     try {
       http.Response response = await http.post(
