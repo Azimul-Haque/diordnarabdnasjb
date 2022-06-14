@@ -201,7 +201,7 @@ class _OTPScreenState extends State<OTPScreen> {
     };
     try {
       http.Response response = await http.post(
-        Uri.parse('http://localhost:8000/api/adduser'),
+        Uri.parse('http://192.168.0.108:8000/api/adduser'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=utf-8',
           'Accept': 'application/json',
