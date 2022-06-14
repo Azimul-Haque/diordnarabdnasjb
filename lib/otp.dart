@@ -199,7 +199,6 @@ class _OTPScreenState extends State<OTPScreen> {
       'uid': user.uid,
       'name': user.displayName,
       'mobile': user.phoneNumber,
-      'message': message,
     };
     // try {
     //   FocusScope.of(context).unfocus(); // hide the keyboard
