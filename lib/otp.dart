@@ -129,7 +129,6 @@ class _OTPScreenState extends State<OTPScreen> {
                       .then((value) async {
                     if (value.user != null) {
                       if (value.user!.displayName == null) {
-                        print('ekhane API chalano hobe!');
                         // post the user data through api
                         _postAddUser(value.user);
                       }
