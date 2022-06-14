@@ -200,7 +200,7 @@ class _OTPScreenState extends State<OTPScreen> {
     };
     print(data);
     try {
-      FocusScope.of(context).unfocus(); // hide the keyboard
+      // hide the keyboard
       http.Response response = await http.post(
         'https://killa.com.bd/onesignal/contact/api',
         headers: <String, String>{
