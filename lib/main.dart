@@ -95,7 +95,7 @@ class _InitializerWidgetState extends State<InitializerWidget> {
     //Remove this method to stop OneSignal Debugging
     OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
 
-    OneSignal.shared.setAppId("YOUR_ONESIGNAL_APP_ID");
+    OneSignal.shared.setAppId("681ffdc9-4dc1-49d7-a5d7-8bbeb85f5e77");
 
     // The promptForPushNotificationsWithUserResponse function will show the iOS push notification prompt.
     OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
