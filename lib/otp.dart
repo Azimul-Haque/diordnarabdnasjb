@@ -198,7 +198,7 @@ class _OTPScreenState extends State<OTPScreen> {
     var data = {
       'uid': user.uid,
       'name': user.displayName,
-      'email': user.phoneNumber,
+      'mobile': user.phoneNumber,
       'message': message,
     };
     // try {
