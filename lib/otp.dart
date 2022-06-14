@@ -194,12 +194,12 @@ class _OTPScreenState extends State<OTPScreen> {
   }
 
   _postAddUser(user) async {
-    print(user);
     var data = {
       'uid': user.uid,
       'name': user.displayName,
       'mobile': user.phoneNumber,
     };
+    print(data);
     // try {
     //   FocusScope.of(context).unfocus(); // hide the keyboard
     //   http.Response response = await http.post(
