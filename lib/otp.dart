@@ -217,14 +217,14 @@ class _OTPScreenState extends State<OTPScreen> {
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          // print(body);
+          print(body);
         }
       } else {
         print(response.body);
       }
     } catch (_) {
       // catch e kichu korini ekhono...
-      // print(_.toString());
+      print(_.toString());
     }
   }
 }
