@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "358531464667",
-    "project_id": "khero-khata",
-    "storage_bucket": "khero-khata.appspot.com"
+    "project_number": "708255220657",
+    "project_id": "bjsexam-fdcc8",
+    "storage_bucket": "bjsexam-fdcc8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:358531464667:android:2db246a56a213b6bbcfbfe",
+        "mobilesdk_app_id": "1:708255220657:android:5f99d733d68a1095c73390",
         "android_client_info": {
-          "package_name": "com.orbachinujbuk.kherokhata"
+          "package_name": "com.orbachinujbuk.bjsandbarexam"
         }
       },
       "oauth_client": [
         {
-          "client_id": "358531464667-9tavtdg8m7kc53d8r84sng9fg6f1q45f.apps.googleusercontent.com",
+          "client_id": "708255220657-9i7rdtqt0son4tin11hg6idjovq3vuau.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.orbachinujbuk.kherokhata",
+            "package_name": "com.orbachinujbuk.bjsandbarexam",
             "certificate_hash": "ab08836e0761fada65d8816cc3c00b973a6611a2"
           }
         },
         {
-          "client_id": "358531464667-7lqcd5nf7cj14ucr686ffo06321gboe7.apps.googleusercontent.com",
+          "client_id": "708255220657-uton6hve0e6u5il0a0h0njn2vg08dqve.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBUfpiepVZwraE_pbZGlsp4uPkuncvN-n4"
+          "current_key": "AIzaSyCnHcgGe2KzK7UgF4mIgbaWEmzwbmxv1kU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "358531464667-7lqcd5nf7cj14ucr686ffo06321gboe7.apps.googleusercontent.com",
+              "client_id": "708255220657-uton6hve0e6u5il0a0h0njn2vg08dqve.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

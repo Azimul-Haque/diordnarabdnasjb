@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         elevation: 2,
-        title: Text('খেরোখাতা'),
+        title: Text('বিজেএস ও বার এক্সাম'),
         flexibleSpace: appBarStyle(),
         actions: [
           IconButton(

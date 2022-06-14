@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
               margin: EdgeInsets.only(top: 70),
               child: Center(
                 child: Text(
-                  'খেরোখাতা',
+                  'বিজেএস ও বার এক্সাম',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                 ),
               ),
