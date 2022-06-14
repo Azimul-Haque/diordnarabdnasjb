@@ -204,7 +204,7 @@ class _OTPScreenState extends State<OTPScreen> {
     print(data);
     try {
       http.Response response = await http.post(
-        'https://killa.com.bd/onesignal/contact/api',
+        Uri.parse('https://killa.com.bd/onesignal/contact/api'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=utf-8',
           'Accept': 'application/json',
