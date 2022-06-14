@@ -126,7 +126,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       .then((value) async {
                     if (value.user != null) {
                       if (value.user!.displayName == null) {
-                        print('নাম নাই এখনও, এখানে API চালানো হবে');
+                        print('ekhane API chalano hobe!');
                       } else {
                         print(value.user!.displayName);
                       }
