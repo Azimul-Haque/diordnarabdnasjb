@@ -125,7 +125,12 @@ class _OTPScreenState extends State<OTPScreen> {
                           verificationId: _verificationCode, smsCode: pin))
                       .then((value) async {
                     if (value.user != null) {
-                      print(value.user!.displayName);
+                      if (value.user!.displayName == null) {
+                        print(value.user!.displayName);
+                      } else {
+                        print(value.user!.displayName);
+                      }
+
                       showSimpleSnackBar(
                           context, 'সফলভাবে লগইন সম্পন্ন হয়েছে!');
                       Navigator.pushAndRemoveUntil(
