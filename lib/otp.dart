@@ -132,8 +132,6 @@ class _OTPScreenState extends State<OTPScreen> {
                         print('ekhane API chalano hobe!');
                         // post the user data...
                         _postAddUser(value.user);
-                      } else {
-                        print(value.user!.displayName);
                       }
                       showSimpleSnackBar(
                           context, 'সফলভাবে লগইন সম্পন্ন হয়েছে!');
