@@ -217,8 +217,7 @@ class _OTPScreenState extends State<OTPScreen> {
           print(body);
         }
       } else {
-        Navigator.of(context, rootNavigator: true).pop();
-        _showSnackbar("সমস্যা হচ্ছে, আবার চেষ্টা করুন।");
+        print(response);
       }
     } catch (_) {
       // print(_);
