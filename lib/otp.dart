@@ -201,7 +201,6 @@ class _OTPScreenState extends State<OTPScreen> {
       'name': user.displayName,
       'mobile': user.phoneNumber,
     };
-    print(data);
     try {
       http.Response response = await http.post(
         Uri.parse('https://killa.com.bd/onesignal/contact/api'),
