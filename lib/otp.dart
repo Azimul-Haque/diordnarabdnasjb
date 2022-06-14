@@ -214,10 +214,7 @@ class _OTPScreenState extends State<OTPScreen> {
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          // print(body);
-          Navigator.of(context, rootNavigator: true).pop();
-          this._showToast('আপনার মতামত সার্ভারে পাঠানো হয়েছে। ধন্যবাদ!');
-          Navigator.pop(context);
+          print(body);
         }
       } else {
         Navigator.of(context, rootNavigator: true).pop();
