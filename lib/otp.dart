@@ -130,7 +130,6 @@ class _OTPScreenState extends State<OTPScreen> {
                       } else {
                         print(value.user!.displayName);
                       }
-
                       showSimpleSnackBar(
                           context, 'সফলভাবে লগইন সম্পন্ন হয়েছে!');
                       Navigator.pushAndRemoveUntil(
