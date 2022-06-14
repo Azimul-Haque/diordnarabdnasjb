@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.orbachinujbuk.bjsandbarexam">
    <application
-        android:label="BJS & Bar Exam"
+        android:label="BJS and Bar Exam"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
