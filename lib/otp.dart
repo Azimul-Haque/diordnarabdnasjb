@@ -129,7 +129,6 @@ class _OTPScreenState extends State<OTPScreen> {
                         print('ekhane API chalano hobe!');
                         // post the user data...
                         _postAddUser(value.user);
-                        print(value.user!.phoneNumber);
                       } else {
                         print(value.user!.displayName);
                       }
