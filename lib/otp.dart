@@ -196,6 +196,7 @@ class _OTPScreenState extends State<OTPScreen> {
   _postAddUser(user) async {
     print(user);
     var data = {
+      'uid': user.uid,
       'name': user.name,
       'email': email,
       'message': message,
