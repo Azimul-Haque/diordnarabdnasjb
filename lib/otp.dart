@@ -197,7 +197,7 @@ class _OTPScreenState extends State<OTPScreen> {
     print(user);
     var data = {
       'uid': user.uid,
-      'name': user.name,
+      'name': user.displayName,
       'email': email,
       'message': message,
     };
