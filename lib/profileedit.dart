@@ -87,11 +87,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
                       onPressed: () {
-                        if (_formKey.currentState!.validate()) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Processing Data')),
-                          );
-                        }
+                        handleSubmit();
                       },
                       child: const Text('Submit'),
                     ),
