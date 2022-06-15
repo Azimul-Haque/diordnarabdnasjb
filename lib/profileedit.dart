@@ -118,8 +118,8 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: const Row(
-            children: <Widget>[
+          content: Row(
+            children: const <Widget>[
               Text('Processing Data'),
             ],
           ),
