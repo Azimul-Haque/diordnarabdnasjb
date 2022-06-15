@@ -123,7 +123,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
       FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
-
       try {
         userdata.updateDisplayName(_nameController.text).then(
               (value) => showSimpleSnackBar(context, "হালনাগাদ হয়েছে!"),
