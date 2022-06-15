@@ -145,7 +145,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   _postUpdateUser(user) async {
     var data = {
       'uid': user.uid,
-      'name': user.displayName ?? 'No Name',
+      'name': user.displayName,
       'softtoken': 'Rifat.Admin.2022',
     };
     // print(data);
