@@ -63,6 +63,9 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     },
                     controller: _nameController,
                   ),
+                  SizedBox(
+                    height: 30,
+                  ),
                   TextFormField(
                     decoration: const InputDecoration(
                       icon: Icon(Icons.phone_android_sharp),
