@@ -66,7 +66,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       focusedBorder: UnderlineInputBorder(
                         borderSide: BorderSide(color: Colors.purple),
                       ),
-                      enabledBorder: new UnderlineInputBorder(
+                      enabledBorder: UnderlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.grey, width: 1.0)),
                     ),
