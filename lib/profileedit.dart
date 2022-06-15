@@ -128,6 +128,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       _formKey.currentState!.save();
       try {
         userdata.updateDisplayName(_nameController.text).then(
+              this._postUpdateUser(user),
               (value) => showSnackBarandPop(context, "হালনাগাদ হয়েছে!"),
             );
       } on FirebaseAuthException catch (e) {
