@@ -22,32 +22,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
 
   @override
   Widget build(BuildContext context) {
-    final cursor = Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          width: 1.5,
-          height: 20,
-          decoration: BoxDecoration(
-            color: Colors.green,
-            borderRadius: BorderRadius.circular(8),
-          ),
-        ),
-      ],
-    );
-    final preFilledWidget = Column(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Container(
-          width: 56,
-          height: 3,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8),
-          ),
-        ),
-      ],
-    );
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
