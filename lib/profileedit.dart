@@ -46,22 +46,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       return null;
                     },
                   ),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: 'Password',
-                      labelStyle: TextStyle(
-                          color: Colors.black87,
-                          fontSize: 17,
-                          fontFamily: 'AvenirLight'),
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.purple),
-                      ),
-                      enabledBorder: UnderlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey, width: 1.0)),
-                    ),
-                    //  controller: _passwordController,
-                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
