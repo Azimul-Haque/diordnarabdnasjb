@@ -52,11 +52,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                         onTap: () {
                           print('tapped');
                         },
-                        child: Text(
-                          'Forgot Password?',
-                          style: TextStyle(
-                              color: Colors.blue, fontWeight: FontWeight.bold),
-                        ),
                       ),
                       labelText: 'Password',
                       labelStyle: TextStyle(
