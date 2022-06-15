@@ -16,11 +16,13 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   final _formKey = GlobalKey<FormState>();
   late String _nameonform;
   final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     _nameController.text = widget.user.displayName ?? 'No Name';
+    _phoneController.text = widget.user.phoneNumber ?? '01***';
     // print(widget.user);
   }
 
