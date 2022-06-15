@@ -63,7 +63,7 @@ showSimpleSnackBar(BuildContext context, String message) {
   );
 }
 
-showSnackBarandPop(message) {
+showSnackBarandPop(BuildContext context, String message) {
   Timer(const Duration(seconds: 1), () {
     Navigator.of(context).pop();
     ScaffoldMessenger.of(context).showSnackBar(
