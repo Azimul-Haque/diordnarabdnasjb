@@ -54,6 +54,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     onSaved: (value) {
                       _nameonform = value.toString();
                     },
+                    controller: _nameController,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
