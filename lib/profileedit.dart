@@ -15,6 +15,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
   late String _nameonform;
+  final _nameController = TextEditingController();
 
   @override
   void initState() {
