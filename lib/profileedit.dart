@@ -76,7 +76,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     onSaved: (value) {
                       _phoneonform = value.toString();
                     },
-                    controller: _nameController,
+                    controller: _phoneController,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
