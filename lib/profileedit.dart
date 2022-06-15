@@ -70,10 +70,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                           borderSide:
                               BorderSide(color: Colors.grey, width: 1.0)),
                     ),
-                    style: TextStyle(
-                        color: Colors.black87,
-                        fontSize: 17,
-                        fontFamily: 'AvenirLight'),
+
                     //  controller: _passwordController,
                   ),
                   Padding(
