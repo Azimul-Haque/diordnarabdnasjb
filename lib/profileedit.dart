@@ -52,7 +52,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       return null;
                     },
                     onSaved: (String? value) {
-                      _nameonform = this.value;
+                      _nameonform = value;
                     },
                   ),
                   Padding(
