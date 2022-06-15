@@ -22,6 +22,8 @@ class _HomeState extends State<Home> {
   late String uid;
   late User userdata;
 
+  get key => null;
+
   @override
   void initState() {
     super.initState();
@@ -114,7 +116,7 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => ProfileEditPage(
                             userdata,
-                          super(key: key,
+                            key: key,
                           )));
                 },
               ),
