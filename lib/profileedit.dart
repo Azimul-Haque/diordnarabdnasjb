@@ -83,7 +83,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     },
                     controller: _phoneController,
                   ),
-                  Padding(
+                  Container(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
                       style: ButtonStyle(
