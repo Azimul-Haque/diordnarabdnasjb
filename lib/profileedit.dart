@@ -107,7 +107,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
 
   void handleSubmit() {
     if (_formKey.currentState!.validate()) {
-      FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
     }
   }
