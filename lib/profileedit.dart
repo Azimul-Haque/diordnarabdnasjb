@@ -123,9 +123,9 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
       FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
-      userdata.updateDisplayName(_nameController.text);
+
       try {
-        userdata.updateProfile(displayName: formname).then(
+        userdata.updateDisplayName(_nameController.text).then(
               (value) => this.showSnackBarandPop("Profile updated."),
             );
       } on FirebaseAuthException catch (e) {
