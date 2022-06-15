@@ -48,11 +48,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                   ),
                   TextFormField(
                     decoration: InputDecoration(
-                      suffix: GestureDetector(
-                        onTap: () {
-                          print('tapped');
-                        },
-                      ),
                       labelText: 'Password',
                       labelStyle: TextStyle(
                           color: Colors.black87,
