@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => InitializerWidget(),
-        '/profileedit': (context) => ProfileEditPage(),
+        '/profileedit': (context) => ProfileEditPage(User user),
         // '/favorites': (context) => FavoritesPage(),
         // '/qstnanswer': (context) => QuestionAnswerPage(),
         // '/constitution': (context) => ConstituionPage(),
