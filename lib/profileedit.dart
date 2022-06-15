@@ -118,7 +118,13 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: const Text('Test'),
+          content: Text('Test'),
+          action: SnackBarAction(
+            label: 'Action',
+            onPressed: () {
+              // Code to execute.
+            },
+          ),
         ),
       );
       _formKey.currentState!.save();
