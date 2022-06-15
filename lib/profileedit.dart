@@ -120,7 +120,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
         const SnackBar(
           content: Text('Test'),
           action: SnackBarAction(
-            label: 'Action',
+            label: CircularProgressIndicator(),
             onPressed: () {
               // Code to execute.
             },
