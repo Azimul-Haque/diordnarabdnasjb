@@ -112,10 +112,7 @@ class _HomeState extends State<Home> {
                 ),
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => ProfileEditPage(
-                            userdata,
-                            key: key,
-                          )));
+                      builder: (context) => ProfileEditPage(userdata);
                 },
               ),
             ),
