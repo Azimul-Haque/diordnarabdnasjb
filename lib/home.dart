@@ -1,7 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:convert';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 import 'package:bjsandbarexam/login.dart';
 import 'package:bjsandbarexam/profileedit.dart';
 
@@ -23,6 +27,7 @@ class _HomeState extends State<Home> {
     super.initState();
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
+    _checkUid(userdata.uid);
     // ignore: avoid_print
     // print(userdata);
   }
@@ -249,5 +254,26 @@ class _HomeState extends State<Home> {
         3.0, // vertical, move down 10
       ),
     );
+  }
+
+  void _checkUid(uid) async {
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
+          _softToken +
+          "/" +
+          uid; // https://jsonplaceholder.typicode.com/posts
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          print(body);
+        }
+      } else {
+        print(response.body);
+      }
+    } catch (_) {
+      print(_);
+    }
   }
 }
