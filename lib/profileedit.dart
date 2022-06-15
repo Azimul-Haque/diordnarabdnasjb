@@ -141,7 +141,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
             // content: Text(e.message),
           ),
         );
-        Navigator.pop(context, true);
+        Navigator.pop(context);
       }
     }
   }
