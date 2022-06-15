@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Column(children: [
             SizedBox(
-              height: 500,
+              height: 30,
             ),
             Container(
               margin: EdgeInsets.only(top: 70),
@@ -52,9 +52,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 500,
             ),
             Container(
               margin: EdgeInsets.only(top: 20),
