@@ -126,7 +126,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
 
       try {
         userdata.updateDisplayName(_nameController.text).then(
-              (value) => this.showSimpleSnackBar("Profile updated."),
+              (value) => showSimpleSnackBar("Profile updated."),
             );
       } on FirebaseAuthException catch (e) {
         print('Failed with error code: ${e.code}');
