@@ -141,4 +141,34 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       }
     }
   }
+
+  _postUpdateUser(user) async {
+    var data = {
+      'uid': user.uid,
+      'name': user.displayName ?? 'No Name',
+      'softtoken': 'Rifat.Admin.2022',
+    };
+    // print(data);
+    try {
+      http.Response response = await http.post(
+        Uri.parse('http://192.168.0.108:8000/api/adduser'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=utf-8',
+          'Accept': 'application/json',
+        },
+        body: jsonEncode(data),
+      );
+      // print(response.statusCode);
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print(body);
+        }
+      } else {
+        // print(response.body);
+      }
+    } catch (_) {
+      // print(_);
+    }
+  }
 }
