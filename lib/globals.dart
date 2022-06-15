@@ -60,6 +60,20 @@ showSimpleSnackBar(BuildContext context, String message) {
   );
 }
 
+showSnackBarandPop(message) {
+  Timer(Duration(seconds: 1), () {
+    // userdata.reload();
+    Navigator.of(context).pop();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        behavior: SnackBarBehavior.floating,
+        content: Text(message),
+      ),
+    );
+    Navigator.of(context).pop();
+  });
+}
+
 appBarStyle() {
   return Ink(
     decoration: BoxDecoration(
