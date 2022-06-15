@@ -32,7 +32,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
+            margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
             child: Form(
               key: _formKey,
               child: Column(
