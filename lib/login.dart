@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           Column(children: [
             SizedBox(
-              height: 30,
+              height: 500,
             ),
             Container(
               margin: EdgeInsets.only(top: 70),
