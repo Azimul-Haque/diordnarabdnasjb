@@ -89,7 +89,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       onPressed: () {
                         handleSubmit();
                       },
-                      child: const Text('Submit'),
+                      child: const Text('Update'),
                     ),
                   ),
                 ],
