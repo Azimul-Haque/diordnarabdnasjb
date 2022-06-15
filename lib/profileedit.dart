@@ -118,7 +118,9 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: CircularProgressIndicator(),
+          content: Column(
+            children: [],
+          ),
         ),
       );
       _formKey.currentState!.save();
