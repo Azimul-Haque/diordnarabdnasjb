@@ -3,8 +3,6 @@
 library kherokhata.globals;
 
 import 'dart:async';
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 
 // appBarStyle() {
