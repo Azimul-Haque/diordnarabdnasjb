@@ -1,9 +1,12 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors, unused_local_variable, avoid_print, unused_field
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
+  ProfileEditPage(User userdata);
+
   // final String phone;
   // ProfileEditPage(this.phone);
   @override
