@@ -114,7 +114,8 @@ class _HomeState extends State<Home> {
                   print(userdata);
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => ProfileEditPage(),
+                      builder: (context) =>
+                          ProfileEditPage(userdata.phoneNumber),
                     ),
                   );
                 },
