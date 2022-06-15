@@ -59,8 +59,8 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                         borderSide: BorderSide(color: Colors.purple),
                       ),
                       enabledBorder: new UnderlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey, width: 1.0)),
+                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
+                      ),
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
