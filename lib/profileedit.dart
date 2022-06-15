@@ -146,7 +146,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     }
   }
 
-  _postUpdateUser(user) async {
+  _postUpdateUser(name) async {
     var data = {
       'uid': user.uid,
       'name': user.displayName,
