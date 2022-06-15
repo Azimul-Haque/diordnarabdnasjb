@@ -22,8 +22,6 @@ class _HomeState extends State<Home> {
   late String uid;
   late User userdata;
 
-  get key => null;
-
   @override
   void initState() {
     super.initState();
