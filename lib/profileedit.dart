@@ -39,6 +39,11 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextFormField(
+                    decoration: const InputDecoration(
+                      icon: Icon(Icons.person),
+                      hintText: 'What do people call you?',
+                      labelText: 'Name *',
+                    ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter some text';
