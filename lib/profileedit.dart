@@ -8,7 +8,6 @@ class ProfileEditPage extends StatefulWidget {
   const ProfileEditPage({Key? key, this.userdata}) : super(key: key);
 
   final User userdata;
-  ProfileEditPage(key, this.userdata);
   @override
   _ProfileEditPageState createState() => _ProfileEditPageState();
 }
