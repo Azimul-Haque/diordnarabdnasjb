@@ -268,6 +268,8 @@ class _HomeState extends State<Home> {
         var body = json.decode(response.body);
         if (body["success"] == true) {
           print(body["success"]);
+        } else {
+          print(body["success"]);
         }
       } else {
         print(response.body);
