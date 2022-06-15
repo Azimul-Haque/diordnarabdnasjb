@@ -32,12 +32,10 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 10),
-            child: Center(
-              child: Text(
-                'OTP ভেরিফিকেশন',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-              ),
-            ),
+            child: child: Text(
+            'OTP ভেরিফিকেশন',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+          ),
           ),
         ],
       ),
