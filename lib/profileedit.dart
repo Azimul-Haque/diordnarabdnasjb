@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
-  var userdata;
-  ProfileEditPage(this.userdata);
+  final User userdata;
+  ProfileEditPage(userdata);
   @override
   _ProfileEditPageState createState() => _ProfileEditPageState(userdata);
 }
