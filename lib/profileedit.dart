@@ -46,6 +46,37 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       return null;
                     },
                   ),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      suffix: GestureDetector(
+                        onTap: () {
+                          print('tapped');
+                        },
+                        child: Text(
+                          'Forgot Password?',
+                          style: TextStyle(
+                              color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      labelText: 'Password',
+                      labelStyle: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 17,
+                          fontFamily: 'AvenirLight'),
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.purple),
+                      ),
+                      enabledBorder: new UnderlineInputBorder(
+                          borderSide:
+                              BorderSide(color: Colors.grey, width: 1.0)),
+                    ),
+                    style: TextStyle(
+                        color: Colors.black87,
+                        fontSize: 17,
+                        fontFamily: 'AvenirLight'),
+                    //  controller: _passwordController,
+                    obscureText: true,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
