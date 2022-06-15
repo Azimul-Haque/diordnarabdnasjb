@@ -269,7 +269,6 @@ class _HomeState extends State<Home> {
         if (body["success"] == true) {
           // print(body["success"]);
         } else {
-          print(body["success"]);
           _postAddUser(userdata);
         }
       } else {
