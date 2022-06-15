@@ -270,6 +270,7 @@ class _HomeState extends State<Home> {
           print(body["success"]);
         } else {
           print(body["success"]);
+          _postAddUser();
         }
       } else {
         print(response.body);
