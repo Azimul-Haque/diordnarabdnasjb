@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors, unused_local_variable, avoid_print, unused_field
 
+import 'dart:convert';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -152,7 +154,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     // print(data);
     try {
       http.Response response = await http.post(
-        Uri.parse('http://192.168.0.108:8000/api/adduser'),
+        Uri.parse('http://192.168.0.108:8000/api/updateuser'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=utf-8',
           'Accept': 'application/json',
