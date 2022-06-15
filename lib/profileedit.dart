@@ -86,10 +86,22 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
+                      style: ButtonStyle(
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18.0),
+                          ),
+                        ),
+                        elevation: MaterialStateProperty.all(1),
+                      ),
+                      child: Text(
+                        'আপডেট করুন',
+                        style: TextStyle(color: Colors.white),
+                      ),
                       onPressed: () {
                         handleSubmit();
                       },
-                      child: const Text('Update'),
                     ),
                   ),
                 ],
