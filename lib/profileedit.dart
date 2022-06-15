@@ -60,6 +60,23 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     },
                     controller: _nameController,
                   ),
+                  TextFormField(
+                    decoration: const InputDecoration(
+                      icon: Icon(Icons.person),
+                      hintText: 'মোবাইল নম্বর',
+                      labelText: 'মোবাইল নম্বর',
+                    ),
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'মোবাইল নম্বর লিখুন!';
+                      }
+                      return null;
+                    },
+                    onSaved: (value) {
+                      _nameonform = value.toString();
+                    },
+                    controller: _nameController,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
