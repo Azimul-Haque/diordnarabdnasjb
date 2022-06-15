@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
     super.initState();
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
-    _checkUid(userdata.uid);
+    _checkUid(userdata);
     // ignore: avoid_print
     // print(userdata);
   }
@@ -256,7 +256,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void _checkUid(uid) async {
+  void _checkUid(userdata) async {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
