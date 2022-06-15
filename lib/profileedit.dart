@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
+  const ProfileEditPage({Key? key}) : super(key: key);
+
   final User userdata;
   ProfileEditPage(this.userdata);
   @override
