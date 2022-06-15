@@ -104,4 +104,12 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       ),
     );
   }
+
+  void handleSubmit() {
+    if (examFormKey.currentState.validate()) {
+      FocusScope.of(context).unfocus();
+      examFormKey.currentState.save();
+      _loadDB(this.questionamnt, this.duration);
+    }
+  }
 }
