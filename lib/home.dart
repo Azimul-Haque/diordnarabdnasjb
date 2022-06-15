@@ -262,7 +262,7 @@ class _HomeState extends State<Home> {
       String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
           _softToken +
           "/" +
-          uid; // https://jsonplaceholder.typicode.com/posts
+          userdata.uid; // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
@@ -270,7 +270,7 @@ class _HomeState extends State<Home> {
           print(body["success"]);
         } else {
           print(body["success"]);
-          _postAddUser(uid);
+          _postAddUser(userdata);
         }
       } else {
         print(response.body);
