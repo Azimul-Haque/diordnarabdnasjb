@@ -14,7 +14,7 @@ class ProfileEditPage extends StatefulWidget {
 class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
-  final Controll _nameController;
+  final String _nameonform;
 
   @override
   void initState() {
