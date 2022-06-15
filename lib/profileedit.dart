@@ -50,6 +50,10 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       }
                       return null;
                     },
+                    onSaved: (String? value) {
+                      // This optional block of code can be used to run
+                      // code when the user saves the form.
+                    },
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
