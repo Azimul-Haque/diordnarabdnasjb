@@ -6,7 +6,7 @@ import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
   final User userdata;
-  const ProfileEditPage(User userdata, {Key? key}) : super(key: key);
+  const ProfileEditPage(this.userdatauserdata);
 
   @override
   _ProfileEditPageState createState() => _ProfileEditPageState();
