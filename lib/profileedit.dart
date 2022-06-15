@@ -120,7 +120,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
 
   void handleSubmit() {
     if (_formKey.currentState!.validate()) {
-      showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
+      showAlertDialog(context, 'সার্ভারে পাঠানো হচ্ছে...');
       FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
       try {
