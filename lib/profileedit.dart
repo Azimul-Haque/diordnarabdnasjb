@@ -19,7 +19,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     // ignore: todo
     // TODO: implement initState
     super.initState();
-    print(widget.user);
+    // print(widget.user);
   }
 
   @override
