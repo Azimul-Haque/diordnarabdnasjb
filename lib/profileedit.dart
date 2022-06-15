@@ -24,7 +24,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
-    _nameController.text = widget.user.displayName.toString() == '' ||
+    _nameController.text = widget.user.displayName.toString() == 'null' ||
             widget.user.displayName == null
         ? 'No Name'
         : widget.user.displayName.toString();
