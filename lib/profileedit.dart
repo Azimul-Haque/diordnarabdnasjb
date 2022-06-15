@@ -39,29 +39,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
-                      suffix: GestureDetector(
-                        onTap: () {
-                          print('tapped');
-                        },
-                        child: Text(
-                          'Forgot Password?',
-                          style: TextStyle(
-                              color: Colors.blue, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      labelText: 'Password',
-                      labelStyle: TextStyle(
-                          color: Colors.black87,
-                          fontSize: 17,
-                          fontFamily: 'AvenirLight'),
-                      focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.purple),
-                      ),
-                      enabledBorder: new UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.grey, width: 1.0),
-                      ),
-                    ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter some text';
