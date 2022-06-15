@@ -142,7 +142,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
           ),
         );
         // Navigator.pop(context);
-        Navigator.pushNamed(context, "/");
+        Navigator.popAndPushNamed(context, "/");
       }
     }
   }
