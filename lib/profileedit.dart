@@ -46,7 +46,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Name is required!';
+                        return 'নাম লিখুন!';
                       }
                       return null;
                     },
