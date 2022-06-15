@@ -118,7 +118,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: ,
+          content: Text('Processing Data'),
         ),
       );
       _formKey.currentState!.save();
