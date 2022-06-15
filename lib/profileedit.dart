@@ -41,8 +41,8 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                   TextFormField(
                     decoration: const InputDecoration(
                       icon: Icon(Icons.person),
-                      hintText: 'What do people call you?',
-                      labelText: 'Name',
+                      hintText: 'আপনার নাম লিখুন',
+                      labelText: 'নাম',
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
