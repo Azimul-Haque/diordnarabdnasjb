@@ -16,8 +16,8 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   final _formKey = GlobalKey<FormState>();
   late String _nameonform;
   late String _phoneonform;
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _phoneController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _phoneController = TextEditingController();
 
   @override
   void initState() {
