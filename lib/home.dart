@@ -89,7 +89,10 @@ class _HomeState extends State<Home> {
             Positioned(
               left: 30,
               bottom: 40,
-              child: Text(userdata.displayName.toString() ?? 'No Name',
+              child: Text(
+                  userdata.displayName.toString() == ''
+                      ? 'No Name'
+                      : userdata.displayName.toString(),
                   style: TextStyle(color: Colors.white, fontSize: 16)),
             ),
             Positioned(
