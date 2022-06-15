@@ -70,7 +70,8 @@ showSnackBarandPop(BuildContext context, String message) {
         content: Text(message),
       ),
     );
-    Navigator.of(context).pop();
+    // Navigator.of(context).pop();
+    Navigator.pushNamed(context, "/");
   });
 }
 
