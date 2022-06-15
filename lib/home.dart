@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
     // ignore: avoid_print
-    print(userdata);
+    // print(userdata);
   }
 
   @override
