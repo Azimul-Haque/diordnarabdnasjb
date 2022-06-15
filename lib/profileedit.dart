@@ -29,7 +29,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
         ? ''
         : widget.user.displayName.toString();
     _phoneController.text = widget.user.phoneNumber ?? '01***';
-    print(_nameController.text);
+    // print(userdata);
   }
 
   @override
