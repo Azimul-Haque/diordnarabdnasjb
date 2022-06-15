@@ -116,15 +116,15 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
 
   void handleSubmit() {
     if (_formKey.currentState!.validate()) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Column(
-            children: <widget>[
-              CircularProgressIndicator(),
-            ],
-          ),
+      _scaffoldKey.currentState.showSnackBar(new SnackBar(
+        duration: new Duration(seconds: 4),
+        content: new Row(
+          children: <Widget>[
+            new CircularProgressIndicator(),
+            new Text("  Signing-In...")
+          ],
         ),
-      );
+      ));
       _formKey.currentState!.save();
     }
   }
