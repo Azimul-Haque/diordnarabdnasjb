@@ -2,6 +2,9 @@
 
 library kherokhata.globals;
 
+import 'dart:async';
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 
 // appBarStyle() {
@@ -61,8 +64,7 @@ showSimpleSnackBar(BuildContext context, String message) {
 }
 
 showSnackBarandPop(message) {
-  Timer(Duration(seconds: 1), () {
-    // userdata.reload();
+  Timer(const Duration(seconds: 1), () {
     Navigator.of(context).pop();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
