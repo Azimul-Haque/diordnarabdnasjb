@@ -54,6 +54,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       // This optional block of code can be used to run
                       // code when the user saves the form.
                     },
+                    controller: _passwordController,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
