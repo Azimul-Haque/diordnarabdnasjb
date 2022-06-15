@@ -53,6 +53,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
+            SizedBox(
+              height: 500,
+            ),
             Container(
               margin: EdgeInsets.only(top: 20),
               child: Center(
