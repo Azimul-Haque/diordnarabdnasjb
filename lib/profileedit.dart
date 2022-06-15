@@ -123,6 +123,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
       _formKey.currentState!.save();
       userdata.updateDisplayName(_nameController.text);
+      FocusScope.of(context).unfocus();
     }
   }
 }
