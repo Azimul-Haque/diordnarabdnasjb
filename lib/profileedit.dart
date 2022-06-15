@@ -119,7 +119,9 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Column(
-            children: [],
+            children: <widget>[
+              CircularProgressIndicator(),
+            ],
           ),
         ),
       );
