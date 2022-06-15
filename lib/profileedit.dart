@@ -14,8 +14,6 @@ class ProfileEditPage extends StatefulWidget {
 class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
 
-  // _ProfileEditPageState(userdata);
-
   @override
   void initState() {
     // ignore: todo
