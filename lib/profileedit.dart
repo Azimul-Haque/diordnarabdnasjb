@@ -65,7 +65,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                           borderSide:
                               BorderSide(color: Colors.grey, width: 1.0)),
                     ),
-
                     //  controller: _passwordController,
                   ),
                   Padding(
