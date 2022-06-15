@@ -90,7 +90,9 @@ class _HomeState extends State<Home> {
               left: 30,
               bottom: 40,
               child: Text(
-                  userdata.displayName == '' ? 'No Name' : userdata.displayName,
+                  userdata.displayName == null
+                      ? 'No Name'
+                      : userdata.displayName,
                   style: TextStyle(color: Colors.white, fontSize: 16)),
             ),
             Positioned(
