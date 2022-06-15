@@ -61,7 +61,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       return null;
                     },
                     onSaved: (value) {
-                      _nameonform = value.toString();
+                      _nameController.text = value.toString();
                     },
                     controller: _nameController,
                   ),
@@ -121,7 +121,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
       _formKey.currentState!.save();
-      userdata.updateDisplayName(_nameonform);
+      userdata.updateDisplayName(_nameController.text);
     }
   }
 }
