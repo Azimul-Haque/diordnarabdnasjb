@@ -71,7 +71,7 @@ showSnackBarandPop(BuildContext context, String message) {
       ),
     );
     // Navigator.of(context).pop();
-    Navigator.pushNamed(context, "/");
+    Navigator.popAndPushNamed(context, "/");
   });
 }
 
