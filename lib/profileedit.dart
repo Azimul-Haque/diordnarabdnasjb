@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
-  final User userdata;
-  const ProfileEditPage(this.userdata);
+  // final User userdata;
+  // const ProfileEditPage(this.userdata);
 
   @override
   _ProfileEditPageState createState() => _ProfileEditPageState();
@@ -20,7 +20,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     // ignore: todo
     // TODO: implement initState
     super.initState();
-    print(widget.userdata);
+    // print(widget.userdata);
   }
 
   @override
