@@ -13,7 +13,7 @@ class ProfileEditPage extends StatefulWidget {
 class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   User userdata;
-  _ProfileEditPageState(userdata);
+  _ProfileEditPageState(this.userdata);
 
   @override
   void initState() {
