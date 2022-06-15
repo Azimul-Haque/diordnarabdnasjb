@@ -120,6 +120,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     if (_formKey.currentState!.validate()) {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
       _formKey.currentState!.save();
+      userdata.updateDisplayName(_nameonform);
     }
   }
 }
