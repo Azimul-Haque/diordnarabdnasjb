@@ -8,7 +8,7 @@ class ProfileEditPage extends StatefulWidget {
   final User userdata;
   ProfileEditPage(this.userdata);
   @override
-  _ProfileEditPageState createState() => _ProfileEditPageState(this.userdata);
+  _ProfileEditPageState createState() => _ProfileEditPageState();
 }
 
 class _ProfileEditPageState extends State<ProfileEditPage> {
