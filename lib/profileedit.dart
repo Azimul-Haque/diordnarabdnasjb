@@ -69,6 +69,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     height: 30,
                   ),
                   TextFormField(
+                    enabled: false,
                     decoration: const InputDecoration(
                       icon: Icon(Icons.phone_android_sharp),
                       hintText: 'মোবাইল নম্বর',
