@@ -42,11 +42,11 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                     decoration: const InputDecoration(
                       icon: Icon(Icons.person),
                       hintText: 'What do people call you?',
-                      labelText: 'Name *',
+                      labelText: 'Name',
                     ),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Name is required!';
                       }
                       return null;
                     },
