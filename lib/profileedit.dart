@@ -15,6 +15,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
   late String _nameonform;
+  late String _phoneonform;
   final _nameController = TextEditingController();
   final _phoneController = TextEditingController();
 
@@ -73,7 +74,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       return null;
                     },
                     onSaved: (value) {
-                      _nameonform = value.toString();
+                      _phoneonform = value.toString();
                     },
                     controller: _nameController,
                   ),
