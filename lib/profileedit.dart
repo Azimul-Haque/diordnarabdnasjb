@@ -75,7 +75,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                         fontSize: 17,
                         fontFamily: 'AvenirLight'),
                     //  controller: _passwordController,
-                    obscureText: true,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
