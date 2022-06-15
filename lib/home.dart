@@ -91,7 +91,7 @@ class _HomeState extends State<Home> {
               bottom: 40,
               child: Text(
                   userdata.displayName.toString() == 'null' ||
-                          widget.user.displayName == null
+                          userdata.displayName == null
                       ? 'No Name'
                       : userdata.displayName.toString(),
                   style: TextStyle(color: Colors.white, fontSize: 16)),
