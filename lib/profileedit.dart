@@ -124,11 +124,6 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
       userdata.updateDisplayName(_nameController.text);
-
-      formKey.currentState.save();
-      print(formname);
-      // print(end);
-
       try {
         userdata.updateProfile(displayName: formname).then(
               (value) => this.showSnackBarandPop("Profile updated."),
