@@ -121,9 +121,30 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   void handleSubmit() {
     if (_formKey.currentState!.validate()) {
       showAlertDialog(context, 'সার্ভারে সেইভ হচ্ছে...');
+      FocusScope.of(context).unfocus();
       _formKey.currentState!.save();
       userdata.updateDisplayName(_nameController.text);
-      FocusScope.of(context).unfocus();
+
+      formKey.currentState.save();
+      print(formname);
+      // print(end);
+
+      try {
+        userdata.updateProfile(displayName: formname).then(
+              (value) => this.showSnackBarandPop("Profile updated."),
+            );
+      } on FirebaseAuthException catch (e) {
+        print('Failed with error code: ${e.code}');
+        print(e.message);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            behavior: SnackBarBehavior.floating,
+            content: Text("Error! Try again."),
+            // content: Text(e.message),
+          ),
+        );
+        Navigator.pop(context);
+      }
     }
   }
 }
