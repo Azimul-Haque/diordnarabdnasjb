@@ -7,13 +7,13 @@ import 'package:bjsandbarexam/globals.dart';
 class ProfileEditPage extends StatefulWidget {
   ProfileEditPage(User userdata);
   @override
-  _ProfileEditPageState createState() => _ProfileEditPageState(User, User userdata);
+  _ProfileEditPageState createState() => _ProfileEditPageState(User userdata);
 }
 
 class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
 
-  _ProfileEditPageState(Type user, userdata);
+  _ProfileEditPageState(userdata);
 
   @override
   void initState() {
