@@ -95,7 +95,7 @@ class _HomeState extends State<Home> {
             Positioned(
               left: 30,
               bottom: 25,
-              child: Text('ইউজারনেম',
+              child: Text(userdata.displayName,
                   style: TextStyle(color: Colors.white70, fontSize: 13)),
             ),
             Positioned(
