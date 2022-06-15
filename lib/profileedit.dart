@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class ProfileEditPage extends StatefulWidget {
+  var 
   ProfileEditPage(this.userdata);
 
   // final String phone;
