@@ -70,9 +70,9 @@ showSnackBarandPop(BuildContext context, String message) {
         content: Text(message),
       ),
     );
-    Navigator.of(context).pop();
+    // Navigator.of(context).pop();
     // IT NAVIGATES TO HOME PAGE!!!
-    // Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
+    Navigator.pushNamedAndRemoveUntil(context, "/", (route) => false);
   });
 }
 

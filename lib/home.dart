@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                   color: Colors.white,
                 ),
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.popUntil(context, (route) => false);
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => ProfileEditPage(userdata),
