@@ -15,6 +15,8 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
 
+  final String _nameController;
+
   @override
   void initState() {
     super.initState();
@@ -54,7 +56,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
                       // This optional block of code can be used to run
                       // code when the user saves the form.
                     },
-                    controller: _passwordController,
+                    controller: _nameController,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 16.0),
