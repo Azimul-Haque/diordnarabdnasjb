@@ -69,6 +69,9 @@ class _TestBkashPageState extends State<TestBkashPage> {
               },
               onPageFinished: (String url) {
                 print('Page finished loading: $url');
+                setState(() {
+                  isLoading = false;
+                });
               },
               gestureNavigationEnabled: true,
               backgroundColor: const Color(0x00000000),
