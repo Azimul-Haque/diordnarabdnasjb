@@ -35,7 +35,6 @@ class _TestBkashPageState extends State<TestBkashPage> {
     return WillPopScope(
       onWillPop: () async {
         bool willLeave = false;
-        // show the confirm dialog
         await showDialog(
             context: context,
             builder: (_) => AlertDialog(
