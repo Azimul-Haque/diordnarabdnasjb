@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors, unused_local_variable, avoid_print, unused_field
 
+import 'dart:async';
+import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:http/http.dart' as http;
 import 'package:webview_flutter/webview_flutter.dart';
@@ -15,7 +18,7 @@ class TestBkashPage extends StatefulWidget {
 
 class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-  const WebViewExample({Key? key, this.cookieManager}) : super(key: key);
+  final WebViewExample({Key? key, this.cookieManager}) : super(key: key);
 
   final CookieManager? cookieManager;
 
