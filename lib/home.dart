@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
               elevation: MaterialStateProperty.all(1),
             ),
             child: Text(
-              'আপডেট করুন',
+              'Test Payment Gateway',
               style: TextStyle(color: Colors.white),
             ),
             onPressed: () {
