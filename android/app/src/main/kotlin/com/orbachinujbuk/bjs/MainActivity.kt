@@ -1,4 +1,4 @@
-package com.orbachinujbuk.bjs
+package com.orbachinujbuk.bjsandbarexam
 
 import io.flutter.embedding.android.FlutterActivity
 
