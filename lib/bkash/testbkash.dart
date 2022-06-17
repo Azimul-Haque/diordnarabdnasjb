@@ -25,8 +25,46 @@ class _TestBkashPageState extends State<TestBkashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: 'https://flutter.dev',
+    return Scaffold(
+      backgroundColor: Colors.green,
+      appBar: AppBar(
+        title: const Text('Flutter WebView example'),
+        // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
+        actions: <Widget>[
+          NavigationControls(_controller.future),
+          SampleMenu(_controller.future, widget.cookieManager),
+        ],
+      ),
+      body: WebView(
+        initialUrl: 'https://flutter.dev',
+        javascriptMode: JavascriptMode.unrestricted,
+        onWebViewCreated: (WebViewController webViewController) {
+          _controller.complete(webViewController);
+        },
+        onProgress: (int progress) {
+          print('WebView is loading (progress : $progress%)');
+        },
+        javascriptChannels: <JavascriptChannel>{
+          _toasterJavascriptChannel(context),
+        },
+        navigationDelegate: (NavigationRequest request) {
+          if (request.url.startsWith('https://www.youtube.com/')) {
+            print('blocking navigation to $request}');
+            return NavigationDecision.prevent;
+          }
+          print('allowing navigation to $request');
+          return NavigationDecision.navigate;
+        },
+        onPageStarted: (String url) {
+          print('Page started loading: $url');
+        },
+        onPageFinished: (String url) {
+          print('Page finished loading: $url');
+        },
+        gestureNavigationEnabled: true,
+        backgroundColor: const Color(0x00000000),
+      ),
+      floatingActionButton: favoriteButton(),
     );
   }
 }
