@@ -18,7 +18,7 @@ class TestBkashPage extends StatefulWidget {
 
 class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-  final _TestBkashPageState({Key? key, this.cookieManager}) : super(key: key);
+  _TestBkashPageState({Key? key, this.cookieManager}) : super(key: key);
 
   final CookieManager? cookieManager;
 
