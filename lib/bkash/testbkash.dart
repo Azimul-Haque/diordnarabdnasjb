@@ -8,30 +8,17 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class TestBkashPage extends StatefulWidget {
-  final User user;
-  TestBkashPage(this.user);
   @override
   _TestBkashPageState createState() => _TestBkashPageState();
 }
 
 class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-  final _formKey = GlobalKey<FormState>();
-  late String _nameonform;
-  late String _phoneonform;
-  final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _phoneController = TextEditingController();
-  late User userdata;
 
   @override
   void initState() {
     super.initState();
-    userdata = FirebaseAuth.instance.currentUser!;
-    _nameController.text = widget.user.displayName.toString() == 'null' ||
-            widget.user.displayName == null
-        ? ''
-        : widget.user.displayName.toString();
-    _phoneController.text = widget.user.phoneNumber ?? '01***';
+
     // print(userdata);
   }
 
