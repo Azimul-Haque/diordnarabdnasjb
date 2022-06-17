@@ -70,8 +70,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
                   isLoading = false;
                 });
               },
-              gestureNavigationEnabled: true,
-              backgroundColor: const Color(0x00000000),
+              // gestureNavigationEnabled: true,
+              // backgroundColor: const Color(0x00000000),
             ),
             isLoading ? LinearProgressIndicator() : Stack(),
           ],
