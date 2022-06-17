@@ -14,13 +14,14 @@ import 'package:flutter/material.dart';
 class TestBkashPage extends StatefulWidget {
   TestBkashPage({Key? key, this.cookieManager}) : super(key: key);
   final CookieManager? cookieManager;
+  final Future<WebViewController> controller;
   @override
   _TestBkashPageState createState() => _TestBkashPageState();
 }
 
 class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-  final Future<WebViewController> controller;
+
   @override
   void initState() {
     super.initState();
