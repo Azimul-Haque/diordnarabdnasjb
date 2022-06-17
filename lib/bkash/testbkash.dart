@@ -20,7 +20,7 @@ class TestBkashPage extends StatefulWidget {
 
 class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-
+  final Future<WebViewController> controller;
   @override
   void initState() {
     super.initState();
