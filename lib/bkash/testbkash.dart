@@ -31,6 +31,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
   Widget build(BuildContext context) {
     bool isLoading = true;
     return Scaffold(
+      key: _scaffoldkey,
       // backgroundColor: Colors.green,
       appBar: AppBar(
         title: const Text('Flutter WebView example'),
