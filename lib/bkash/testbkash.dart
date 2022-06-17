@@ -7,6 +7,8 @@ import 'dart:io';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'package:flutter/material.dart';
+
+import '../globals.dart';
 // import 'package:bjsandbarexam/globals.dart';
 
 class TestBkashPage extends StatefulWidget {
@@ -35,6 +37,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
       // backgroundColor: Colors.green,
       appBar: AppBar(
         title: const Text('Flutter WebView example'),
+        flexibleSpace: appBarStyle(),
         // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
       ),
       body: SafeArea(
