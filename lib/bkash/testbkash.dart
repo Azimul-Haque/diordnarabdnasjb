@@ -68,7 +68,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
         gestureNavigationEnabled: true,
         backgroundColor: const Color(0x00000000),
       ),
-      floatingActionButton: favoriteButton(),
+      // floatingActionButton: favoriteButton(),
     );
   }
 
