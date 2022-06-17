@@ -39,13 +39,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
         title: const Text('Flutter WebView example'),
         // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
       ),
-      body: Stack(
-        children: [
-          //... widgets that render behind the column
-          
-        ],
-      ),
-      SafeArea(
+      body: SafeArea(
         child: Stack(
           children: <Widget>[
             WebView(
