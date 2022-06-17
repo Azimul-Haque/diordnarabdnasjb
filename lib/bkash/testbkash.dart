@@ -44,7 +44,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
         child: Stack(
           children: <Widget>[
             WebView(
-              initialUrl: 'https://atiqueriyad.com/dashboard',
+              initialUrl:
+                  'https://shop.bkash.com/bjs--bar-exam01837409842/paymentlink',
               javascriptMode: JavascriptMode.unrestricted,
               onWebViewCreated: (WebViewController webViewController) {
                 _controller.complete(webViewController);
