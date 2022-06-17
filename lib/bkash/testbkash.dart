@@ -67,4 +67,14 @@ class _TestBkashPageState extends State<TestBkashPage> {
       floatingActionButton: favoriteButton(),
     );
   }
+
+  JavascriptChannel _toasterJavascriptChannel(BuildContext context) {
+    return JavascriptChannel(
+        name: 'Toaster',
+        onMessageReceived: (JavascriptMessage message) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text(message.message)),
+          );
+        });
+  }
 }
