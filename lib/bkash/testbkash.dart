@@ -23,7 +23,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
   void initState() {
     super.initState();
     // print(userdata);
-    if (Platform.isAndroid) WebView.platform = AndroidWebView();
+    // if (Platform.isAndroid) WebView.platform = AndroidWebView();
+    if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
   }
 
   @override
