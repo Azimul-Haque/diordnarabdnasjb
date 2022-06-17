@@ -23,7 +23,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
   final CookieManager? cookieManager;
 
   @override
-  State<WebViewExample> createState() => _WebViewExampleState();
+  State<_TestBkashPageState> createState() => _WebViewExampleState();
 
   @override
   void initState() {
