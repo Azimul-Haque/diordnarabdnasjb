@@ -33,7 +33,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
 
   @override
   Widget build(BuildContext context) {
-    bool isLoading;
+    bool isLoading = true;
     return Scaffold(
       // backgroundColor: Colors.green,
       appBar: AppBar(
