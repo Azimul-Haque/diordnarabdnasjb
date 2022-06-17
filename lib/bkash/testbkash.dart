@@ -48,8 +48,9 @@ class _TestBkashPageState extends State<TestBkashPage> {
                       child: const Text('Yes'),
                     ),
                     TextButton(
-                        onPressed: () => Navigator.of(context).pop(),
-                        child: const Text('No'))
+                      onPressed: () => Navigator.of(context).pop(),
+                      child: const Text('No'),
+                    ),
                   ],
                 ));
         return willLeave;
