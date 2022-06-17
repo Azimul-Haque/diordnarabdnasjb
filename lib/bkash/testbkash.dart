@@ -77,4 +77,30 @@ class _TestBkashPageState extends State<TestBkashPage> {
           );
         });
   }
+
+  Widget favoriteButton() {
+    return FutureBuilder<WebViewController>(
+        future: _controller.future,
+        builder: (BuildContext context,
+            AsyncSnapshot<WebViewController> controller) {
+          return FloatingActionButton(
+            onPressed: () async {
+              String? url;
+              if (controller.hasData) {
+                url = await controller.data!.currentUrl();
+              }
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    controller.hasData
+                        ? 'Favorited $url'
+                        : 'Unable to favorite',
+                  ),
+                ),
+              );
+            },
+            child: const Icon(Icons.favorite),
+          );
+        });
+  }
 }
