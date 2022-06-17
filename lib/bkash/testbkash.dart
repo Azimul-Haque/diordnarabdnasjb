@@ -33,25 +33,27 @@ class _TestBkashPageState extends State<TestBkashPage> {
   Widget build(BuildContext context) {
     bool isLoading = true;
     return WillPopScope(
-      onWillPop: () {bool willLeave = false;
-      // show the confirm dialog
-      await showDialog(
-          context: context,
-          builder: (_) => AlertDialog(
-                title: const Text('Are you sure want to leave?'),
-                actions: [
-                  ElevatedButton(
-                      onPressed: () {
-                        willLeave = true;
-                        Navigator.of(context).pop();
-                      },
-                      child: const Text('Yes')),
-                  TextButton(
-                      onPressed: () => Navigator.of(context).pop(),
-                      child: const Text('No'))
-                ],
-              ));
-      return willLeave;},
+      onWillPop: () async {
+        bool willLeave = false;
+        // show the confirm dialog
+        await showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: const Text('Are you sure want to leave?'),
+                  actions: [
+                    ElevatedButton(
+                        onPressed: () {
+                          willLeave = true;
+                          Navigator.of(context).pop();
+                        },
+                        child: const Text('Yes')),
+                    TextButton(
+                        onPressed: () => Navigator.of(context).pop(),
+                        child: const Text('No'))
+                  ],
+                ));
+        return willLeave;
+      },
       child: Scaffold(
         key: _scaffoldkey,
         appBar: AppBar(
