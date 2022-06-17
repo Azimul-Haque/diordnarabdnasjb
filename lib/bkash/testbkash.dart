@@ -18,7 +18,6 @@ class _TestBkashPageState extends State<TestBkashPage> {
   @override
   void initState() {
     super.initState();
-
     // print(userdata);
   }
 
@@ -27,7 +26,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('ব্যবহারকারীর তথ্য'),
+        title: Text('Test'),
         flexibleSpace: appBarStyle(),
       ),
       body: Column(
