@@ -40,7 +40,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
         // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
       ),
       body: WebView(
-        initialUrl: 'https://flutter.dev',
+        initialUrl:
+            'https://shop.bkash.com/bjs--bar-exam01837409842/paymentlink',
         javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (WebViewController webViewController) {
           _controller.complete(webViewController);
