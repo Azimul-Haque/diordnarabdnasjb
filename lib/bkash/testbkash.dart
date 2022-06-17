@@ -32,46 +32,48 @@ class _TestBkashPageState extends State<TestBkashPage> {
   @override
   Widget build(BuildContext context) {
     bool isLoading = true;
-    return WillPopScope(child: Scaffold(
-      key: _scaffoldkey,
-      appBar: AppBar(
-        title: const Text('Flutter WebView example'),
-        flexibleSpace: appBarStyle(),
-      ),
-      body: SafeArea(
-        child: Stack(
-          children: <Widget>[
-            WebView(
-              initialUrl:
-                  'https://shop.bkash.com/bjs--bar-exam01837409842/paymentlink',
-              javascriptMode: JavascriptMode.unrestricted,
-              onWebViewCreated: (WebViewController webViewController) {
-                _controller.complete(webViewController);
-              },
-              onProgress: (int progress) {
-                print('WebView is loading (progress : $progress%)');
-              },
-              javascriptChannels: <JavascriptChannel>{
-                _toasterJavascriptChannel(context),
-              },
-              onPageStarted: (String url) {
-                print('Page started loading: $url');
-              },
-              onPageFinished: (String url) {
-                print('Page finished loading: $url');
-                setState(() {
-                  isLoading = false;
-                });
-              },
-              // gestureNavigationEnabled: true,
-              // backgroundColor: const Color(0x00000000),
+    return WillPopScope(
+        child: Scaffold(
+          key: _scaffoldkey,
+          appBar: AppBar(
+            title: const Text('Flutter WebView example'),
+            flexibleSpace: appBarStyle(),
+          ),
+          body: SafeArea(
+            child: Stack(
+              children: <Widget>[
+                WebView(
+                  initialUrl:
+                      'https://shop.bkash.com/bjs--bar-exam01837409842/paymentlink',
+                  javascriptMode: JavascriptMode.unrestricted,
+                  onWebViewCreated: (WebViewController webViewController) {
+                    _controller.complete(webViewController);
+                  },
+                  onProgress: (int progress) {
+                    print('WebView is loading (progress : $progress%)');
+                  },
+                  javascriptChannels: <JavascriptChannel>{
+                    _toasterJavascriptChannel(context),
+                  },
+                  onPageStarted: (String url) {
+                    print('Page started loading: $url');
+                  },
+                  onPageFinished: (String url) {
+                    print('Page finished loading: $url');
+                    setState(() {
+                      isLoading = false;
+                    });
+                  },
+                  // gestureNavigationEnabled: true,
+                  // backgroundColor: const Color(0x00000000),
+                ),
+                isLoading ? LinearProgressIndicator() : Stack(),
+              ],
             ),
-            isLoading ? LinearProgressIndicator() : Stack(),
-          ],
+          ),
+          // floatingActionButton: favoriteButton(),
         ),
-      ),
-      // floatingActionButton: favoriteButton(),
-    );, onWillPop: onWillPop)
+        onWillPop: () {});
   }
 
   JavascriptChannel _toasterJavascriptChannel(BuildContext context) {
