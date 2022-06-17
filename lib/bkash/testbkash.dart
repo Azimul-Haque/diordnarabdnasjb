@@ -41,11 +41,12 @@ class _TestBkashPageState extends State<TestBkashPage> {
                   title: const Text('Are you sure want to leave?'),
                   actions: [
                     ElevatedButton(
-                        onPressed: () {
-                          willLeave = true;
-                          Navigator.of(context).pop();
-                        },
-                        child: const Text('Yes')),
+                      onPressed: () {
+                        willLeave = true;
+                        Navigator.of(context).pop();
+                      },
+                      child: const Text('Yes'),
+                    ),
                     TextButton(
                         onPressed: () => Navigator.of(context).pop(),
                         child: const Text('No'))
