@@ -33,6 +33,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
 
   @override
   Widget build(BuildContext context) {
+    var isLoading;
     return Scaffold(
       // backgroundColor: Colors.green,
       appBar: AppBar(
@@ -72,11 +73,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
               gestureNavigationEnabled: true,
               backgroundColor: const Color(0x00000000),
             ),
-            isLoading
-                ? Container(
-                    child: LinearProgressIndicator(),
-                  )
-                : Stack(),
+            isLoading ? LinearProgressIndicator() : Stack(),
           ],
         ),
       ),
