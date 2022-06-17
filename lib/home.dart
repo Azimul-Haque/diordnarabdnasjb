@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 import 'package:bjsandbarexam/login.dart';
 import 'package:bjsandbarexam/profileedit.dart';
-import 'package:bjsandbarexam/bkash/bkashtest.dart';
+import 'package:bjsandbarexam/bkash/testbkash.dart';
 
 import 'package:bjsandbarexam/globals.dart';
 
