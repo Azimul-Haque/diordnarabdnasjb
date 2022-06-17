@@ -26,87 +26,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      key: _scaffoldkey,
-      appBar: AppBar(
-        title: Text('Test'),
-        flexibleSpace: appBarStyle(),
-      ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Form(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      icon: Icon(Icons.person),
-                      hintText: 'আপনার নাম লিখুন',
-                      labelText: 'নাম',
-                    ),
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'নাম লিখুন!';
-                      }
-                      return null;
-                    },
-                    onSaved: (value) {
-                      _nameController.text = value.toString();
-                    },
-                    controller: _nameController,
-                  ),
-                  SizedBox(
-                    height: 30,
-                  ),
-                  TextFormField(
-                    enabled: false,
-                    decoration: const InputDecoration(
-                      icon: Icon(Icons.phone_android_sharp),
-                      hintText: 'মোবাইল নম্বর',
-                      labelText: 'মোবাইল নম্বর',
-                    ),
-                    validator: (value) {
-                      if (value == null || value.isEmpty) {
-                        return 'মোবাইল নম্বর লিখুন!';
-                      }
-                      return null;
-                    },
-                    onSaved: (value) {
-                      _phoneonform = value.toString();
-                    },
-                    controller: _phoneController,
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(20),
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0),
-                          ),
-                        ),
-                        elevation: MaterialStateProperty.all(1),
-                      ),
-                      child: Text(
-                        'আপডেট করুন',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      onPressed: () {
-                        handleSubmit();
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
+    return WebView(
+      initialUrl: 'https://flutter.dev',
     );
   }
 
