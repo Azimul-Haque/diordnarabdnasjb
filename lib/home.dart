@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => BkashTestPage(userdata),
+                  builder: (context) => TestBkashPage(),
                 ),
               );
             },
