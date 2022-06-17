@@ -7,14 +7,14 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
-class ProfileEditPage extends StatefulWidget {
+class TestBkashPage extends StatefulWidget {
   final User user;
-  ProfileEditPage(this.user);
+  TestBkashPage(this.user);
   @override
-  _ProfileEditPageState createState() => _ProfileEditPageState();
+  _TestBkashPageState createState() => _TestBkashPageState();
 }
 
-class _ProfileEditPageState extends State<ProfileEditPage> {
+class _TestBkashPageState extends State<TestBkashPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
   late String _nameonform;
