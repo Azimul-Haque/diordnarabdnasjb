@@ -52,8 +52,34 @@ class _HomeState extends State<Home> {
         ],
       ),
       drawer: _homeDrawer(),
-      body: Center(
-        child: Text(userdata.toString()),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          ElevatedButton(
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                ),
+              ),
+              elevation: MaterialStateProperty.all(1),
+            ),
+            child: Text(
+              'আপডেট করুন',
+              style: TextStyle(color: Colors.white),
+            ),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => ProfileEditPage(userdata),
+                ),
+              );
+            },
+          ),
+          Center(
+            child: Text(userdata.toString()),
+          ),
+        ],
       ),
     );
   }
