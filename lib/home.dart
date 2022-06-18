@@ -280,6 +280,51 @@ class _HomeState extends State<Home> {
     ));
   }
 
+  Widget _bottomNavigationBar() {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Page 1',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.book_online),
+          label: 'Page 1',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.read_more),
+          label: 'Page 2',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.account_circle),
+          label: 'Profile',
+        )
+      ],
+      onTap: _onTap,
+      currentIndex: _currentTabIndex,
+      elevation: 0,
+    );
+  }
+
+  _onTap(int tabIndex) {
+    switch (tabIndex) {
+      // case 0:
+      //   Notifications();
+      //   // _navigatorKey.currentState.pushReplacementNamed("Page 1");
+      //   break;
+      // case 1:
+      //   Notifications();
+      //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
+      //   break;
+      // case 2:
+      //   Notifications();
+      //   // _navigatorKey.currentState.pushReplacementNamed("Profile");
+      //   break;
+    }
+    _currentTabIndex = tabIndex;
+  }
+
   BoxShadow _boxShadow1() {
     return BoxShadow(
       color: Colors.grey[700]!,
