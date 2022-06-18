@@ -303,6 +303,7 @@ class _HomeState extends State<Home> {
       ],
       onTap: _onTap,
       currentIndex: _currentTabIndex,
+      elevation: 50,
     );
   }
 
