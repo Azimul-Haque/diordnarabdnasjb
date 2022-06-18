@@ -301,7 +301,7 @@ class _HomeState extends State<Home> {
         )
       ],
       onTap: _onTap,
-      currentIndex: _currentTabIndex,
+      currentIndex: currentTabIndex,
       // elevation: 50,
     );
   }
@@ -309,7 +309,7 @@ class _HomeState extends State<Home> {
   _onTap(int tabIndex) {
     switch (tabIndex) {
       case 0:
-        if (_currentTabIndex == tabIndex) {
+        if (currentTabIndex == tabIndex) {
         } else {
           Navigator.popUntil(context, (route) => false);
           Navigator.of(context).push(
