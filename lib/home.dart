@@ -301,7 +301,7 @@ class _HomeState extends State<Home> {
         )
       ],
       onTap: _onTap,
-      currentIndex: currentTabIndex,
+      currentIndex: currentGTabIndex,
       // elevation: 50,
     );
   }
@@ -309,7 +309,7 @@ class _HomeState extends State<Home> {
   _onTap(int tabIndex) {
     switch (tabIndex) {
       case 0:
-        if (currentTabIndex == tabIndex) {
+        if (currentGTabIndex == tabIndex) {
         } else {
           Navigator.popUntil(context, (route) => false);
           Navigator.of(context).push(
@@ -331,8 +331,8 @@ class _HomeState extends State<Home> {
         );
         break;
     }
-    _currentTabIndex = tabIndex;
-    // print(_currentTabIndex);
+    _currentGTabIndex = tabIndex;
+    // print(_currentGTabIndex);
   }
 
   BoxShadow _boxShadow1() {
