@@ -32,7 +32,7 @@ class _PackagePageState extends State<PackagePage> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('ব্যবহারকারীর তথ্য'),
+        title: Text('প্যাকেজ'),
         flexibleSpace: appBarStyle(),
       ),
       body: Column(
@@ -44,60 +44,5 @@ class _PackagePageState extends State<PackagePage> {
         ],
       ),
     );
-  }
-
-  void handleSubmit() {
-    if (_formKey.currentState!.validate()) {
-      showAlertDialog(context, 'সার্ভারে পাঠানো হচ্ছে...');
-      FocusScope.of(context).unfocus();
-      _formKey.currentState!.save();
-      try {
-        userdata.updateDisplayName(_nameController.text).then(
-              (value) => showSnackBarandPop(context, "হালনাগাদ হয়েছে!"),
-            );
-        _postUpdateUser(_nameController.text);
-      } on FirebaseAuthException catch (e) {
-        print('Failed with error code: ${e.code}');
-        print(e.message);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            behavior: SnackBarBehavior.floating,
-            content: Text("Error! Try again."),
-            // content: Text(e.message),
-          ),
-        );
-        Navigator.pop(context);
-      }
-    }
-  }
-
-  _postUpdateUser(name) async {
-    var data = {
-      'uid': userdata.uid,
-      'name': name,
-      'softtoken': 'Rifat.Admin.2022',
-    };
-    // print(data);
-    try {
-      http.Response response = await http.post(
-        Uri.parse('http://192.168.0.108:8000/api/updateuser'),
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=utf-8',
-          'Accept': 'application/json',
-        },
-        body: jsonEncode(data),
-      );
-      // print(response.statusCode);
-      if (response.statusCode == 200) {
-        var body = json.decode(response.body);
-        if (body["success"] == true) {
-          // print(body);
-        }
-      } else {
-        // print(response.body);
-      }
-    } catch (_) {
-      // print(_);
-    }
   }
 }
