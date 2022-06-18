@@ -331,8 +331,8 @@ class _HomeState extends State<Home> {
         );
         break;
     }
-    _currentGTabIndex = tabIndex;
-    // print(_currentGTabIndex);
+    currentGTabIndex = tabIndex;
+    // print(currentGTabIndex);
   }
 
   BoxShadow _boxShadow1() {
