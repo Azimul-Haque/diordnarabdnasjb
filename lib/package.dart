@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
 class PackagePage extends StatefulWidget {
-  final User user;
-  PackagePage(this.user);
   @override
   _PackagePageState createState() => _PackagePageState();
 }
