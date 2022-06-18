@@ -317,7 +317,7 @@ class _HomeState extends State<Home> {
       //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
       //   break;
       case 2:
-        ProfileEditPage();
+        ProfileEditPage(userdata);
         break;
     }
     _currentTabIndex = tabIndex;
