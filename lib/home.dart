@@ -2,6 +2,7 @@
 
 import 'dart:convert';
 
+import 'package:bjsandbarexam/package.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -129,7 +130,7 @@ class _HomeState extends State<Home> {
       case 2:
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (context) => ProfileEditPage(userdata),
+            builder: (context) => PackagePage(),
           ),
         );
         break;
