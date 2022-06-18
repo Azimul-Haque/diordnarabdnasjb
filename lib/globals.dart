@@ -3,6 +3,7 @@
 library bjsandbarexam.globals;
 
 import 'dart:async';
+import 'dart:js';
 import 'package:bjsandbarexam/home.dart';
 import 'package:bjsandbarexam/profileedit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -78,7 +79,7 @@ Widget bottomNavigationBar() {
         label: 'Profile',
       )
     ],
-    onTap: onTap,
+    onTap: onTap(context, 1),
     currentIndex: currentGTabIndex,
     // elevation: 50,
   );
