@@ -119,7 +119,7 @@ onTap(int tabIndex) {
       break;
   }
   currentGTabIndex = tabIndex;
-  // print(currentGTabIndex);
+  print(currentGTabIndex);
 }
 
 showSimpleSnackBar(BuildContext context, String message) {
