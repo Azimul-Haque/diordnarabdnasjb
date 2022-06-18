@@ -23,11 +23,7 @@ class _PackagePageState extends State<PackagePage> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
-    _nameController.text = widget.user.displayName.toString() == 'null' ||
-            widget.user.displayName == null
-        ? ''
-        : widget.user.displayName.toString();
-    _phoneController.text = widget.user.phoneNumber ?? '01***';
+
     // print(userdata);
   }
 
