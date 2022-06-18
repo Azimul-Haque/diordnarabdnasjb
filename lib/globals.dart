@@ -110,6 +110,14 @@ onTap(int tabIndex) {
       //   ),
       // );
       break;
+    case 3:
+      // User userdata;
+      // Navigator.of(context).push(
+      //   MaterialPageRoute(
+      //     builder: (context) => ProfileEditPage(userdata),
+      //   ),
+      // );
+      break;
   }
   currentGTabIndex = tabIndex;
   // print(currentGTabIndex);
