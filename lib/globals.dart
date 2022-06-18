@@ -113,6 +113,7 @@ Widget _bottomNavigationBar() {
     ],
     onTap: _onTap,
     currentIndex: _currentTabIndex,
+    elevation: 0,
   );
 }
 
