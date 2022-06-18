@@ -139,7 +139,7 @@ class _HomeState extends State<Home> {
     }
     setState(() {
       currentGTabIndex = tabIndex;
-      _pageController.animateToPage(currentGTabIndex,
+      pageController.animateToPage(currentGTabIndex,
           duration: Duration(milliseconds: 200), curve: Curves.linear);
     });
     print(currentGTabIndex);

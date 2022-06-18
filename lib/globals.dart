@@ -56,7 +56,7 @@ showAlertDialog(BuildContext context, String message) {
 // }
 
 int currentGTabIndex = 0;
-var _pageController = PageController();
+var pageController = PageController();
 
 showSimpleSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(

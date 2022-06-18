@@ -95,6 +95,8 @@ class _PackagePageState extends State<PackagePage> {
     }
     setState(() {
       currentGTabIndex = tabIndex;
+      pageController.animateToPage(currentGTabIndex,
+          duration: Duration(milliseconds: 200), curve: Curves.linear);
     });
     print(currentGTabIndex);
   }
