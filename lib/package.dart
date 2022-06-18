@@ -38,6 +38,7 @@ class _PackagePageState extends State<PackagePage> {
           ),
         ],
       ),
+      bottomNavigationBar: bottomNavigationBar(),
     );
   }
 }
