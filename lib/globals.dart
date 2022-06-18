@@ -3,10 +3,9 @@
 library bjsandbarexam.globals;
 
 import 'dart:async';
-import 'dart:js';
-import 'package:bjsandbarexam/home.dart';
-import 'package:bjsandbarexam/profileedit.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:bjsandbarexam/home.dart';
+// import 'package:bjsandbarexam/profileedit.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 // appBarStyle() {
