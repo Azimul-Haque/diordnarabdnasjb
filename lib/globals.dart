@@ -7,6 +7,7 @@ import 'dart:async';
 // import 'package:bjsandbarexam/profileedit.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:bjsandbarexam/home.dart';
 
 // appBarStyle() {
 //   return Ink(
