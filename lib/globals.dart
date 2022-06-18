@@ -98,17 +98,17 @@ onTap(int tabIndex) {
       //   );
       // }
       break;
-    // case 1:
-    //   Notifications();
-    //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
-    //   break;
+    case 1:
+      // Notifications();
+      //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
+      break;
     case 2:
-      User userdata;
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (context) => ProfileEditPage(userdata),
-        ),
-      );
+      // User userdata;
+      // Navigator.of(context).push(
+      //   MaterialPageRoute(
+      //     builder: (context) => ProfileEditPage(userdata),
+      //   ),
+      // );
       break;
   }
   currentGTabIndex = tabIndex;
