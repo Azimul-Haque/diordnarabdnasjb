@@ -88,15 +88,15 @@ Widget bottomNavigationBar() {
 onTap(int tabIndex) {
   switch (tabIndex) {
     case 0:
-      if (currentGTabIndex == tabIndex) {
-      } else {
-        Navigator.popUntil(context, (route) => false);
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => const Home(),
-          ),
-        );
-      }
+      // if (currentGTabIndex == tabIndex) {
+      // } else {
+      //   Navigator.popUntil(context, (route) => false);
+      //   Navigator.of(context).push(
+      //     MaterialPageRoute(
+      //       builder: (context) => const Home(),
+      //     ),
+      //   );
+      // }
       break;
     // case 1:
     //   Notifications();
