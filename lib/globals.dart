@@ -78,7 +78,7 @@ Widget bottomNavigationBar() {
         label: 'Profile',
       )
     ],
-    onTap: onTap,
+    onTap: onBottomNavTap,
     currentIndex: currentGTabIndex,
     // elevation: 50,
   );

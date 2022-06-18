@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  onTap(int tabIndex) {
+  onBottomNavTap(int tabIndex) {
     switch (tabIndex) {
       case 0:
         // if (currentGTabIndex == tabIndex) {
@@ -203,7 +203,7 @@ class _HomeState extends State<Home> {
             color: Colors.black87,
           ),
           title: Text("নীড়"),
-          onTap: () {
+          BottomNav: () {
             Navigator.pop(context); // this line closes the drawer
           },
         ),
@@ -213,7 +213,7 @@ class _HomeState extends State<Home> {
         //     color: Colors.black87,
         //   ),
         //   title: Text("প্রশ্ন যোগ করুন"),
-        //   onTap: () {
+        //   BottomNav: () {
         //     Navigator.pop(context);
         //     // Route route = MaterialPageRoute(builder: (context) => NotificationPage(["1", "2"]));
         //     // Navigator.push(context, route);
