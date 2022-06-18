@@ -118,7 +118,9 @@ onTap(int tabIndex) {
       // );
       break;
   }
-  currentGTabIndex = tabIndex;
+  setState(() {
+    currentGTabIndex = tabIndex;
+  });
   print(currentGTabIndex);
 }
 
