@@ -310,12 +310,15 @@ class _HomeState extends State<Home> {
   _onTap(int tabIndex) {
     switch (tabIndex) {
       case 0:
-        Navigator.popUntil(context, (route) => false);
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => Home(),
-          ),
-        );
+        if (_currentTabIndex == tabIndex) {
+        } else {
+          Navigator.popUntil(context, (route) => false);
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => Home(),
+            ),
+          );
+        }
         break;
       // case 1:
       //   Notifications();
