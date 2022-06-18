@@ -330,7 +330,7 @@ class _HomeState extends State<Home> {
         break;
     }
     _currentTabIndex = tabIndex;
-    print(_currentTabIndex);
+    // print(_currentTabIndex);
   }
 
   BoxShadow _boxShadow1() {
