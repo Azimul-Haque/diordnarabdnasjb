@@ -22,7 +22,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   late String uid;
   late User userdata;
-  int _currentTabIndex = 0;
 
   @override
   void initState() {
