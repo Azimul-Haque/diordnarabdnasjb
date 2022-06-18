@@ -7,7 +7,6 @@ import 'dart:async';
 // import 'package:bjsandbarexam/profileedit.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:bjsandbarexam/home.dart';
 
 // appBarStyle() {
 //   return Ink(
@@ -79,10 +78,48 @@ Widget bottomNavigationBar() {
         label: 'Profile',
       )
     ],
-    onTap: onBottomNavTap,
+    onTap: onTap,
     currentIndex: currentGTabIndex,
     // elevation: 50,
   );
+}
+
+onTap(int tabIndex) {
+  switch (tabIndex) {
+    case 0:
+      // if (currentGTabIndex == tabIndex) {
+      // } else {
+      //   Navigator.popUntil(context, (route) => false);
+      //   Navigator.of(context).push(
+      //     MaterialPageRoute(
+      //       builder: (context) => const Home(),
+      //     ),
+      //   );
+      // }
+      break;
+    case 1:
+      // Notifications();
+      //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
+      break;
+    case 2:
+      // User userdata;
+      // Navigator.of(context).push(
+      //   MaterialPageRoute(
+      //     builder: (context) => ProfileEditPage(userdata),
+      //   ),
+      // );
+      break;
+    case 3:
+      // User userdata;
+      // Navigator.of(context).push(
+      //   MaterialPageRoute(
+      //     builder: (context) => ProfileEditPage(userdata),
+      //   ),
+      // );
+      break;
+  }
+  currentGTabIndex = tabIndex;
+  print(currentGTabIndex);
 }
 
 showSimpleSnackBar(BuildContext context, String message) {
