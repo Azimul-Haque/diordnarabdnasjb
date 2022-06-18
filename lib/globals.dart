@@ -84,44 +84,6 @@ Widget bottomNavigationBar() {
   );
 }
 
-onTap(int tabIndex) {
-  switch (tabIndex) {
-    case 0:
-      // if (currentGTabIndex == tabIndex) {
-      // } else {
-      //   Navigator.popUntil(context, (route) => false);
-      //   Navigator.of(context).push(
-      //     MaterialPageRoute(
-      //       builder: (context) => const Home(),
-      //     ),
-      //   );
-      // }
-      break;
-    case 1:
-      // Notifications();
-      //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
-      break;
-    case 2:
-      // User userdata;
-      // Navigator.of(context).push(
-      //   MaterialPageRoute(
-      //     builder: (context) => ProfileEditPage(userdata),
-      //   ),
-      // );
-      break;
-    case 3:
-      // User userdata;
-      // Navigator.of(context).push(
-      //   MaterialPageRoute(
-      //     builder: (context) => ProfileEditPage(userdata),
-      //   ),
-      // );
-      break;
-  }
-  currentGTabIndex = tabIndex;
-  print(currentGTabIndex);
-}
-
 showSimpleSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
