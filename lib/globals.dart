@@ -5,6 +5,7 @@ library bjsandbarexam.globals;
 import 'dart:async';
 import 'package:bjsandbarexam/home.dart';
 import 'package:bjsandbarexam/profileedit.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 // appBarStyle() {
@@ -77,13 +78,13 @@ Widget bottomNavigationBar() {
         label: 'Profile',
       )
     ],
-    onTap: _onTap,
+    onTap: onTap,
     currentIndex: currentGTabIndex,
     // elevation: 50,
   );
 }
 
-_onTap(context, int tabIndex) {
+onTap(context, int tabIndex) {
   switch (tabIndex) {
     case 0:
       if (currentGTabIndex == tabIndex) {
@@ -91,7 +92,7 @@ _onTap(context, int tabIndex) {
         Navigator.popUntil(context, (route) => false);
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (context) => Home(),
+            builder: (context) => const Home(),
           ),
         );
       }
@@ -101,6 +102,7 @@ _onTap(context, int tabIndex) {
     //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
     //   break;
     case 2:
+      User userdata;
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (context) => ProfileEditPage(userdata),
