@@ -309,10 +309,10 @@ class _HomeState extends State<Home> {
 
   _onTap(int tabIndex) {
     switch (tabIndex) {
-      // case 0:
-      //   Notifications();
-      //   // _navigatorKey.currentState.pushReplacementNamed("Page 1");
-      //   break;
+      case 0:
+        Home();
+        // _navigatorKey.currentState.pushReplacementNamed("Page 1");
+        break;
       // case 1:
       //   Notifications();
       //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
