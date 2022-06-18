@@ -311,16 +311,14 @@ class _HomeState extends State<Home> {
     switch (tabIndex) {
       case 0:
         Home();
-        // _navigatorKey.currentState.pushReplacementNamed("Page 1");
         break;
       // case 1:
       //   Notifications();
       //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
       //   break;
-      // case 2:
-      //   Notifications();
-      //   // _navigatorKey.currentState.pushReplacementNamed("Profile");
-      //   break;
+      case 2:
+        ProfileEditPage();
+        break;
     }
     _currentTabIndex = tabIndex;
   }
