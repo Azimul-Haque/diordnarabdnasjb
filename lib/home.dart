@@ -86,44 +86,6 @@ class _HomeState extends State<Home> {
     );
   }
 
-  onBottomNavTap(int tabIndex) {
-    switch (tabIndex) {
-      case 0:
-        // if (currentGTabIndex == tabIndex) {
-        // } else {
-        //   Navigator.popUntil(context, (route) => false);
-        //   Navigator.of(context).push(
-        //     MaterialPageRoute(
-        //       builder: (context) => const Home(),
-        //     ),
-        //   );
-        // }
-        break;
-      case 1:
-        // Notifications();
-        //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
-        break;
-      case 2:
-        // User userdata;
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => ProfileEditPage(userdata),
-        //   ),
-        // );
-        break;
-      case 3:
-        // User userdata;
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => ProfileEditPage(userdata),
-        //   ),
-        // );
-        break;
-    }
-    currentGTabIndex = tabIndex;
-    print(currentGTabIndex);
-  }
-
   Widget _homeDrawer() {
     return Drawer(
         child: ListView(
@@ -203,7 +165,7 @@ class _HomeState extends State<Home> {
             color: Colors.black87,
           ),
           title: Text("নীড়"),
-          BottomNav: () {
+          onTap: () {
             Navigator.pop(context); // this line closes the drawer
           },
         ),
@@ -213,7 +175,7 @@ class _HomeState extends State<Home> {
         //     color: Colors.black87,
         //   ),
         //   title: Text("প্রশ্ন যোগ করুন"),
-        //   BottomNav: () {
+        //   onTap: () {
         //     Navigator.pop(context);
         //     // Route route = MaterialPageRoute(builder: (context) => NotificationPage(["1", "2"]));
         //     // Navigator.push(context, route);
