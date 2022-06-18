@@ -84,7 +84,7 @@ Widget bottomNavigationBar() {
   );
 }
 
-void onTap(int tabIndex) {
+void onTap(BuildContext context, int tabIndex) {
   switch (tabIndex) {
     case 0:
       if (currentGTabIndex == tabIndex) {
