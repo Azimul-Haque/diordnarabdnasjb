@@ -310,14 +310,22 @@ class _HomeState extends State<Home> {
   _onTap(int tabIndex) {
     switch (tabIndex) {
       case 0:
-        Home();
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => Home(),
+          ),
+        );
         break;
       // case 1:
       //   Notifications();
       //   //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
       //   break;
       case 2:
-        ProfileEditPage(userdata);
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => ProfileEditPage(userdata),
+          ),
+        );
         break;
     }
     _currentTabIndex = tabIndex;
