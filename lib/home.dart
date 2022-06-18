@@ -10,7 +10,7 @@ import 'package:bjsandbarexam/login.dart';
 import 'package:bjsandbarexam/profileedit.dart';
 import 'package:bjsandbarexam/bkash/testbkash.dart';
 
-import 'package:bjsandbarexam/globals.dart';
+import 'package:bjsandbarexam/globals.dart'  as globals;;
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
