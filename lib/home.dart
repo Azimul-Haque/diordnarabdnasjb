@@ -86,6 +86,73 @@ class _HomeState extends State<Home> {
     );
   }
 
+  Widget bottomNavigationBar() {
+    return BottomNavigationBar(
+      type: BottomNavigationBarType.fixed,
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Page 1',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.book_online),
+          label: 'Page 1',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.read_more),
+          label: 'Page 2',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.account_circle),
+          label: 'Profile',
+        )
+      ],
+      onTap: onTap,
+      currentIndex: currentGTabIndex,
+      // elevation: 50,
+    );
+  }
+
+  onTap(int tabIndex) {
+    switch (tabIndex) {
+      case 0:
+        // if (currentGTabIndex == tabIndex) {
+        // } else {
+        //   Navigator.popUntil(context, (route) => false);
+        //   Navigator.of(context).push(
+        //     MaterialPageRoute(
+        //       builder: (context) => const Home(),
+        //     ),
+        //   );
+        // }
+        break;
+      case 1:
+        // Notifications();
+        //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
+        break;
+      case 2:
+        // User userdata;
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => ProfileEditPage(userdata),
+        //   ),
+        // );
+        break;
+      case 3:
+        // User userdata;
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => ProfileEditPage(userdata),
+        //   ),
+        // );
+        break;
+    }
+    setState(() {
+      currentGTabIndex = tabIndex;
+    });
+    print(currentGTabIndex);
+  }
+
   Widget _homeDrawer() {
     return Drawer(
         child: ListView(
