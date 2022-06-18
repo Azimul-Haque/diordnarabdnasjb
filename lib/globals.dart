@@ -79,13 +79,13 @@ Widget bottomNavigationBar() {
         label: 'Profile',
       )
     ],
-    onTap: onTap(context, 1),
+    onTap: onTap(1),
     currentIndex: currentGTabIndex,
     // elevation: 50,
   );
 }
 
-void onTap(BuildContext context, int tabIndex) {
+onTap(BuildContext context, int tabIndex) {
   switch (tabIndex) {
     case 0:
       if (currentGTabIndex == tabIndex) {
