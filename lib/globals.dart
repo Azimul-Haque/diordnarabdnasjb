@@ -22,6 +22,8 @@ import 'package:flutter/material.dart';
 //   );
 // }
 
+int _currentTabIndex = 0;
+
 showAlertDialog(BuildContext context, String message) {
   // set up the AlertDialog
   AlertDialog alert = AlertDialog(
