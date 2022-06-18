@@ -127,20 +127,13 @@ class _HomeState extends State<Home> {
         //  _navigatorKey.currentState.pushReplacementNamed("Page 2");
         break;
       case 2:
-        // User userdata;
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => ProfileEditPage(userdata),
-        //   ),
-        // );
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => ProfileEditPage(userdata),
+          ),
+        );
         break;
       case 3:
-        // User userdata;
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (context) => ProfileEditPage(userdata),
-        //   ),
-        // );
         break;
     }
     setState(() {
