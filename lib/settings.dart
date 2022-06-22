@@ -25,6 +25,10 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
+      appBar: AppBar(
+        title: Text('সেটিংস'),
+        flexibleSpace: appBarStyle(),
+      ),
       body: Column(
         children: [
           Container(
