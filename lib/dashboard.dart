@@ -56,6 +56,31 @@ class _DashboardState extends State<Dashboard> {
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: RaisedButton(
+                    child: Text('Approve'),
+                    onPressed: () => null,
+                  ),
+                ),
+                Expanded(
+                  child: RaisedButton(
+                    child: Text('Reject'),
+                    onPressed: () => null,
+                  ),
+                ),
+                Expanded(
+                  child: RaisedButton(
+                    child: Text('Need Revise'),
+                    onPressed: () => null,
+                  ),
+                )
+              ],
+            ),
             ElevatedButton(
               style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
