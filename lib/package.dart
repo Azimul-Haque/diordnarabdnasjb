@@ -24,8 +24,11 @@ class _PackagePageState extends State<PackagePage> {
 
   @override
   Widget build(BuildContext context) {
-    String html =
-        '''<html> <body> <div id="fb-root"></div> <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script> <div class="fb-video" data-href="https://www.facebook.com/10msjobs/videos/1657928677897688/" data-width="500" data-show-text="false"> </div> </body> </html>''';
+    String html = '''
+           <iframe width="200" height='200'
+            src="https://www.facebook.com/v3.2/plugins/video.php? 
+            allowfullscreen=false&autoplay=false&href=https://www.facebook.com/facebook/videos/10153231379946729/" </iframe>
+     ''';
     return Scaffold(
       key: _scaffoldkey,
       // appBar: AppBar(
@@ -43,8 +46,6 @@ class _PackagePageState extends State<PackagePage> {
               html,
               // ignore: deprecated_member_use
               webView: true,
-              // ignore: deprecated_member_use
-              webViewMediaPlaybackAlwaysAllow: true,
             ),
           ),
         ],
