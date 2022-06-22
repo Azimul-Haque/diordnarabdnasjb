@@ -41,6 +41,7 @@ class _HomeState extends State<Home> {
                           ? 'সেটিংস'
                           : '',
           this.context),
+      drawer: _homeDrawer(),
       body: PageView(
         children: _pages,
         onPageChanged: (index) {
