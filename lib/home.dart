@@ -60,13 +60,13 @@ class _HomeState extends State<Home> {
         },
         controller: _pageController,
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(CupertinoIcons.drop),
-        onPressed: () {
-          // Route route = MaterialPageRoute(builder: (context) => Addperiod());
-          // Navigator.push(context, route);
-        },
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   child: const Icon(CupertinoIcons.drop),
+      //   onPressed: () {
+      //     // Route route = MaterialPageRoute(builder: (context) => Addperiod());
+      //     // Navigator.push(context, route);
+      //   },
+      // ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         // shape: const CircularNotchedRectangle(),
