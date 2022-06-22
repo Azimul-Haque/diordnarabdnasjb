@@ -30,17 +30,17 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     var screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: commonAppBar(
-          _selectedItem == 0
-              ? 'বিজেএস ও বার এক্সাম'
-              : _selectedItem == 1
-                  ? 'প্যাকেজ'
-                  : _selectedItem == 2
-                      ? 'ফলাফল'
-                      : _selectedItem == 3
-                          ? 'সেটিংস'
-                          : '',
-          this.context),
+      // appBar: commonAppBar(
+      //     _selectedItem == 0
+      //         ? 'বিজেএস ও বার এক্সাম'
+      //         : _selectedItem == 1
+      //             ? 'প্যাকেজ'
+      //             : _selectedItem == 2
+      //                 ? 'ফলাফল'
+      //                 : _selectedItem == 3
+      //                     ? 'সেটিংস'
+      //                     : '',
+      //     this.context),
       body: PageView(
         children: _pages,
         onPageChanged: (index) {
