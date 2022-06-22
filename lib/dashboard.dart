@@ -87,7 +87,12 @@ class _DashboardState extends State<Dashboard> {
                   ),
                   Expanded(
                     child: TextButton(
-                      child: Text('Need Revise'),
+                      child: Column(
+                        children: const <Widget>[
+                          Icon(Icons.minimize),
+                          Text('test'),
+                        ],
+                      ),
                       onPressed: () => {},
                     ),
                   )
