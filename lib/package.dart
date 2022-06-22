@@ -46,8 +46,6 @@ class _PackagePageState extends State<PackagePage> {
               html,
               // ignore: deprecated_member_use
               webView: true,
-              // ignore: deprecated_member_use
-              webViewMediaPlaybackAlwaysAllow: true,
             ),
           ),
         ],
