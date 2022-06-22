@@ -53,6 +53,7 @@ class _DashboardState extends State<Dashboard> {
       // ),
       // drawer: _homeDrawer(),
       body: Container(
+        padding: ,
         child: SingleChildScrollView(
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
