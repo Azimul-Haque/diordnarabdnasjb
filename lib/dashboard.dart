@@ -102,6 +102,43 @@ class _DashboardState extends State<Dashboard> {
                 color: Colors.grey,
                 height: 20,
               ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: TextButton(
+                      child: Column(
+                        children: const <Widget>[
+                          Icon(Icons.ac_unit),
+                          Text('বিজেএস'),
+                        ],
+                      ),
+                      onPressed: () {},
+                    ),
+                  ),
+                  Expanded(
+                    child: TextButton(
+                      child: Column(
+                        children: const <Widget>[
+                          Icon(Icons.accessibility_new_outlined),
+                          Text('বার'),
+                        ],
+                      ),
+                      onPressed: () => {},
+                    ),
+                  ),
+                  Expanded(
+                    child: TextButton(
+                      child: Column(
+                        children: const <Widget>[
+                          Icon(Icons.minimize),
+                          Text('ফ্রি পরীক্ষা'),
+                        ],
+                      ),
+                      onPressed: () => {},
+                    ),
+                  ),
+                ],
+              ),
               ElevatedButton(
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
