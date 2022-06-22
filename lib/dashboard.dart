@@ -34,25 +34,26 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 2,
-      //   title: Text('বিজেএস ও বার এক্সাম'),
-      //   flexibleSpace: appBarStyle(),
-      //   actions: [
-      //     IconButton(
-      //       icon: Icon(Icons.logout),
-      //       onPressed: () async {
-      //         await FirebaseAuth.instance.signOut();
-      //         Navigator.pushAndRemoveUntil(
-      //             context,
-      //             MaterialPageRoute(builder: (context) => LoginScreen()),
-      //             (route) => false);
-      //       },
-      //     )
-      //   ],
-      // ),
-      // drawer: _homeDrawer(),
-      body: SingleChildScrollViewColumn(
+        // appBar: AppBar(
+        //   elevation: 2,
+        //   title: Text('বিজেএস ও বার এক্সাম'),
+        //   flexibleSpace: appBarStyle(),
+        //   actions: [
+        //     IconButton(
+        //       icon: Icon(Icons.logout),
+        //       onPressed: () async {
+        //         await FirebaseAuth.instance.signOut();
+        //         Navigator.pushAndRemoveUntil(
+        //             context,
+        //             MaterialPageRoute(builder: (context) => LoginScreen()),
+        //             (route) => false);
+        //       },
+        //     )
+        //   ],
+        // ),
+        // drawer: _homeDrawer(),
+        body: SingleChildScrollView(
+      child: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ElevatedButton(
@@ -81,7 +82,7 @@ class _DashboardState extends State<Dashboard> {
           ),
         ],
       ),
-    );
+    ));
   }
 
   void _checkUid(userdata) async {
