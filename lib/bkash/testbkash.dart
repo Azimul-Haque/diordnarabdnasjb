@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, use_key_in_widget_constructors, prefer_const_constructors, unused_local_variable, avoid_print, unused_field
 
 import 'dart:async';
+import 'dart:html';
 import 'dart:io';
 // import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:http/http.dart' as http;
@@ -76,8 +77,6 @@ class _TestBkashPageState extends State<TestBkashPage> {
                 },
                 javascriptChannels: <JavascriptChannel>{
                   _toasterJavascriptChannel(context),
-                  const inp = document.getElementById("your_input");
-                  inp.value = "some text";
                 },
                 onPageStarted: (String url) {
                   print('Page started loading: $url');
@@ -90,7 +89,6 @@ class _TestBkashPageState extends State<TestBkashPage> {
                 },
                 // gestureNavigationEnabled: true,
                 // backgroundColor: const Color(0x00000000),
-                
               ),
               isLoading ? LinearProgressIndicator() : Stack(),
             ],
