@@ -131,7 +131,7 @@ class _HomeState extends State<Home> {
                               : Colors.grey[600],
                         ),
                         Text(
-                          'Records',
+                          'প্যাকেজ',
                           style: TextStyle(
                               color: _selectedItem == 1
                                   ? Colors.blue
