@@ -26,7 +26,7 @@ class _HomeState extends State<Home> {
     SettingsPage()
   ];
   final _pageController = PageController();
-
+  late User userdata;
   int? get currentIndex => null;
 
   @override
