@@ -60,13 +60,13 @@ class _HomeState extends State<Home> {
         },
         controller: _pageController,
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: const Icon(CupertinoIcons.drop),
-      //   onPressed: () {
-      //     // Route route = MaterialPageRoute(builder: (context) => Addperiod());
-      //     // Navigator.push(context, route);
-      //   },
-      // ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(CupertinoIcons.drop),
+        onPressed: () {
+          // Route route = MaterialPageRoute(builder: (context) => Addperiod());
+          // Navigator.push(context, route);
+        },
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         // shape: const CircularNotchedRectangle(),
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
-                    minWidth: screenwidth * .25,
+                    minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 0;
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   MaterialButton(
-                    minWidth: screenwidth * .25,
+                    minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 1;
@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
-                    minWidth: screenwidth * .25,
+                    minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 2;
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   MaterialButton(
-                    minWidth: screenwidth * .25,
+                    minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 3;
