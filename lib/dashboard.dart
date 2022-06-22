@@ -62,7 +62,7 @@ class _DashboardState extends State<Dashboard> {
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Expanded(
                     child: TextButton(
