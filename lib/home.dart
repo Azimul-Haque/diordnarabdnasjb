@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
                   : _selectedItem == 2
                       ? 'ফলাফল'
                       : _selectedItem == 3
-                          ? 'Profile'
+                          ? 'সেটিংস'
                           : '',
           this.context),
       body: PageView(
