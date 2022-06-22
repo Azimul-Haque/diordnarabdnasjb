@@ -237,7 +237,7 @@ class _HomeState extends State<Home> {
                   boxShadow: [_boxShadow1()],
                   borderRadius: BorderRadius.circular(50),
                 ),
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   backgroundColor: Colors.blue,
                   child: Text("A", style: TextStyle(fontSize: 25)),
                 ),
@@ -255,19 +255,19 @@ class _HomeState extends State<Home> {
                           userdata.displayName == null
                       ? 'No Name'
                       : userdata.displayName.toString(),
-                  style: TextStyle(color: Colors.white, fontSize: 16)),
+                  style: const TextStyle(color: Colors.white, fontSize: 16)),
             ),
             Positioned(
               left: 30,
               bottom: 25,
               child: Text(userdata.phoneNumber ?? '',
-                  style: TextStyle(color: Colors.white70, fontSize: 13)),
+                  style: const TextStyle(color: Colors.white70, fontSize: 13)),
             ),
             Positioned(
               right: 10,
               bottom: 30,
               child: IconButton(
-                padding: EdgeInsets.all(0.0),
+                padding: const EdgeInsets.all(0.0),
                 icon: const Icon(
                   Icons.edit,
                   color: Colors.white,
