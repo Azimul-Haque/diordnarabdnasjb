@@ -68,7 +68,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: const <Widget>[
                           Icon(Icons.ac_unit),
-                          Text('test'),
+                          Text('বিজেএস'),
                         ],
                       ),
                       onPressed: () {},
@@ -79,7 +79,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: const <Widget>[
                           Icon(Icons.accessibility_new_outlined),
-                          Text('test'),
+                          Text('বার'),
                         ],
                       ),
                       onPressed: () => {},
