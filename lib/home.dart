@@ -60,13 +60,12 @@ class _HomeState extends State<Home> {
         },
         controller: _pageController,
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        icon: const Icon(CupertinoIcons.checkmark_shield),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(CupertinoIcons.checkmark_shield),
         onPressed: () {
           // Route route = MaterialPageRoute(builder: (context) => Addperiod());
           // Navigator.push(context, route);
         },
-        label: const Text('Exam'),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
