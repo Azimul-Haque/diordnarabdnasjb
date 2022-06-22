@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
         },
         controller: _pageController,
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         child: const Icon(CupertinoIcons.checkmark_shield),
         onPressed: () {
           // Route route = MaterialPageRoute(builder: (context) => Addperiod());
