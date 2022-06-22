@@ -143,9 +143,6 @@ class _HomeState extends State<Home> {
                   )
                 ],
               ),
-
-              // Right Tab bar icons
-
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
