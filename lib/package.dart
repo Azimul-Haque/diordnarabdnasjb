@@ -24,6 +24,11 @@ class _PackagePageState extends State<PackagePage> {
 
   @override
   Widget build(BuildContext context) {
+    String html = '''
+           <iframe width="200" height='200'
+            src="https://www.facebook.com/v2.3/plugins/video.php? 
+            allowfullscreen=false&autoplay=true&href=${FB_VIDEO_URL}" </iframe>
+     ''';
     return Scaffold(
       key: _scaffoldkey,
       // appBar: AppBar(
