@@ -147,14 +147,14 @@ commonAppBar(String appbarname, BuildContext context) {
               value: "signout",
               child: Row(
                 children: <Widget>[
-                  Icon(
+                  const Icon(
                     Icons.logout,
                     color: Colors.black87,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text("Sign Out")
+                  const Text("Sign Out")
                 ],
               ),
             ),
@@ -162,14 +162,14 @@ commonAppBar(String appbarname, BuildContext context) {
               value: "rate",
               child: Row(
                 children: <Widget>[
-                  Icon(
+                  const Icon(
                     Icons.star,
                     color: Colors.black87,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text("Rate Us")
+                  const Text("Rate Us")
                 ],
               ),
             ),
@@ -177,14 +177,14 @@ commonAppBar(String appbarname, BuildContext context) {
               value: "shareapp",
               child: Row(
                 children: <Widget>[
-                  Icon(
+                  const Icon(
                     Icons.share,
                     color: Colors.black87,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text("Share App")
+                  const Text("Share App")
                 ],
               ),
             ),
@@ -192,14 +192,14 @@ commonAppBar(String appbarname, BuildContext context) {
               value: "aboutus",
               child: Row(
                 children: <Widget>[
-                  Icon(
+                  const Icon(
                     Icons.info_outline,
                     color: Colors.black87,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
-                  Text("About Us")
+                  const Text("About Us")
                 ],
               ),
             ),
