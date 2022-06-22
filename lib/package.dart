@@ -41,6 +41,12 @@ class _PackagePageState extends State<PackagePage> {
             margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
             child: Text("Package Page"),
           ),
+          SingleChildScrollView(
+            child: HtmlWidget(
+              html,
+              webView: true,
+            ),
+          ),
         ],
       ),
     );
