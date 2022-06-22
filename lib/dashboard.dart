@@ -51,7 +51,6 @@ class _DashboardState extends State<Dashboard> {
       //     )
       //   ],
       // ),
-      drawer: _homeDrawer(),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
