@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
+    super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
   }
 
