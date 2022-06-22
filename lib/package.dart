@@ -25,10 +25,10 @@ class _PackagePageState extends State<PackagePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
-      appBar: AppBar(
-        title: Text('প্যাকেজ'),
-        flexibleSpace: appBarStyle(),
-      ),
+      // appBar: AppBar(
+      //   title: Text('প্যাকেজ'),
+      //   flexibleSpace: appBarStyle(),
+      // ),
       body: Column(
         children: [
           Container(
