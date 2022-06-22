@@ -101,6 +101,7 @@ appBarStyle() {
 
 commonAppBar(String appbarname, BuildContext context) {
   return AppBar(
+    drawer: _homeDrawer(),
     elevation: appbarname == 'EasyPeriod' ? 0 : 4,
     title: Text(appbarname),
     automaticallyImplyLeading: false,
