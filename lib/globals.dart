@@ -132,11 +132,11 @@ commonAppBar(String appbarname, BuildContext context) {
               //     "EasyPeriod App");
               break;
             case 'aboutus':
-              if (await canLaunch("https://orbachinujbuk.com")) {
-                await launch("https://orbachinujbuk.com");
-              } else {
-                throw 'Could not launch!';
-              }
+              // if (await canLaunch("https://orbachinujbuk.com")) {
+              //   await launch("https://orbachinujbuk.com");
+              // } else {
+              //   throw 'Could not launch!';
+              // }
               break;
             default:
           }
