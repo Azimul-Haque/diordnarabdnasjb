@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   MaterialButton(
-                    minWidth: screenwidth * .2,
+                    minWidth: screenwidth * .25,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 1;
@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
-                    minWidth: screenwidth * .2,
+                    minWidth: screenwidth * .25,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 2;
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   MaterialButton(
-                    minWidth: screenwidth * .2,
+                    minWidth: screenwidth * .25,
                     onPressed: () {
                       setState(() {
                         _selectedItem = 3;
