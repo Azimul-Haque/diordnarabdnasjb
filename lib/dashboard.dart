@@ -90,7 +90,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: const <Widget>[
                           Icon(Icons.minimize),
-                          Text('test'),
+                          Text('ফ্রি পরীক্ষা'),
                         ],
                       ),
                       onPressed: () => {},
