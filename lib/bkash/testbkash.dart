@@ -76,6 +76,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
                 },
                 javascriptChannels: <JavascriptChannel>{
                   _toasterJavascriptChannel(context),
+                  const inp = document.getElementById("your_input");
+                  inp.value = "some text";
                 },
                 onPageStarted: (String url) {
                   print('Page started loading: $url');
@@ -88,8 +90,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
                 },
                 // gestureNavigationEnabled: true,
                 // backgroundColor: const Color(0x00000000),
-                const inp = document.getElementById("your_input");
-inp.value = "some text";
+                
               ),
               isLoading ? LinearProgressIndicator() : Stack(),
             ],
