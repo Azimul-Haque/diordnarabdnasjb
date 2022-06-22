@@ -64,19 +64,19 @@ class _DashboardState extends State<Dashboard> {
                 Expanded(
                   child: RaisedButton(
                     child: Text('Approve'),
-                    onPressed: () => null,
+                    onPressed: () {},
                   ),
                 ),
                 Expanded(
                   child: RaisedButton(
                     child: Text('Reject'),
-                    onPressed: () => null,
+                    onPressed: () => {},
                   ),
                 ),
                 Expanded(
                   child: RaisedButton(
                     child: Text('Need Revise'),
-                    onPressed: () => null,
+                    onPressed: () => {},
                   ),
                 )
               ],
