@@ -76,7 +76,12 @@ class _DashboardState extends State<Dashboard> {
                   ),
                   Expanded(
                     child: TextButton(
-                      child: Text('Reject'),
+                      child: Column(
+                        children: const <Widget>[
+                          Icon(Icons.ac_unit),
+                          Text('test'),
+                        ],
+                      ),
                       onPressed: () => {},
                     ),
                   ),
