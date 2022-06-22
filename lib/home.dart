@@ -53,8 +53,8 @@ class _HomeState extends State<Home> {
       floatingActionButton: FloatingActionButton(
         child: const Icon(CupertinoIcons.drop),
         onPressed: () {
-          Route route = MaterialPageRoute(builder: (context) => Addperiod());
-          Navigator.push(context, route);
+          // Route route = MaterialPageRoute(builder: (context) => Addperiod());
+          // Navigator.push(context, route);
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
