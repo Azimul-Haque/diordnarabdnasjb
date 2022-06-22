@@ -25,7 +25,7 @@ class _PackagePageState extends State<PackagePage> {
   @override
   Widget build(BuildContext context) {
     String html = '''
-           <iframe width="200" height='200'
+           <iframe 
             src="https://www.facebook.com/v2.3/plugins/video.php? 
             allowfullscreen=false&autoplay=false&show-text=false&show-captions=false&href=https://www.facebook.com/10msjobs/videos/1657928677897688" </iframe>
      ''';
