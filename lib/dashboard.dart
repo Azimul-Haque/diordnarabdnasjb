@@ -62,19 +62,19 @@ class _DashboardState extends State<Dashboard> {
             Row(
               children: <Widget>[
                 Expanded(
-                  child: FlatButton(
+                  child: OutlinedButton(
                     child: Text('Approve'),
                     onPressed: () {},
                   ),
                 ),
                 Expanded(
-                  child: FlatButton(
+                  child: OutlinedButton(
                     child: Text('Reject'),
                     onPressed: () => {},
                   ),
                 ),
                 Expanded(
-                  child: FlatButton(
+                  child: OutlinedButton(
                     child: Text('Need Revise'),
                     onPressed: () => {},
                   ),
