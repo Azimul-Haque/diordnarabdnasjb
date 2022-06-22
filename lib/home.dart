@@ -1,4 +1,5 @@
 import 'package:bjsandbarexam/login.dart';
+import 'package:bjsandbarexam/profileedit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -261,7 +262,7 @@ class _HomeState extends State<Home> {
               bottom: 30,
               child: IconButton(
                 padding: EdgeInsets.all(0.0),
-                icon: Icon(
+                icon: const Icon(
                   Icons.edit,
                   color: Colors.white,
                 ),
@@ -275,7 +276,7 @@ class _HomeState extends State<Home> {
                 },
               ),
             ),
-            Positioned(
+            const Positioned(
               right: 3,
               bottom: 3,
               child: Text("Version: 1.0.0",
@@ -283,15 +284,15 @@ class _HomeState extends State<Home> {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         ListTile(
-          leading: Icon(
+          leading: const Icon(
             Icons.home,
             color: Colors.black87,
           ),
-          title: Text("নীড়"),
+          title: const Text("নীড়"),
           onTap: () {
             Navigator.pop(context); // this line closes the drawer
           },
