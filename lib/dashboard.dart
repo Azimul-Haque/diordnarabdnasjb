@@ -52,66 +52,68 @@ class _DashboardState extends State<Dashboard> {
       //   ],
       // ),
       // drawer: _homeDrawer(),
-      body: SingleChildScrollView(
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            Row(
-              children: <Widget>[
-                Expanded(
-                  child: TextButton(
-                    child: Column(
-                      children: const <Widget>[
-                        Text('test'),
-                        Text('test'),
-                        Text('test'),
-                      ],
+      body: Container(
+        child: SingleChildScrollView(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: TextButton(
+                      child: Column(
+                        children: const <Widget>[
+                          Text('test'),
+                          Text('test'),
+                          Text('test'),
+                        ],
+                      ),
+                      onPressed: () {},
                     ),
-                    onPressed: () {},
                   ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    child: Text('Reject'),
-                    onPressed: () => {},
+                  Expanded(
+                    child: TextButton(
+                      child: Text('Reject'),
+                      onPressed: () => {},
+                    ),
                   ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    child: Text('Need Revise'),
-                    onPressed: () => {},
-                  ),
-                )
-              ],
-            ),
-            ElevatedButton(
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                  ),
-                ),
-                elevation: MaterialStateProperty.all(1),
+                  Expanded(
+                    child: TextButton(
+                      child: Text('Need Revise'),
+                      onPressed: () => {},
+                    ),
+                  )
+                ],
               ),
-              child: Text(
-                'Test Payment Gateway',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => TestBkashPage(),
+              ElevatedButton(
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                    ),
                   ),
-                );
-              },
-            ),
-            Center(
-              child: Text(userdata.toString()),
-            ),
-          ],
+                  elevation: MaterialStateProperty.all(1),
+                ),
+                child: Text(
+                  'Test Payment Gateway',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => TestBkashPage(),
+                    ),
+                  );
+                },
+              ),
+              Center(
+                child: Text(userdata.toString()),
+              ),
+            ],
+          ),
         ),
       ),
     );
