@@ -100,7 +100,7 @@ class _HomeState extends State<Home> {
                               : Colors.grey[600],
                         ),
                         Text(
-                          'Home',
+                          'নীড়',
                           style: TextStyle(
                               color: _selectedItem == 0
                                   ? Colors.blue
