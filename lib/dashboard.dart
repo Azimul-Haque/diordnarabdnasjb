@@ -98,6 +98,10 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ],
               ),
+              Divider(
+                color: Colors.black,
+                height: 36,
+              ),
               ElevatedButton(
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
