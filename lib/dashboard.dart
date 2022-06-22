@@ -34,23 +34,23 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 2,
-      //   title: Text('বিজেএস ও বার এক্সাম'),
-      //   flexibleSpace: appBarStyle(),
-      //   actions: [
-      //     IconButton(
-      //       icon: Icon(Icons.logout),
-      //       onPressed: () async {
-      //         await FirebaseAuth.instance.signOut();
-      //         Navigator.pushAndRemoveUntil(
-      //             context,
-      //             MaterialPageRoute(builder: (context) => LoginScreen()),
-      //             (route) => false);
-      //       },
-      //     )
-      //   ],
-      // ),
+      appBar: AppBar(
+        elevation: 2,
+        title: Text('বিজেএস ও বার এক্সাম'),
+        flexibleSpace: appBarStyle(),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () async {
+              await FirebaseAuth.instance.signOut();
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
+                  (route) => false);
+            },
+          )
+        ],
+      ),
       drawer: _homeDrawer(),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
