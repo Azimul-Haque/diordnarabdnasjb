@@ -45,7 +45,7 @@ class _PackagePageState extends State<PackagePage> {
             child: HtmlWidget(
               html,
               // ignore: deprecated_member_use
-              webView: false,
+              webView: true,
             ),
           ),
         ],
