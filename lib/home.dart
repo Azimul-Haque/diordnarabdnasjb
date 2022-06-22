@@ -61,12 +61,12 @@ class _HomeState extends State<Home> {
         controller: _pageController,
       ),
       floatingActionButton: FloatingActionButton.extended(
-        child: const Icon(CupertinoIcons.checkmark_shield),
+        icon: const Icon(CupertinoIcons.checkmark_shield),
         onPressed: () {
           // Route route = MaterialPageRoute(builder: (context) => Addperiod());
           // Navigator.push(context, route);
         },
-        label: Text('Approve'),
+        label: const Text('Approve'),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
