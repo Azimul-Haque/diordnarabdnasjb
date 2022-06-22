@@ -69,8 +69,8 @@ class _TestBkashPageState extends State<TestBkashPage> {
                 initialUrl:
                     'https://shop.bkash.com/bjs--bar-exam01837409842/paymentlink',
                 javascriptMode: JavascriptMode.unrestricted,
-                const inp = document.getElementById("your_input");
-                  inp.value = "some text";
+                // const inp = document.getElementById("your_input");
+                //   inp.value = "some text";
                 onWebViewCreated: (WebViewController webViewController) {
                   _controller.complete(webViewController);
                 },
