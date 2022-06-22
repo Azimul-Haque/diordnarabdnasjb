@@ -198,7 +198,7 @@ class _HomeState extends State<Home> {
                               : Colors.grey[600],
                         ),
                         Text(
-                          'Profile',
+                          'সেটিংস',
                           style: TextStyle(
                               color: _selectedItem == 3
                                   ? Colors.blue
