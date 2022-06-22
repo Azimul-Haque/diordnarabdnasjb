@@ -80,6 +80,24 @@ class _DashboardState extends State<Dashboard> {
             Center(
               child: Text(userdata.toString()),
             ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
           ],
         ),
       ),
