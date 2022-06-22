@@ -34,9 +34,9 @@ class _HomeState extends State<Home> {
           _selectedItem == 0
               ? 'বিজেএস ও বার এক্সাম'
               : _selectedItem == 1
-                  ? 'Period List'
+                  ? 'প্যাকেজ'
                   : _selectedItem == 2
-                      ? 'Period Calendar'
+                      ? 'ফলাফল'
                       : _selectedItem == 3
                           ? 'Profile'
                           : '',
