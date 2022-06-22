@@ -51,7 +51,7 @@ class _HomeState extends State<Home> {
         controller: _pageController,
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(CupertinoIcons.drop),
+        child: const Icon(CupertinoIcons.drop),
         onPressed: () {
           Route route = MaterialPageRoute(builder: (context) => Addperiod());
           Navigator.push(context, route);
@@ -59,9 +59,9 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        shape: CircularNotchedRectangle(),
+        shape: const CircularNotchedRectangle(),
         notchMargin: 7,
-        child: Container(
+        child: SizedBox(
           height: 60,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         _selectedItem = 0;
                         _pageController.animateToPage(_selectedItem,
-                            duration: Duration(milliseconds: 200),
+                            duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
                     },
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         _selectedItem = 1;
                         _pageController.animateToPage(_selectedItem,
-                            duration: Duration(milliseconds: 200),
+                            duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
                     },
@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         _selectedItem = 2;
                         _pageController.animateToPage(_selectedItem,
-                            duration: Duration(milliseconds: 200),
+                            duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
                     },
@@ -176,7 +176,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         _selectedItem = 3;
                         _pageController.animateToPage(_selectedItem,
-                            duration: Duration(milliseconds: 200),
+                            duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
                     },
