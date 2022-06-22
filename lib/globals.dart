@@ -103,7 +103,7 @@ commonAppBar(String appbarname, BuildContext context) {
   return AppBar(
     elevation: appbarname == 'EasyPeriod' ? 0 : 4,
     title: Text(appbarname),
-    automaticallyImplyLeading: false,
+    automaticallyImplyLeading: true,
     flexibleSpace: appBarStyle(),
     actions: <Widget>[
       PopupMenuButton(
