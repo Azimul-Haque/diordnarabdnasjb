@@ -32,7 +32,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: commonAppBar(
           _selectedItem == 0
-              ? 'ড্যাশবোর্ড'
+              ? 'বিজেএস ও বার এক্সাম'
               : _selectedItem == 1
                   ? 'Period List'
                   : _selectedItem == 2
