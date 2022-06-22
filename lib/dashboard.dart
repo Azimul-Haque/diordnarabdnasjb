@@ -52,9 +52,8 @@ class _DashboardState extends State<Dashboard> {
       //   ],
       // ),
       // drawer: _homeDrawer(),
-      body: ListView(
-        shrinkWrap: true,
-        padding: EdgeInsets.all(15.0),
+      body: SingleChildScrollViewColumn(
+        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ElevatedButton(
             style: ButtonStyle(
