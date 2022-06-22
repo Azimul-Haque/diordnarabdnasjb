@@ -72,7 +72,7 @@ class _HomeState extends State<Home> {
         // shape: const CircularNotchedRectangle(),
         notchMargin: 7,
         child: SizedBox(
-          height: 60,
+          height: 80,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
