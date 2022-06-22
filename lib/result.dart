@@ -25,10 +25,6 @@ class _ResultPageState extends State<ResultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
-      appBar: AppBar(
-        title: Text('রেজাল্ট'),
-        flexibleSpace: appBarStyle(),
-      ),
       body: Column(
         children: [
           Container(
