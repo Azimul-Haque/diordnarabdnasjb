@@ -96,14 +96,14 @@ class _HomeState extends State<Home> {
                           CupertinoIcons.home,
                           // Icons.dashboard,
                           color: _selectedItem == 0
-                              ? Colors.primaries.first
+                              ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'Home',
                           style: TextStyle(
                               color: _selectedItem == 0
-                                  ? Colors.primaries.first
+                                  ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
                         ),
@@ -127,14 +127,14 @@ class _HomeState extends State<Home> {
                           CupertinoIcons.list_bullet_indent,
                           // Icons.format_list_numbered_sharp,
                           color: _selectedItem == 1
-                              ? Colors.primaries.first
+                              ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'Records',
                           style: TextStyle(
                               color: _selectedItem == 1
-                                  ? Colors.primaries.first
+                                  ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
                         ),
@@ -166,14 +166,14 @@ class _HomeState extends State<Home> {
                           CupertinoIcons.calendar_today,
                           // Icons.calendar_today_outlined,
                           color: _selectedItem == 2
-                              ? Colors.primaries.first
+                              ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'Calendar',
                           style: TextStyle(
                               color: _selectedItem == 2
-                                  ? Colors.primaries.first
+                                  ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
                         ),
@@ -197,14 +197,14 @@ class _HomeState extends State<Home> {
                           CupertinoIcons.person,
                           // Icons.person,
                           color: _selectedItem == 3
-                              ? Colors.primaries.first
+                              ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'Profile',
                           style: TextStyle(
                               color: _selectedItem == 3
-                                  ? Colors.primaries.first
+                                  ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
                         ),
