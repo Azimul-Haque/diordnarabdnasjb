@@ -44,6 +44,7 @@ class _PackagePageState extends State<PackagePage> {
           SingleChildScrollView(
             child: HtmlWidget(
               html,
+              // ignore: deprecated_member_use
               webView: true,
             ),
           ),
