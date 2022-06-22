@@ -64,7 +64,9 @@ class _DashboardState extends State<Dashboard> {
                 Expanded(
                   child: TextButton(
                     child: Column(
-                      children: <Widget>[
+                      children: const <Widget>[
+                        Text('test'),
+                        Text('test'),
                         Text('test'),
                       ],
                     ),
