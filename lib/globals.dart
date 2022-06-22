@@ -114,7 +114,7 @@ commonAppBar(String appbarname, BuildContext context) {
             case 'signout':
               await FirebaseAuth.instance.signOut();
               Route route =
-                  MaterialPageRoute(builder: (context) => LoginPage());
+                  MaterialPageRoute(builder: (context) => LoginScreen());
               Navigator.push(context, route);
               break;
             case 'rate':
