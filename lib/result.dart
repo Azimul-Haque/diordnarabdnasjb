@@ -4,12 +4,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:bjsandbarexam/globals.dart';
 
-class PackagePage extends StatefulWidget {
+class ResultPage extends StatefulWidget {
   @override
-  _PackagePageState createState() => _PackagePageState();
+  _ResultPageState createState() => _ResultPageState();
 }
 
-class _PackagePageState extends State<PackagePage> {
+class _ResultPageState extends State<ResultPage> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
 
   late User userdata;
@@ -26,14 +26,14 @@ class _PackagePageState extends State<PackagePage> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('প্যাকেজ'),
+        title: Text('রেজাল্ট'),
         flexibleSpace: appBarStyle(),
       ),
       body: Column(
         children: [
           Container(
             margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Text("Package Page"),
+            child: Text("Result Page"),
           ),
         ],
       ),
