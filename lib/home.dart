@@ -167,7 +167,7 @@ class _HomeState extends State<Home> {
                               : Colors.grey[600],
                         ),
                         Text(
-                          'Calendar',
+                          'ফলাফল',
                           style: TextStyle(
                               color: _selectedItem == 2
                                   ? Colors.blue
