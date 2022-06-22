@@ -100,7 +100,7 @@ class _DashboardState extends State<Dashboard> {
               ),
               Divider(
                 color: Colors.grey,
-                height: 36,
+                height: 20,
               ),
               ElevatedButton(
                 style: ButtonStyle(
