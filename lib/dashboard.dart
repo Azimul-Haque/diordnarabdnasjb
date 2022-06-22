@@ -53,7 +53,8 @@ class _DashboardState extends State<Dashboard> {
       // ),
       // drawer: _homeDrawer(),
       body: ListView(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        shrinkWrap: true,
+        padding: EdgeInsets.all(15.0),
         children: [
           ElevatedButton(
             style: ButtonStyle(
