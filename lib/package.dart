@@ -46,7 +46,7 @@ class _PackagePageState extends State<PackagePage> {
               html,
               // ignore: deprecated_member_use
               webView: true,
-              factoryBuilder: () => MyWidgetFactory(),
+              webViewMediaPlaybackAlwaysAllow: true,
             ),
           ),
         ],
@@ -54,5 +54,3 @@ class _PackagePageState extends State<PackagePage> {
     );
   }
 }
-
-class MyWidgetFactory extends WidgetFactory with WebViewFactory {}
