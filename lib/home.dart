@@ -1,3 +1,5 @@
+import 'package:bjsandbarexam/login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -294,32 +296,7 @@ class _HomeState extends State<Home> {
             Navigator.pop(context); // this line closes the drawer
           },
         ),
-        // ListTile(
-        //   leading: Icon(
-        //     Icons.add_to_photos,
-        //     color: Colors.black87,
-        //   ),
-        //   title: Text("প্রশ্ন যোগ করুন"),
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //     // Route route = MaterialPageRoute(builder: (context) => NotificationPage(["1", "2"]));
-        //     // Navigator.push(context, route);
-        //     Navigator.pushNamed(context, '/formpage');
-        //   },
-        // ),
-        // ListTile(
-        //   leading: Icon(
-        //     Icons.favorite,
-        //     color: Colors.black87,
-        //   ),
-        //   title: Text("প্রিয় তালিকা"),
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //     // Route route = MaterialPageRoute(builder: (context) => NotificationPage(["1", "2"]));
-        //     // Navigator.push(context, route);
-        //     Navigator.pushNamed(context, '/favorites');
-        //   },
-        // ),
+
         // Divider(
         //   color: Colors.black26,
         // ),
@@ -342,56 +319,16 @@ class _HomeState extends State<Home> {
         //     });
         //   },
         // ),
-        // ListTile(
-        //   leading: Icon(
-        //     Icons.mail,
-        //     color: Colors.black87,
-        //   ),
-        //   title: Text("মতামত জানান"),
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //     Route route =
-        //         MaterialPageRoute(builder: (context) => ContactPage(userName));
-        //     Navigator.push(context, route);
-        //   },
-        // ),
-        // ListTile(
-        //   leading: Icon(
-        //     Icons.info,
-        //     color: Colors.black87,
-        //   ),
-        //   title: Text("আমাদের সম্পর্কে"),
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //     _showDialog();
-        //   },
-        // ),
-        // ListTile(
-        //   leading: Icon(
-        //     Icons.share,
-        //     color: Colors.black87,
-        //   ),
-        //   title: Text("শেয়ার করুন"),
-        //   onTap: () {
-        //     Navigator.pop(context);
-        //     share();
-        //     // final RenderBox box = context.findRenderObject();
-        //     // Share.share("https://orbachinujbuk.com/",
-        //     //   subject: "অ্যাপটি শেয়ার করুন!",
-        //     //   sharePositionOrigin: box.localToGlobal(Offset.zero) & box.size
-        //     // );
-        //     // Share.share('check out my website https://example.com', subject: 'Look what I made!');
-        //   },
-        // ),
-        Divider(
+
+        const Divider(
           color: Colors.black26,
         ),
         ListTile(
-          leading: Icon(
+          leading: const Icon(
             Icons.logout,
             color: Colors.black87,
           ),
-          title: Text("লগ আউট"),
+          title: const Text("লগ আউট"),
           onTap: () async {
             await FirebaseAuth.instance.signOut();
             Navigator.pushAndRemoveUntil(
@@ -409,7 +346,7 @@ class _HomeState extends State<Home> {
       color: Colors.grey[700]!,
       blurRadius: 10.0, // has the effect of softening the shadow
       spreadRadius: 1.0, // has the effect of extending the shadow
-      offset: Offset(
+      offset: const Offset(
         3.0, // horizontal, move right 10
         3.0, // vertical, move down 10
       ),
