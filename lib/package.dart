@@ -27,7 +27,7 @@ class _PackagePageState extends State<PackagePage> {
     String html = '''
            <iframe width="200" height='200'
             src="https://www.facebook.com/v3.2/plugins/video.php? 
-            allowfullscreen=false&autoplay=false&show-text=false&show-captions=false&href=https://www.facebook.com/10msjobs/videos/1657928677897688" </iframe>
+            allowfullscreen=true&autoplay=false&show-text=false&show-captions=false&href=https://www.facebook.com/10msjobs/videos/1657928677897688" </iframe>
      ''';
     return Scaffold(
       key: _scaffoldkey,
