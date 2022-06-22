@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
           // Route route = MaterialPageRoute(builder: (context) => Addperiod());
           // Navigator.push(context, route);
         },
-        label: const Text('Approve'),
+        label: const Text('Exam'),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
