@@ -30,6 +30,11 @@ class _HomeState extends State<Home> {
   int? get currentIndex => null;
 
   @override
+  void initState() {
+    userdata = FirebaseAuth.instance.currentUser!;
+  }
+
+  @override
   Widget build(BuildContext context) {
     var screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
