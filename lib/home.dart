@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        // shape: const CircularNotchedRectangle(),
+        shape: const CircularNotchedRectangle(),
         notchMargin: 7,
         child: SizedBox(
           height: 60,
