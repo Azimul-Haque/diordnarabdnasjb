@@ -119,17 +119,17 @@ commonAppBar(String appbarname, BuildContext context) {
               Navigator.push(context, route);
               break;
             case 'rate':
-              if (await canLaunch("https://orbachinujbuk.com")) {
-                await launch(
-                    "https://play.google.com/store/apps/details?id=com.orbachinujbuk.easyperiod");
-              } else {
-                throw 'Could not launch!';
-              }
+              // if (await canLaunch("https://orbachinujbuk.com")) {
+              //   await launch(
+              //       "https://play.google.com/store/apps/details?id=com.orbachinujbuk.easyperiod");
+              // } else {
+              //   throw 'Could not launch!';
+              // }
               break;
             case 'shareapp':
-              share(
-                  "https://play.google.com/store/apps/details?id=com.orbachinujbuk.easyperiod",
-                  "EasyPeriod App");
+              // share(
+              //     "https://play.google.com/store/apps/details?id=com.orbachinujbuk.easyperiod",
+              //     "EasyPeriod App");
               break;
             case 'aboutus':
               if (await canLaunch("https://orbachinujbuk.com")) {
