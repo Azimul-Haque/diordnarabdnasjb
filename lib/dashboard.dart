@@ -223,4 +223,73 @@ class _DashboardState extends State<Dashboard> {
       // print(_);
     }
   }
+
+  Widget _scrollCard(String iconname, String title, String subtitle) {
+    return Container(
+      height: 110,
+      width: 110,
+      child: Card(
+        child: Stack(
+          children: <Widget>[
+            Column(
+              // mainAxisAlignment: MainAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                SizedBox(
+                  height: 9,
+                  width: double.infinity,
+                ),
+                Image.asset(
+                  "assets/images/" + iconname,
+                  height: 45,
+                  width: 45,
+                  alignment: Alignment.center,
+                ),
+                SizedBox(
+                  height: 8,
+                  width: double.infinity,
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Kalpurush',
+                    height: 1,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  subtitle,
+                  style: TextStyle(
+                    color: Colors.blueGrey,
+                    fontSize: 13,
+                    fontFamily: 'Kalpurush',
+                    height: 1.1,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+            Positioned.fill(
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {},
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+            ),
+          ],
+        ),
+        margin: EdgeInsets.all(5),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+        ),
+        elevation: 7,
+        color: Colors.white,
+      ),
+    );
+  }
 }
