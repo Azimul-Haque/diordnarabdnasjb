@@ -94,7 +94,7 @@ class _DashboardState extends State<Dashboard> {
                           SizedBox(
                             height: 5,
                           ),
-                          Text('বিজেএস'),
+                          Text('বিজেএস মডেল টেস্ট'),
                         ],
                       ),
                       onPressed: () {},
