@@ -61,6 +61,21 @@ class _DashboardState extends State<Dashboard> {
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+              Container(
+                height: 125,
+                width: double.infinity,
+                child: ListView(
+                  padding: EdgeInsets.all(10),
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    _scrollCard("prostabona.png", "১ টি", 'প্রস্তাবনা'),
+                    _scrollCard("agreement.png", "১১ টি", 'ভাগ'),
+                    _scrollCard("law.png", "১৫৩ টি", 'অনুচ্ছেদ'),
+                    _scrollCard("seal.png", "৭ টি", 'তফসিল'),
+                    _scrollCard("search.png", "১৭ টি", 'সংশোধনী'),
+                  ],
+                ),
+              ),
               Row(
                 children: <Widget>[
                   Expanded(
