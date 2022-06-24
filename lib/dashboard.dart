@@ -298,7 +298,7 @@ class _DashboardState extends State<Dashboard> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
-        elevation: 3,
+        elevation: 1,
         color: Colors.white,
       ),
     );
