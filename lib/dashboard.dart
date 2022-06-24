@@ -77,6 +77,7 @@ class _DashboardState extends State<Dashboard> {
                 ),
               ),
               Container(
+                padding: const EdgeInsets.all(10),
                 child: Row(
                   children: <Widget>[
                     Expanded(
