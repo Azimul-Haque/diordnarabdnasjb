@@ -52,75 +52,31 @@ class _DashboardState extends State<Dashboard> {
       //   ],
       // ),
       // drawer: _homeDrawer(),
-      body: Container(
-        // padding: const EdgeInsets.all(10),
-        child: SingleChildScrollView(
-          child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-              // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-              SizedBox(
-                height: 125,
-                width: double.infinity,
-                child: ListView(
-                  padding: EdgeInsets.all(10),
-                  scrollDirection: Axis.horizontal,
-                  children: <Widget>[
-                    _scrollCard("১ টি", 'প্রস্তাবনা'),
-                    _scrollCard("১১ টি", 'ভাগ'),
-                    _scrollCard("১৫৩ টি", 'অনুচ্ছেদ'),
-                    _scrollCard("৭ টি", 'তফসিল'),
-                    _scrollCard("১৭ টি", 'সংশোধনী'),
-                  ],
-                ),
+      body: SingleChildScrollView(
+        child: Column(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            SizedBox(
+              height: 125,
+              width: double.infinity,
+              child: ListView(
+                padding: EdgeInsets.all(10),
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  _scrollCard("১ টি", 'প্রস্তাবনা'),
+                  _scrollCard("১১ টি", 'ভাগ'),
+                  _scrollCard("১৫৩ টি", 'অনুচ্ছেদ'),
+                  _scrollCard("৭ টি", 'তফসিল'),
+                  _scrollCard("১৭ টি", 'সংশোধনী'),
+                ],
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Expanded(
-                      child: TextButton(
-                        child: Column(
-                          children: const <Widget>[
-                            Icon(Icons.ac_unit),
-                            Text('বিজেএস'),
-                          ],
-                        ),
-                        onPressed: () {},
-                      ),
-                    ),
-                    Expanded(
-                      child: TextButton(
-                        child: Column(
-                          children: const <Widget>[
-                            Icon(Icons.accessibility_new_outlined),
-                            Text('বার'),
-                          ],
-                        ),
-                        onPressed: () => {},
-                      ),
-                    ),
-                    Expanded(
-                      child: TextButton(
-                        child: Column(
-                          children: const <Widget>[
-                            Icon(Icons.minimize),
-                            Text('ফ্রি পরীক্ষা'),
-                          ],
-                        ),
-                        onPressed: () => {},
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Divider(
-                color: Colors.grey,
-                height: 20,
-              ),
-              Row(
+            ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Row(
                 children: <Widget>[
                   Expanded(
                     child: TextButton(
@@ -157,32 +113,73 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ],
               ),
-              ElevatedButton(
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 20,
+            ),
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: TextButton(
+                    child: Column(
+                      children: const <Widget>[
+                        Icon(Icons.ac_unit),
+                        Text('বিজেএস'),
+                      ],
                     ),
+                    onPressed: () {},
                   ),
-                  elevation: MaterialStateProperty.all(1),
                 ),
-                child: Text(
-                  'Test Payment Gateway',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => TestBkashPage(),
+                Expanded(
+                  child: TextButton(
+                    child: Column(
+                      children: const <Widget>[
+                        Icon(Icons.accessibility_new_outlined),
+                        Text('বার'),
+                      ],
                     ),
-                  );
-                },
+                    onPressed: () => {},
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    child: Column(
+                      children: const <Widget>[
+                        Icon(Icons.minimize),
+                        Text('ফ্রি পরীক্ষা'),
+                      ],
+                    ),
+                    onPressed: () => {},
+                  ),
+                ),
+              ],
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                  ),
+                ),
+                elevation: MaterialStateProperty.all(1),
               ),
-              Center(
-                child: Text(userdata.toString()),
+              child: Text(
+                'Test Payment Gateway',
+                style: TextStyle(color: Colors.white),
               ),
-            ],
-          ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => TestBkashPage(),
+                  ),
+                );
+              },
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+          ],
         ),
       ),
     );
