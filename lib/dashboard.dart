@@ -91,6 +91,9 @@ class _DashboardState extends State<Dashboard> {
                             width: 45,
                             alignment: Alignment.center,
                           ),
+                          SizedBox(
+                            height: 5,
+                          ),
                           Text('বিজেএস'),
                         ],
                       ),
