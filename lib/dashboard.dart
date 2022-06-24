@@ -85,7 +85,12 @@ class _DashboardState extends State<Dashboard> {
                     child: TextButton(
                       child: Column(
                         children: const <Widget>[
-                          Icon(CupertinoIcons.add),
+                          Image.asset(
+                            "assets/images/",
+                            height: 45,
+                            width: 45,
+                            alignment: Alignment.center,
+                          ),
                           Text('বিজেএস'),
                         ],
                       ),
