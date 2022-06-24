@@ -288,7 +288,7 @@ class _DashboardState extends State<Dashboard> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {},
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(5),
                 ),
               ),
             ),
