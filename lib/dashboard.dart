@@ -67,11 +67,11 @@ class _DashboardState extends State<Dashboard> {
                 padding: EdgeInsets.all(10),
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
-                  _scrollCard("১ টি", 'প্রস্তাবনা'),
-                  _scrollCard("১১ টি", 'ভাগ'),
-                  _scrollCard("১৫৩ টি", 'অনুচ্ছেদ'),
-                  _scrollCard("৭ টি", 'তফসিল'),
-                  _scrollCard("১৭ টি", 'সংশোধনী'),
+                  _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
+                  _scrollCard("১১ টি", 'ভাগ', screenwidth),
+                  _scrollCard("১৫৩ টি", 'অনুচ্ছেদ', screenwidth),
+                  _scrollCard("৭ টি", 'তফসিল', screenwidth),
+                  _scrollCard("১৭ টি", 'সংশোধনী', screenwidth),
                 ],
               ),
             ),
@@ -240,7 +240,7 @@ class _DashboardState extends State<Dashboard> {
     }
   }
 
-  Widget _scrollCard(String title, String subtitle) {
+  Widget _scrollCard(String title, String subtitle, String screenwidth) {
     return SizedBox(
       height: screenwidth,
       width: 250,
