@@ -86,7 +86,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: const <Widget>[
                           Image.asset(
-                            "assets/images/",
+                            "assets/images/agreement.png",
                             height: 45,
                             width: 45,
                             alignment: Alignment.center,
