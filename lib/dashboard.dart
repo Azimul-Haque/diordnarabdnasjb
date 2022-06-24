@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'dart:convert';
+import 'dart:ffi';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -240,7 +241,7 @@ class _DashboardState extends State<Dashboard> {
     }
   }
 
-  Widget _scrollCard(String title, String subtitle, String screenwidth) {
+  Widget _scrollCard(String title, String subtitle, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth,
