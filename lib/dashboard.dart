@@ -76,42 +76,44 @@ class _DashboardState extends State<Dashboard> {
                   ],
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  Expanded(
-                    child: TextButton(
-                      child: Column(
-                        children: const <Widget>[
-                          Icon(Icons.ac_unit),
-                          Text('বিজেএস'),
-                        ],
+              Container(
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: TextButton(
+                        child: Column(
+                          children: const <Widget>[
+                            Icon(Icons.ac_unit),
+                            Text('বিজেএস'),
+                          ],
+                        ),
+                        onPressed: () {},
                       ),
-                      onPressed: () {},
                     ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      child: Column(
-                        children: const <Widget>[
-                          Icon(Icons.accessibility_new_outlined),
-                          Text('বার'),
-                        ],
+                    Expanded(
+                      child: TextButton(
+                        child: Column(
+                          children: const <Widget>[
+                            Icon(Icons.accessibility_new_outlined),
+                            Text('বার'),
+                          ],
+                        ),
+                        onPressed: () => {},
                       ),
-                      onPressed: () => {},
                     ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      child: Column(
-                        children: const <Widget>[
-                          Icon(Icons.minimize),
-                          Text('ফ্রি পরীক্ষা'),
-                        ],
+                    Expanded(
+                      child: TextButton(
+                        child: Column(
+                          children: const <Widget>[
+                            Icon(Icons.minimize),
+                            Text('ফ্রি পরীক্ষা'),
+                          ],
+                        ),
+                        onPressed: () => {},
                       ),
-                      onPressed: () => {},
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
               Divider(
                 color: Colors.grey,
