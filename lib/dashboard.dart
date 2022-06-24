@@ -244,7 +244,7 @@ class _DashboardState extends State<Dashboard> {
   Widget _scrollCard(String title, String subtitle, double screenwidth) {
     return SizedBox(
       height: 110,
-      width: screenwidth * .9,
+      width: screenwidth * .8,
       child: Card(
         child: Stack(
           children: <Widget>[
