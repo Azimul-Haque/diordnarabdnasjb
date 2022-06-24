@@ -105,7 +105,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: const <Widget>[
                           Icon(Icons.accessibility_new_outlined),
-                          Text('বার'),
+                          Text('বার মডেল টেস্ট'),
                         ],
                       ),
                       onPressed: () => {},
