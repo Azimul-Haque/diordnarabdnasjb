@@ -78,13 +78,13 @@ class _DashboardState extends State<Dashboard> {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Row(
                 children: <Widget>[
                   Expanded(
                     child: TextButton(
                       child: Column(
-                        children: const <Widget>[
+                        children: <Widget>[
                           Image.asset(
                             "assets/images/agreement.png",
                             height: 45,
