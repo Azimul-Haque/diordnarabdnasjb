@@ -97,6 +97,7 @@ class _DashboardState extends State<Dashboard> {
                           Text(
                             'বিজেএস\nমডেল টেস্ট',
                             style: TextStyle(fontSize: 12),
+                            textAlign: Center,
                           ),
                         ],
                       ),
