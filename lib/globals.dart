@@ -89,8 +89,7 @@ appBarStyle() {
   return Ink(
     decoration: BoxDecoration(
       gradient: LinearGradient(
-        // colors: [Colors.lightBlue[600]!, Colors.lightBlue[200]!],
-        colors: [Colors.amber, Colors.amber[400]!],
+        colors: [Colors.lightBlue[600]!, Colors.lightBlue[200]!],
         begin: const FractionalOffset(0.0, 0.0),
         end: const FractionalOffset(1.0, 0.0),
         stops: [0.0, 1.0],
