@@ -288,7 +288,7 @@ class _DashboardState extends State<Dashboard> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {},
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(5),
                 ),
               ),
             ),
@@ -296,7 +296,7 @@ class _DashboardState extends State<Dashboard> {
         ),
         margin: EdgeInsets.all(5),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+          borderRadius: BorderRadius.all(Radius.circular(5)),
         ),
         elevation: 7,
         color: Colors.white,
