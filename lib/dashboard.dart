@@ -61,7 +61,7 @@ class _DashboardState extends State<Dashboard> {
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
               // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-              Container(
+              SizedBox(
                 height: 125,
                 width: double.infinity,
                 child: ListView(
