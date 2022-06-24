@@ -5,6 +5,7 @@ import 'dart:ffi';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:http/http.dart' as http;
 
 import 'package:bjsandbarexam/login.dart';
@@ -97,7 +98,7 @@ class _DashboardState extends State<Dashboard> {
                           Text(
                             'বিজেএস\nমডেল টেস্ট',
                             style: TextStyle(fontSize: 12),
-                            textAlign: Center,
+                            textAlign: TextAlign.center,
                           ),
                         ],
                       ),
