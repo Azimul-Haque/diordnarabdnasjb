@@ -240,7 +240,7 @@ class _DashboardState extends State<Dashboard> {
   }
 
   Widget _scrollCard(String iconname, String title, String subtitle) {
-    return Container(
+    return SizedBox(
       height: 110,
       width: 110,
       child: Card(
@@ -253,12 +253,6 @@ class _DashboardState extends State<Dashboard> {
                 SizedBox(
                   height: 9,
                   width: double.infinity,
-                ),
-                Image.asset(
-                  "assets/images/" + iconname,
-                  height: 45,
-                  width: 45,
-                  alignment: Alignment.center,
                 ),
                 SizedBox(
                   height: 8,
