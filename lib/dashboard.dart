@@ -377,7 +377,8 @@ class _DashboardState extends State<Dashboard> {
                       Text(
                         title,
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 13),
+                        style: TextStyle(
+                            fontSize: 13, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ))
