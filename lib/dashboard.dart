@@ -84,6 +84,41 @@ class _DashboardState extends State<Dashboard> {
               child: Row(
                 children: <Widget>[
                   Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("exambjs.png", "Prediction"),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("exambar.png", "Prediction"),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("examfree.png", "Prediction"),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 20,
+            ),
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
                     child: TextButton(
                       child: Column(
                         children: <Widget>[
@@ -162,41 +197,7 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
-            Container(
-              padding: const EdgeInsets.all(10),
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    child: Container(
-                      // width: screenwidth * .1,
-                      padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
-                      child: _homeCard("exambjs.png", "Prediction"),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      // width: screenwidth * .1,
-                      padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
-                      child: _homeCard("exambar.png", "Prediction"),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      // width: screenwidth * .1,
-                      padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
-                      child: _homeCard("examfree.png", "Prediction"),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Divider(
-              color: Colors.grey,
-              height: 20,
-            ),
+
             ElevatedButton(
               style: ButtonStyle(
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
