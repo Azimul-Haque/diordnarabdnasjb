@@ -68,7 +68,7 @@ class _DashboardState extends State<Dashboard> {
               height: 125,
               width: double.infinity,
               child: ListView(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                 scrollDirection: Axis.horizontal,
                 children: <Widget>[
                   _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
