@@ -376,6 +376,7 @@ class _DashboardState extends State<Dashboard> {
                     children: <Widget>[
                       Text(
                         title,
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 13, fontWeight: FontWeight.bold),
                       ),
