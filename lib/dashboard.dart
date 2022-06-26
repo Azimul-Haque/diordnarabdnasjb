@@ -79,6 +79,10 @@ class _DashboardState extends State<Dashboard> {
                 ],
               ),
             ),
+            Divider(
+              color: Colors.grey,
+              height: 20,
+            ),
             Container(
               padding: const EdgeInsets.all(10),
               child: Row(
