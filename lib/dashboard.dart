@@ -83,7 +83,7 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
-            Expanded(
+            const Container(
               child: Text("test"),
             ),
             Container(
