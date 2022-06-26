@@ -36,6 +36,7 @@ class _DashboardState extends State<Dashboard> {
 
   @override
   Widget build(BuildContext context) {
+    double screenheight = MediaQuery.of(context).size.height;
     double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       // appBar: AppBar(
@@ -87,9 +88,9 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: <Widget>[
                           Image.asset(
-                            "assets/images/agreement.png",
-                            height: 45,
-                            width: 45,
+                            "assets/images/exambjs.png",
+                            height: 60,
+                            width: 60,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
@@ -108,9 +109,21 @@ class _DashboardState extends State<Dashboard> {
                   Expanded(
                     child: TextButton(
                       child: Column(
-                        children: const <Widget>[
-                          Icon(Icons.accessibility_new_outlined),
-                          Text('বার মডেল টেস্ট'),
+                        children: <Widget>[
+                          Image.asset(
+                            "assets/images/exambar.png",
+                            height: 60,
+                            width: 60,
+                            alignment: Alignment.center,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'বার\nমডেল টেস্ট',
+                            style: TextStyle(fontSize: 13),
+                            textAlign: TextAlign.center,
+                          ),
                         ],
                       ),
                       onPressed: () => {},
@@ -118,10 +131,25 @@ class _DashboardState extends State<Dashboard> {
                   ),
                   Expanded(
                     child: TextButton(
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.white)),
                       child: Column(
-                        children: const <Widget>[
-                          Icon(Icons.minimize),
-                          Text('ফ্রি পরীক্ষা'),
+                        children: <Widget>[
+                          Image.asset(
+                            "assets/images/examfree.png",
+                            height: 60,
+                            width: 60,
+                            alignment: Alignment.center,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'ফ্রি\nপরীক্ষা',
+                            style: TextStyle(fontSize: 13),
+                            textAlign: TextAlign.center,
+                          ),
                         ],
                       ),
                       onPressed: () => {},
@@ -134,42 +162,40 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
-            Row(
-              children: <Widget>[
-                Expanded(
-                  child: TextButton(
-                    child: Column(
-                      children: const <Widget>[
-                        Icon(Icons.ac_unit),
-                        Text('বিজেএস'),
-                      ],
+            Container(
+              padding: const EdgeInsets.all(10),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("exambjs.png", "Prediction"),
                     ),
-                    onPressed: () {},
                   ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    child: Column(
-                      children: const <Widget>[
-                        Icon(Icons.accessibility_new_outlined),
-                        Text('বার'),
-                      ],
+                  Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("exambjs.png", "Prediction"),
                     ),
-                    onPressed: () => {},
                   ),
-                ),
-                Expanded(
-                  child: TextButton(
-                    child: Column(
-                      children: const <Widget>[
-                        Icon(Icons.minimize),
-                        Text('ফ্রি পরীক্ষা'),
-                      ],
+                  Expanded(
+                    child: Container(
+                      // width: screenwidth * .1,
+                      padding: EdgeInsets.only(
+                          top: 5, left: 0, bottom: 5, right: 2.5),
+                      child: _homeCard("exambjs.png", "Prediction"),
                     ),
-                    onPressed: () => {},
                   ),
-                ),
-              ],
+                ],
+              ),
+            ),
+            Divider(
+              color: Colors.grey,
+              height: 20,
             ),
             ElevatedButton(
               style: ButtonStyle(
@@ -191,6 +217,12 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 );
               },
+            ),
+            Center(
+              child: Text(userdata.toString()),
+            ),
+            Center(
+              child: Text(userdata.toString()),
             ),
             Center(
               child: Text(userdata.toString()),
@@ -315,6 +347,59 @@ class _DashboardState extends State<Dashboard> {
         elevation: 2,
         color: Colors.white,
       ),
+    );
+  }
+
+  Widget _homeCard(String image, String title) {
+    return Card(
+      child: Stack(
+        children: <Widget>[
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ClipRRect(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(5), topRight: Radius.circular(5)),
+                child: Image.asset("assets/images/" + image),
+              ),
+              Padding(
+                  padding: EdgeInsets.all(2),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        title,
+                        style: TextStyle(
+                            fontSize: 13, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ))
+            ],
+          ),
+          Positioned.fill(
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => routename,
+                  //   ),
+                  // );
+                },
+                borderRadius: BorderRadius.circular(5),
+              ),
+            ),
+          ),
+        ],
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
+      ),
+      elevation: 2,
     );
   }
 }
