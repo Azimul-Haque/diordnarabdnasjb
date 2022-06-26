@@ -85,7 +85,7 @@ class _DashboardState extends State<Dashboard> {
             ),
             Text(
               "data",
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.start,
             ),
             Container(
               padding: EdgeInsets.only(left: 10, right: 10),
