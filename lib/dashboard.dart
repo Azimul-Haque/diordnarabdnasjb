@@ -83,7 +83,8 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
-            const Container(
+            // ignore: avoid_unnecessary_containers
+            Container(
               child: Text("test"),
             ),
             Container(
