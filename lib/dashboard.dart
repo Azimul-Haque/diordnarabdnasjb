@@ -84,9 +84,7 @@ class _DashboardState extends State<Dashboard> {
               height: 20,
             ),
             // ignore: avoid_unnecessary_containers
-            Container(
-              child: Text("test"),
-            ),
+            Text("test"),
             Container(
               padding: EdgeInsets.only(left: 10, right: 10),
               child: Row(
