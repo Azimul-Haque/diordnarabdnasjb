@@ -72,22 +72,8 @@ class _DashboardState extends State<Dashboard> {
                 itemBuilder: (context, index) {
                   return _scrollCard(courses[index]["name"].toString(),
                       'প্রস্তাবনা', screenwidth);
-                  // ListTile(
-                  //   title: Text(courses[index]["name"].toString()),
-                  // );
                 },
               ),
-              // ListView(
-              //   padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-              //   scrollDirection: Axis.horizontal,
-              //   children: <Widget>[
-              //     _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
-              //     _scrollCard("১১ টি", 'ভাগ', screenwidth),
-              //     _scrollCard("১৫৩ টি", 'অনুচ্ছেদ', screenwidth),
-              //     _scrollCard("৭ টি", 'তফসিল', screenwidth),
-              //     _scrollCard("১৭ টি", 'সংশোধনী', screenwidth),
-              //   ],
-              // ),
             ),
             Divider(
               color: Colors.grey,
