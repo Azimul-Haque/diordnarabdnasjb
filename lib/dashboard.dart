@@ -75,10 +75,16 @@ class _DashboardState extends State<Dashboard> {
                             'প্রস্তাবনা', screenwidth);
                       },
                     )
-                  : SizedBox(
-                      height: 20,
-                      child: CircularProgressIndicator(),
-                    ),
+                  : Container(
+                      width: 50.0,
+                      height: 20.0,
+                      child: (CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          Colors.green,
+                        ),
+                        backgroundColor: Colors.red,
+                        value: 0.2,
+                      ))),
             ),
             Divider(
               color: Colors.grey,
