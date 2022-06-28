@@ -60,11 +60,11 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            SizedBox(
+              courses.isNotEmpty ? SizedBox(
               height: 125,
               width: double.infinity,
-              child: courses.isNotEmpty
-                  ? ListView.builder(
+              child: 
+                  ListView.builder(
                       padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                       // physics: ClampingScrollPhysics(),
                       // shrinkWrap: true,
@@ -75,11 +75,7 @@ class _DashboardState extends State<Dashboard> {
                             'প্রস্তাবনা', screenwidth);
                       },
                     )
-                  : SizedBox(
-                      width: 50.0,
-                      height: 20.0,
-                      child: (CircularProgressIndicator()),
-                    ),
+                  
             ),
             Divider(
               color: Colors.grey,
