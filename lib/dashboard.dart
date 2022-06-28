@@ -84,7 +84,7 @@ class _DashboardState extends State<Dashboard> {
                         ),
                         backgroundColor: Colors.red,
                         value: 0.2,
-                      ),),
+                      )),
                     ),
             ),
             Divider(
