@@ -65,6 +65,7 @@ class _DashboardState extends State<Dashboard> {
               // width: double.infinity,
               child: ListView.builder(
                 padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+                physics: ClampingScrollPhysics(),
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemCount: courses.length,
