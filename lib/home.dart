@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:bjsandbarexam/login.dart';
 import 'package:bjsandbarexam/profileedit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -8,6 +10,7 @@ import 'package:bjsandbarexam/dashboard.dart';
 import 'package:bjsandbarexam/package.dart';
 import 'package:bjsandbarexam/result.dart';
 import 'package:bjsandbarexam/settings.dart';
+import 'package:http/http.dart' as http;
 
 import 'globals.dart';
 
@@ -33,6 +36,7 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
+    _checkUid(userdata);
   }
 
   @override
@@ -355,5 +359,59 @@ class _HomeState extends State<Home> {
         3.0, // vertical, move down 10
       ),
     );
+  }
+
+  void _checkUid(userdata) async {
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
+          _softToken +
+          "/" +
+          userdata.uid; // https://jsonplaceholder.typicode.com/posts
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print("KAAJ HOCCHE...");
+        } else {
+          _postAddUser(userdata);
+        }
+      } else {
+        // print(response.body);
+      }
+    } catch (_) {
+      // print(_);
+    }
+  }
+
+  _postAddUser(user) async {
+    var data = {
+      'uid': user.uid,
+      'name': user.displayName ?? 'No Name',
+      'mobile': user.phoneNumber,
+      'softtoken': 'Rifat.Admin.2022',
+    };
+    // print(data);
+    try {
+      http.Response response = await http.post(
+        Uri.parse('http://192.168.0.108:8000/api/adduser'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=utf-8',
+          'Accept': 'application/json',
+        },
+        body: jsonEncode(data),
+      );
+      // print(response.statusCode);
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print(body);
+        }
+      } else {
+        // print(response.body);
+      }
+    } catch (_) {
+      // print(_);
+    }
   }
 }

@@ -1,18 +1,12 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'dart:convert';
-import 'dart:ffi';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:bjsandbarexam/login.dart';
-import 'package:bjsandbarexam/profileedit.dart';
 import 'package:bjsandbarexam/bkash/testbkash.dart';
-
-import 'package:bjsandbarexam/globals.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -24,6 +18,8 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   late String uid;
   late User userdata;
+  // List courses = [];
+  List<Map<String, dynamic>> courses = [];
 
   @override
   void initState() {
@@ -31,7 +27,7 @@ class _DashboardState extends State<Dashboard> {
     setState(() {});
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
-    _checkUid(userdata);
+    _getCourses();
   }
 
   @override
@@ -67,17 +63,26 @@ class _DashboardState extends State<Dashboard> {
             SizedBox(
               height: 125,
               width: double.infinity,
-              child: ListView(
-                padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
-                  _scrollCard("১১ টি", 'ভাগ', screenwidth),
-                  _scrollCard("১৫৩ টি", 'অনুচ্ছেদ', screenwidth),
-                  _scrollCard("৭ টি", 'তফসিল', screenwidth),
-                  _scrollCard("১৭ টি", 'সংশোধনী', screenwidth),
-                ],
+              child: ListView.builder(
+                itemCount: courses.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Text(courses[index]["name"].toString()),
+                  );
+                },
               ),
+              // ListView(
+              //   padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+              //   scrollDirection: Axis.horizontal,
+              //   children: <Widget>[
+              //     courses
+              //     _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
+              //     _scrollCard("১১ টি", 'ভাগ', screenwidth),
+              //     _scrollCard("১৫৩ টি", 'অনুচ্ছেদ', screenwidth),
+              //     _scrollCard("৭ টি", 'তফসিল', screenwidth),
+              //     _scrollCard("১৭ টি", 'সংশোধনী', screenwidth),
+              //   ],
+              // ),
             ),
             Divider(
               color: Colors.grey,
@@ -274,57 +279,28 @@ class _DashboardState extends State<Dashboard> {
     );
   }
 
-  void _checkUid(userdata) async {
+  void _getCourses() async {
     try {
       String _softToken = "Rifat.Admin.2022";
-      String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
-          _softToken +
-          "/" +
-          userdata.uid; // https://jsonplaceholder.typicode.com/posts
+      String serviceURL = "http://192.168.0.108:8000/api/getcourses/" +
+          _softToken; // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          // print(body["success"]);
-        } else {
-          _postAddUser(userdata);
-        }
+          print("E PORJONTO");
+          setState(() {
+            // var data = json.decode(body["courses"]);
+            courses =
+                List<Map<String, dynamic>>.from(jsonDecode(body["courses"]));
+          });
+          print(courses.toString());
+        } else {}
       } else {
-        // print(response.body);
+        print(response.body);
       }
     } catch (_) {
-      // print(_);
-    }
-  }
-
-  _postAddUser(user) async {
-    var data = {
-      'uid': user.uid,
-      'name': user.displayName ?? 'No Name',
-      'mobile': user.phoneNumber,
-      'softtoken': 'Rifat.Admin.2022',
-    };
-    // print(data);
-    try {
-      http.Response response = await http.post(
-        Uri.parse('http://192.168.0.108:8000/api/adduser'),
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=utf-8',
-          'Accept': 'application/json',
-        },
-        body: jsonEncode(data),
-      );
-      // print(response.statusCode);
-      if (response.statusCode == 200) {
-        var body = json.decode(response.body);
-        if (body["success"] == true) {
-          // print(body);
-        }
-      } else {
-        // print(response.body);
-      }
-    } catch (_) {
-      // print(_);
+      print(_);
     }
   }
 
