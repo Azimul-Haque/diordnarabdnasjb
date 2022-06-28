@@ -63,6 +63,7 @@ class _DashboardState extends State<Dashboard> {
               height: 125,
               width: double.infinity,
               child: ListView.builder(
+                padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                 itemCount: courses.length,
                 itemBuilder: (context, index) {
                   return ListTile(
