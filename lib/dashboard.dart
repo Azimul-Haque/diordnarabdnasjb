@@ -63,17 +63,19 @@ class _DashboardState extends State<Dashboard> {
             SizedBox(
               height: 125,
               width: double.infinity,
-              child: ListView.builder(
-                padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                // physics: ClampingScrollPhysics(),
-                // shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemCount: courses.length,
-                itemBuilder: (context, index) {
-                  return _scrollCard(courses[index]["name"].toString(),
-                      'প্রস্তাবনা', screenwidth);
-                },
-              ),
+              child: courses.length > 0
+                  ? ListView.builder(
+                      padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+                      // physics: ClampingScrollPhysics(),
+                      // shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: courses.length,
+                      itemBuilder: (context, index) {
+                        return _scrollCard(courses[index]["name"].toString(),
+                            'প্রস্তাবনা', screenwidth);
+                      },
+                    )
+                  : CircularProgressIndicator(),
             ),
             Divider(
               color: Colors.grey,
