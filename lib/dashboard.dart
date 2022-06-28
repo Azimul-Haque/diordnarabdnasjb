@@ -293,6 +293,7 @@ class _DashboardState extends State<Dashboard> {
           for (var i in data) {
             courses.add(i);
           }
+          print(courses);
         } else {}
       } else {
         // print(response.body);
