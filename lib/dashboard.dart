@@ -77,7 +77,7 @@ class _DashboardState extends State<Dashboard> {
                     ))
                 : SizedBox(
                     width: 50.0,
-                    height: 20.0,
+                    height: 50.0,
                     child: (CircularProgressIndicator()),
                   ),
             Divider(
