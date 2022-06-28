@@ -290,7 +290,9 @@ class _DashboardState extends State<Dashboard> {
         if (body["success"] == true) {
           print("E PORJONTO");
           var data = body["courses"];
-          for (var i in data) {}
+          for (var i in data) {
+            courses.add(i);
+          }
         } else {}
       } else {
         // print(response.body);
