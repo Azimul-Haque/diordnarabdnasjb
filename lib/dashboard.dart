@@ -83,7 +83,6 @@ class _DashboardState extends State<Dashboard> {
                           Colors.green,
                         ),
                         backgroundColor: Colors.red,
-                        value: 0.2,
                       )),
                     ),
             ),
