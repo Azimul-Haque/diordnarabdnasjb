@@ -54,6 +54,7 @@ class _DashboardState extends State<Dashboard> {
       // drawer: _homeDrawer(),
       body: SingleChildScrollView(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
