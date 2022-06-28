@@ -294,13 +294,13 @@ class _DashboardState extends State<Dashboard> {
             courses =
                 List<Map<String, dynamic>>.from(jsonDecode(body["courses"]));
           });
-          print(courses.toString());
+          // print(courses.toString());
         } else {}
       } else {
-        print(response.body);
+        // print(response.body);
       }
     } catch (_) {
-      print(_);
+      // print(_);
     }
   }
 
