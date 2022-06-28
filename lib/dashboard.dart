@@ -19,7 +19,7 @@ class _DashboardState extends State<Dashboard> {
   late String uid;
   late User userdata;
   // List courses = [];
-  List<Map<String, dynamic>> courses = [];
+  List courses = [];
 
   @override
   void initState() {
