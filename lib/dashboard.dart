@@ -63,7 +63,7 @@ class _DashboardState extends State<Dashboard> {
             SizedBox(
               height: 125,
               width: double.infinity,
-              child: courses.length > 0
+              child: courses.isNotEmpty
                   ? ListView.builder(
                       padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                       // physics: ClampingScrollPhysics(),
