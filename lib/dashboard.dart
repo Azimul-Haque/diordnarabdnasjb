@@ -78,12 +78,7 @@ class _DashboardState extends State<Dashboard> {
                   : SizedBox(
                       width: 50.0,
                       height: 20.0,
-                      child: (CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(
-                          Colors.green,
-                        ),
-                        backgroundColor: Colors.red,
-                      )),
+                      child: (CircularProgressIndicator()),
                     ),
             ),
             Divider(
