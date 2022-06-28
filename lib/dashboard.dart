@@ -75,7 +75,8 @@ class _DashboardState extends State<Dashboard> {
                             'প্রস্তাবনা', screenwidth);
                       },
                     )
-                  : Container(
+                  : SizedBox(
+                      height: 20,
                       child: CircularProgressIndicator(),
                     ),
             ),
