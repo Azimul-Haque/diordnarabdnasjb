@@ -64,7 +64,7 @@ class _DashboardState extends State<Dashboard> {
               width: double.infinity,
               child: ListView.builder(
                 padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.vertical,
                 itemCount: courses.length,
                 itemBuilder: (context, index) {
                   return ListTile(
@@ -76,7 +76,6 @@ class _DashboardState extends State<Dashboard> {
               //   padding: EdgeInsets.only(top: 10, left: 10, right: 10),
               //   scrollDirection: Axis.horizontal,
               //   children: <Widget>[
-              //     courses
               //     _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth),
               //     _scrollCard("১১ টি", 'ভাগ', screenwidth),
               //     _scrollCard("১৫৩ টি", 'অনুচ্ছেদ', screenwidth),
