@@ -75,7 +75,9 @@ class _DashboardState extends State<Dashboard> {
                             'প্রস্তাবনা', screenwidth);
                       },
                     )
-                  : CircularProgressIndicator(),
+                  : Container(
+                      child: CircularProgressIndicator(),
+                    ),
             ),
             Divider(
               color: Colors.grey,
