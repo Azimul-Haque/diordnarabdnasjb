@@ -18,7 +18,9 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   late String uid;
   late User userdata;
-  List courses = ['', ''];
+  List courses = [
+    {'name': ''}
+  ];
 
   @override
   void initState() {
