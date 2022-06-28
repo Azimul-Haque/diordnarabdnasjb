@@ -290,10 +290,7 @@ class _DashboardState extends State<Dashboard> {
         if (body["success"] == true) {
           print("E PORJONTO");
           var data = json.decode(body["courses"]);
-          setState(() {
-            courses =
-                List<Map<String, dynamic>>.from(jsonDecode(body["courses"]));
-          });
+
           // print(courses.toString());
         } else {}
       } else {
