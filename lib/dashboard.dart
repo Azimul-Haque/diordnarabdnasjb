@@ -70,9 +70,10 @@ class _DashboardState extends State<Dashboard> {
                 scrollDirection: Axis.horizontal,
                 itemCount: courses.length,
                 itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(courses[index]["name"].toString()),
-                  );
+                  return _scrollCard("১ টি", 'প্রস্তাবনা', screenwidth);
+                  // ListTile(
+                  //   title: Text(courses[index]["name"].toString()),
+                  // );
                 },
               ),
               // ListView(
