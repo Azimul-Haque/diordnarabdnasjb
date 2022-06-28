@@ -19,7 +19,8 @@ class _DashboardState extends State<Dashboard> {
   late String uid;
   late User userdata;
   List courses = [
-    {'name': ''}
+    {'name': ''},
+    {'name': ''},
   ];
 
   @override
