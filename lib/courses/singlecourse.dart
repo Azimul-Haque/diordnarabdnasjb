@@ -23,7 +23,7 @@ class _SingleCourseState extends State<SingleCourse> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData();
+    _getCoursesData(courseid);
   }
 
   @override
@@ -45,12 +45,13 @@ class _SingleCourseState extends State<SingleCourse> {
     );
   }
 
-  void _getCoursesData() async {
+  void _getCoursesData(courseid) async {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
           "/api/getcourses/exams" +
-          _softToken; // https://jsonplaceholder.typicode.com/posts
+          _softToken /
+              courseid.toString(); // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
