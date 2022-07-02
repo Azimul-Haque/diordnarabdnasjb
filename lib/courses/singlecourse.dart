@@ -87,10 +87,10 @@ class _SingleCourseState extends State<SingleCourse> {
           print(exams);
         } else {}
       } else {
-        // print(response.body);
+        print(response.body);
       }
     } catch (_) {
-      // print(_);
+      print(_);
     }
   }
 
