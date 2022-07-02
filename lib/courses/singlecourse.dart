@@ -49,7 +49,7 @@ class _SingleCourseState extends State<SingleCourse> {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
-          "/api/getcourses/" +
+          "/api/getcourses/exams" +
           _softToken; // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
