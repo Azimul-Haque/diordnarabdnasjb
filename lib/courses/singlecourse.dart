@@ -41,7 +41,7 @@ class _SingleCourseState extends State<SingleCourse> {
           children: [
             exams.isNotEmpty
                 ? SizedBox(
-                    height: 125,
+                    height: double.infinity,
                     width: double.infinity,
                     child: ListView.builder(
                       padding: EdgeInsets.only(top: 10, left: 10, right: 10),
