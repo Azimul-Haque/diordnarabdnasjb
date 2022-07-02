@@ -35,8 +35,8 @@ class _SingleCourseState extends State<SingleCourse> {
         flexibleSpace: appBarStyle(),
       ),
       body: SingleChildScrollView(
-        mainAxisSize: MainAxisSize.min,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             exams.isNotEmpty
                 ? SizedBox(
