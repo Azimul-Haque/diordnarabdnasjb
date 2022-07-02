@@ -83,7 +83,7 @@ class _SingleCourseState extends State<SingleCourse> {
               exams.add(i);
             }
           });
-          print(exams.length);
+          // print(exams.length);
         } else {}
       } else {
         // print(response.body);
