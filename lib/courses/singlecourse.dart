@@ -22,7 +22,8 @@ class _SingleCourseState extends State<SingleCourse> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
-    print(widget.courseid);
+    // print(widget.courseid);
+    _getCoursesData();
   }
 
   @override
@@ -58,7 +59,7 @@ class _SingleCourseState extends State<SingleCourse> {
           var data = body["courses"];
           setState(() {
             for (var i in data) {
-              courses.add(i);
+              exams.add(i);
             }
           });
           // print(courses);
