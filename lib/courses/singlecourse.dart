@@ -50,7 +50,7 @@ class _SingleCourseState extends State<SingleCourse> {
                       itemCount: exams.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(exams[index]["name"].toString(),
-                            exams[index]["id"], screenwidth);
+                            exams[index]["id"]);
                       },
                     ))
                 : SizedBox(
