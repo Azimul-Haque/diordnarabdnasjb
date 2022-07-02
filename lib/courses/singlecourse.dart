@@ -54,10 +54,12 @@ class _SingleCourseState extends State<SingleCourse> {
                             exams[index]["id"], screenwidth);
                       },
                     ))
-                : SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: (CircularProgressIndicator()),
+                : Center(
+                    child: SizedBox(
+                      width: 50.0,
+                      height: 50.0,
+                      child: (CircularProgressIndicator()),
+                    ),
                   ),
           ],
         ),
