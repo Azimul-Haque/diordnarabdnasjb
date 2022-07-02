@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 
 const String baseAPIURL = "http://192.168.186.39:8000";
 // appBarStyle() {
-//   return Ink(
+//   return Ink( 192.168.186.39
 //     decoration: new BoxDecoration(
 //       gradient: new LinearGradient(
 //         colors: [
