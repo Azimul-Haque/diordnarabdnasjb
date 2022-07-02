@@ -42,9 +42,9 @@ class _SingleCourseState extends State<SingleCourse> {
             exams.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                    // physics: ClampingScrollPhysics(),
-                    // shrinkWrap: true,
-                    // scrollDirection: Axis.horizontal,
+                    physics: ClampingScrollPhysics(),
+                    shrinkWrap: true,
+                    scrollDirection: Axis.vertical,
                     itemCount: exams.length,
                     itemBuilder: (context, index) {
                       return _scrollCard(exams[index]["name"].toString(),
