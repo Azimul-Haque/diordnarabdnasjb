@@ -96,7 +96,7 @@ class _SingleCourseState extends State<SingleCourse> {
   Widget _scrollCard(String title, int courseid) {
     return SizedBox(
       height: 110,
-      width: ,
+      width: screenwidth,
       child: Card(
         child: Stack(
           children: <Widget>[
