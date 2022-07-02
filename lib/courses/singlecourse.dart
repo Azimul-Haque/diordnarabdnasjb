@@ -79,8 +79,8 @@ class _SingleCourseState extends State<SingleCourse> {
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          print("E PORJONTO");
-          var data = body["courses"];
+          // print("E PORJONTO");
+          var data = body["exams"];
           setState(() {
             for (var i in data) {
               exams.add(i);
