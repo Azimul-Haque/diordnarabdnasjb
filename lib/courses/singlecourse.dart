@@ -40,20 +40,17 @@ class _SingleCourseState extends State<SingleCourse> {
           mainAxisSize: MainAxisSize.min,
           children: [
             exams.isNotEmpty
-                ? SizedBox(
-                    height: double.infinity,
-                    width: double.infinity,
-                    child: ListView.builder(
-                      padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                      // physics: ClampingScrollPhysics(),
-                      // shrinkWrap: true,
-                      // scrollDirection: Axis.horizontal,
-                      itemCount: exams.length,
-                      itemBuilder: (context, index) {
-                        return _scrollCard(exams[index]["name"].toString(),
-                            exams[index]["exam_id"], screenwidth);
-                      },
-                    ))
+                ? ListView.builder(
+                    padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+                    // physics: ClampingScrollPhysics(),
+                    // shrinkWrap: true,
+                    // scrollDirection: Axis.horizontal,
+                    itemCount: exams.length,
+                    itemBuilder: (context, index) {
+                      return _scrollCard(exams[index]["name"].toString(),
+                          exams[index]["exam_id"], screenwidth);
+                    },
+                  )
                 : Center(
                     child: SizedBox(
                       width: 50.0,
