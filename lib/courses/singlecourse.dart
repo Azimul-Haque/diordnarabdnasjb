@@ -28,6 +28,7 @@ class _SingleCourseState extends State<SingleCourse> {
 
   @override
   Widget build(BuildContext context) {
+    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
