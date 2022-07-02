@@ -55,8 +55,6 @@ class _SingleCourseState extends State<SingleCourse> {
                       },
                     ))
                 : Center(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     child: SizedBox(
                       width: 50.0,
                       height: 50.0,
