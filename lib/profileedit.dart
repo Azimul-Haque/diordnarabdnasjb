@@ -155,7 +155,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
     // print(data);
     try {
       http.Response response = await http.post(
-        Uri.parse('http://192.168.0.108:8000/api/updateuser'),
+        Uri.parse(baseAPIURL + '/api/updateuser'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=utf-8',
           'Accept': 'application/json',

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'dart:convert';
+import 'package:bjsandbarexam/globals.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -278,7 +279,8 @@ class _DashboardState extends State<Dashboard> {
   void _getCourses() async {
     try {
       String _softToken = "Rifat.Admin.2022";
-      String serviceURL = "http://192.168.0.108:8000/api/getcourses/" +
+      String serviceURL = baseAPIURL +
+          "/api/getcourses/" +
           _softToken; // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {

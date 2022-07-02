@@ -11,6 +11,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+const String baseAPIURL = "http://192.168.0.107:8000";
 // appBarStyle() {
 //   return Ink(
 //     decoration: new BoxDecoration(
@@ -58,8 +59,8 @@ showAlertDialog(BuildContext context, String message) {
 //   );
 // }
 
-int currentGTabIndex = 0;
-var pageController = PageController();
+// int currentGTabIndex = 0;
+// var pageController = PageController();
 
 showSimpleSnackBar(BuildContext context, String message) {
   ScaffoldMessenger.of(context).showSnackBar(

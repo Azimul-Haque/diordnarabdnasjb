@@ -364,7 +364,8 @@ class _HomeState extends State<Home> {
   void _checkUid(userdata) async {
     try {
       String _softToken = "Rifat.Admin.2022";
-      String serviceURL = "http://192.168.0.108:8000/api/checkuid/" +
+      String serviceURL = baseAPIURL +
+          "/api/checkuid/" +
           _softToken +
           "/" +
           userdata.uid; // https://jsonplaceholder.typicode.com/posts
@@ -394,7 +395,7 @@ class _HomeState extends State<Home> {
     // print(data);
     try {
       http.Response response = await http.post(
-        Uri.parse('http://192.168.0.108:8000/api/adduser'),
+        Uri.parse(baseAPIURL + '/api/adduser'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=utf-8',
           'Accept': 'application/json',
