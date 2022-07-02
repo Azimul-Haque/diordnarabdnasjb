@@ -51,7 +51,7 @@ class _SingleCourseState extends State<SingleCourse> {
                       itemCount: exams.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(exams[index]["name"].toString(),
-                            exams[index]["id"]);
+                            exams[index]["id"], screenwidth);
                       },
                     ))
                 : SizedBox(
@@ -94,7 +94,7 @@ class _SingleCourseState extends State<SingleCourse> {
     }
   }
 
-  Widget _scrollCard(String title, int courseid) {
+  Widget _scrollCard(String title, int courseid, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth,
