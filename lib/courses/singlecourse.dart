@@ -37,7 +37,28 @@ class _SingleCourseState extends State<SingleCourse> {
       body: SingleChildScrollView(
         mainAxisSize: MainAxisSize.min,
         child: Column(
-          children: [],
+          children: [
+            exams.isNotEmpty
+                ? SizedBox(
+                    height: 125,
+                    width: double.infinity,
+                    child: ListView.builder(
+                      padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+                      // physics: ClampingScrollPhysics(),
+                      // shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: courses.length,
+                      itemBuilder: (context, index) {
+                        return _scrollCard(courses[index]["name"].toString(),
+                            courses[index]["id"], screenwidth);
+                      },
+                    ))
+                : SizedBox(
+                    width: 50.0,
+                    height: 50.0,
+                    child: (CircularProgressIndicator()),
+                  ),
+          ],
         ),
       ),
     );
