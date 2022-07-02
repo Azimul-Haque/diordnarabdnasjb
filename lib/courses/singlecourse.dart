@@ -23,7 +23,7 @@ class _SingleCourseState extends State<SingleCourse> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData(courseid);
+    _getCoursesData();
   }
 
   @override
@@ -51,7 +51,8 @@ class _SingleCourseState extends State<SingleCourse> {
       String serviceURL = baseAPIURL +
           "/api/getcourses/exams" +
           _softToken /
-              courseid.toString(); // https://jsonplaceholder.typicode.com/posts
+              widget.courseid
+                  .toString(); // https://jsonplaceholder.typicode.com/posts
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
