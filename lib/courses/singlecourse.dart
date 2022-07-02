@@ -45,7 +45,7 @@ class _SingleCourseState extends State<SingleCourse> {
     );
   }
 
-  void _getCoursesData(courseid) async {
+  void _getCoursesData() async {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
