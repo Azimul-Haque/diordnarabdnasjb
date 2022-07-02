@@ -74,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
                       itemCount: courses.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(courses[index]["name"].toString(),
-                            courses[index]["id"].toString(), screenwidth);
+                            courses[index]["id"], screenwidth);
                       },
                     ))
                 : SizedBox(
@@ -304,7 +304,7 @@ class _DashboardState extends State<Dashboard> {
     }
   }
 
-  Widget _scrollCard(String title, String courseid, double screenwidth) {
+  Widget _scrollCard(String title, int courseid, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth * .85,
@@ -335,7 +335,7 @@ class _DashboardState extends State<Dashboard> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  courseid,
+                  courseid.toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
