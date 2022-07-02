@@ -93,7 +93,7 @@ class _SingleCourseState extends State<SingleCourse> {
     }
   }
 
-  Widget _scrollCard(String title, int courseid, double screenwidth) {
+  Widget _scrollCard(String title, int courseid) {
     return SizedBox(
       height: 110,
       width: screenwidth * .85,
