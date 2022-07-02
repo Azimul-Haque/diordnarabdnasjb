@@ -47,7 +47,7 @@ class _SingleCourseState extends State<SingleCourse> {
                       padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                       // physics: ClampingScrollPhysics(),
                       // shrinkWrap: true,
-                      scrollDirection: Axis.horizontal,
+                      // scrollDirection: Axis.horizontal,
                       itemCount: exams.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(exams[index]["name"].toString(),
