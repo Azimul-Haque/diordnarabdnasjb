@@ -66,7 +66,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
             children: <Widget>[
               WebView(
                 initialUrl:
-                    'https://shop.bkash.com/bjs--bar-exam01837409842/pay/bdt49/zXOxpv',
+                    'https://shop.bkash.com/bjs--bar-exam01837409842/pay/bdt49/fp6VXB',
                 javascriptMode: JavascriptMode.unrestricted,
                 // const inp = document.getElementById("your_input");
                 //   inp.value = "some text";
