@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 // import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'package:bjsandbarexam/globals.dart';
+// import 'package:bjsandbarexam/globals.dart';
 
 class PackagePage extends StatefulWidget {
   @override
