@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'dart:convert';
+import 'package:bjsandbarexam/courses/singlecourse.dart';
 import 'package:bjsandbarexam/globals.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -73,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
                       itemCount: courses.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(courses[index]["name"].toString(),
-                            'প্রস্তাবনা', screenwidth);
+                            courses[index]["id"].toString(), screenwidth);
                       },
                     ))
                 : SizedBox(
@@ -303,7 +304,7 @@ class _DashboardState extends State<Dashboard> {
     }
   }
 
-  Widget _scrollCard(String title, String subtitle, double screenwidth) {
+  Widget _scrollCard(String title, String courseid, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth * .85,
@@ -334,7 +335,7 @@ class _DashboardState extends State<Dashboard> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  subtitle,
+                  courseid,
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
@@ -349,7 +350,13 @@ class _DashboardState extends State<Dashboard> {
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => SingleCourse(courseid),
+                      ),
+                    );
+                  },
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
