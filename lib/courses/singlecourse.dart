@@ -69,7 +69,7 @@ class _SingleCourseState extends State<SingleCourse> {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
-          "/api/getcourses/exams" +
+          "/api/getcourses/exams/" +
           _softToken +
           "/" +
           widget.courseid.toString();
