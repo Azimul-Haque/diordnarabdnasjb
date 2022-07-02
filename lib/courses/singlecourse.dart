@@ -50,9 +50,9 @@ class _SingleCourseState extends State<SingleCourse> {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
           "/api/getcourses/exams" +
-          _softToken /
-              widget.courseid
-                  .toString(); // https://jsonplaceholder.typicode.com/posts
+          _softToken +
+          "/" +
+          widget.courseid.toString();
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
