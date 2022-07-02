@@ -58,7 +58,7 @@ class _TestBkashPageState extends State<TestBkashPage> {
       child: Scaffold(
         key: _scaffoldkey,
         appBar: AppBar(
-          title: const Text('Flutter WebView example'),
+          title: const Text('bKash Payment'),
           flexibleSpace: appBarStyle(),
         ),
         body: SafeArea(
