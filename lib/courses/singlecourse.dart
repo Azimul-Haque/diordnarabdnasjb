@@ -32,7 +32,7 @@ class _SingleCourseState extends State<SingleCourse> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('রেজাল্ট'),
+        title: Text('কোর্স'),
         flexibleSpace: appBarStyle(),
       ),
       body: SingleChildScrollView(
