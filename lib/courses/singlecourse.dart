@@ -47,10 +47,10 @@ class _SingleCourseState extends State<SingleCourse> {
                       // physics: ClampingScrollPhysics(),
                       // shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
-                      itemCount: courses.length,
+                      itemCount: exams.length,
                       itemBuilder: (context, index) {
-                        return _scrollCard(courses[index]["name"].toString(),
-                            courses[index]["id"], screenwidth);
+                        return _scrollCard(exams[index]["name"].toString(),
+                            exams[index]["id"], screenwidth);
                       },
                     ))
                 : SizedBox(
