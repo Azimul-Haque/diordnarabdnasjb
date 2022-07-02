@@ -34,13 +34,11 @@ class _SingleCourseState extends State<SingleCourse> {
         title: Text('রেজাল্ট'),
         flexibleSpace: appBarStyle(),
       ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Text("ID: " + widget.courseid.toString()),
-          ),
-        ],
+      body: SingleChildScrollView(
+        mainAxisSize: MainAxisSize.min,
+        child: Column(
+          children: [],
+        ),
       ),
     );
   }
