@@ -92,4 +92,73 @@ class _SingleCourseState extends State<SingleCourse> {
       // print(_);
     }
   }
+
+  Widget _scrollCard(String title, int courseid, double screenwidth) {
+    return SizedBox(
+      height: 110,
+      width: screenwidth * .85,
+      child: Card(
+        child: Stack(
+          children: <Widget>[
+            Column(
+              // mainAxisAlignment: MainAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                SizedBox(
+                  height: 9,
+                  width: double.infinity,
+                ),
+                SizedBox(
+                  height: 8,
+                  width: double.infinity,
+                ),
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Kalpurush',
+                    height: 1,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  courseid.toString(),
+                  style: TextStyle(
+                    color: Colors.blueGrey,
+                    fontSize: 13,
+                    fontFamily: 'Kalpurush',
+                    height: 1.1,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+            Positioned.fill(
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => SingleCourse(courseid),
+                      ),
+                    );
+                  },
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ],
+        ),
+        margin: EdgeInsets.all(5),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+        ),
+        elevation: 2,
+        color: Colors.white,
+      ),
+    );
+  }
 }
