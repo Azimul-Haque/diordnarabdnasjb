@@ -15,8 +15,8 @@ class SingleCourse extends StatefulWidget {
 
 class _SingleCourseState extends State<SingleCourse> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
-
   late User userdata;
+  List exams = [];
 
   @override
   void initState() {
