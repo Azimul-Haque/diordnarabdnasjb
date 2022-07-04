@@ -115,7 +115,7 @@ class _CourseExamState extends State<CourseExam> {
                   width: double.infinity,
                 ),
                 Text(
-                  question['question'],
+                  (index + 1).toString() + ". " + question['question'],
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: 14,
