@@ -87,7 +87,7 @@ class _CourseExamState extends State<CourseExam> {
           print(questions.length);
         } else {}
       } else {
-        // print(response.body);
+        print(response.body);
       }
     } catch (_) {
       // print(_);
