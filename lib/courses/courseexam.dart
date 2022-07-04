@@ -68,10 +68,11 @@ class _CourseExamState extends State<CourseExam> {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
-          "/api/getcourses/questions/" +
+          "/api/getcourses/exam/" +
           _softToken +
           "/" +
-          widget.courseexameid.toString();
+          widget.courseexameid.toString() +
+          "/questions";
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
