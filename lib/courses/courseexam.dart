@@ -126,7 +126,7 @@ class _CourseExamState extends State<CourseExam> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  index.toString(),
+                  (index + 1).toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
