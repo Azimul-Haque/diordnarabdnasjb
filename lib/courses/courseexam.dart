@@ -47,10 +47,8 @@ class _CourseExamState extends State<CourseExam> {
                     scrollDirection: Axis.vertical,
                     itemCount: questions.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(
-                          questions[index]["question"].toString(),
-                          questions[index]["exam_id"],
-                          screenwidth);
+                      return _scrollCard(questions[index]["question"],
+                          questions[index]["exam_id"], screenwidth);
                     },
                   )
                 : Center(
@@ -97,7 +95,7 @@ class _CourseExamState extends State<CourseExam> {
     }
   }
 
-  Widget _scrollCard(String question, int courseexameid, double screenwidth) {
+  Widget _scrollCard(var question, int courseexameid, double screenwidth) {
     return SizedBox(
       height: 150,
       width: screenwidth,
