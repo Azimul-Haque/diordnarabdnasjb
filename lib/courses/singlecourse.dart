@@ -140,11 +140,11 @@ class _SingleCourseState extends State<SingleCourse> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                    // Navigator.of(context).push(
-                    //   MaterialPageRoute(
-                    //     builder: (context) => SingleCourse(courseid),
-                    //   ),
-                    // );
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => CourseExam(courseid),
+                      ),
+                    );
                   },
                   borderRadius: BorderRadius.circular(10),
                 ),
