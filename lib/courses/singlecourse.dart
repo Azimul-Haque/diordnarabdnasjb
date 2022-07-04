@@ -102,8 +102,8 @@ class _SingleCourseState extends State<SingleCourse> {
         child: Stack(
           children: <Widget>[
             Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // mainAxisAlignment: MainAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 SizedBox(
                   height: 9,
