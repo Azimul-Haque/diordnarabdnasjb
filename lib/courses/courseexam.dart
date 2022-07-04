@@ -7,8 +7,8 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class CourseExam extends StatefulWidget {
-  final int courseid;
-  CourseExam(this.courseid);
+  final int courseexameid;
+  CourseExam(this.courseexameid);
   @override
   _CourseExamState createState() => _CourseExamState();
 }
@@ -22,7 +22,7 @@ class _CourseExamState extends State<CourseExam> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
-    // print(widget.courseid);
+    // print(widget.courseexameid);
     _getCoursesData();
   }
 
@@ -71,7 +71,7 @@ class _CourseExamState extends State<CourseExam> {
           "/api/getcourses/exams/" +
           _softToken +
           "/" +
-          widget.courseid.toString();
+          widget.courseexameid.toString();
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
@@ -93,7 +93,7 @@ class _CourseExamState extends State<CourseExam> {
     }
   }
 
-  Widget _scrollCard(String title, int courseid, double screenwidth) {
+  Widget _scrollCard(String title, int courseexameid, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth,
@@ -124,7 +124,7 @@ class _CourseExamState extends State<CourseExam> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  courseid.toString(),
+                  courseexameid.toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
@@ -142,7 +142,7 @@ class _CourseExamState extends State<CourseExam> {
                   onTap: () {
                     // Navigator.of(context).push(
                     //   MaterialPageRoute(
-                    //     builder: (context) => CourseExam(courseid),
+                    //     builder: (context) => CourseExam(courseexameid),
                     //   ),
                     // );
                   },
