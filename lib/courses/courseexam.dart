@@ -95,7 +95,7 @@ class _CourseExamState extends State<CourseExam> {
     }
   }
 
-  Widget _scrollCard(var question, int courseexameid, double screenwidth) {
+  Widget _scrollCard(var question, int index, double screenwidth) {
     return SizedBox(
       height: 150,
       width: screenwidth,
