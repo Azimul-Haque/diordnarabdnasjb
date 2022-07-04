@@ -47,8 +47,10 @@ class _CourseExamState extends State<CourseExam> {
                     scrollDirection: Axis.vertical,
                     itemCount: questions.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(questions[index]["name"].toString(),
-                          questions[index]["exam_id"], screenwidth);
+                      return _scrollCard(
+                          questions[index]["question"].toString(),
+                          questions[index]["exam_id"],
+                          screenwidth);
                     },
                   )
                 : Center(
