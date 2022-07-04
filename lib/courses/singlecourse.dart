@@ -149,7 +149,9 @@ class _SingleCourseState extends State<SingleCourse> {
                             ),
                           )
                         : Navigator.of(context).push(
-                            MaterialPageRoute(),
+                            MaterialPageRoute(
+                              builder: (context) => PackagePage(),
+                            ),
                           );
                   },
                   borderRadius: BorderRadius.circular(10),
