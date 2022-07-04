@@ -96,7 +96,14 @@ class _SingleCourseState extends State<SingleCourse> {
   }
 
   Widget _scrollCard(String title, int courseexameid, double screenwidth) {
+    // TEST PURPOSE
+    // TEST PURPOSE
+    // TEST PURPOSE
     bool testconditional = true;
+    // TEST PURPOSE
+    // TEST PURPOSE
+    // TEST PURPOSE
+
     return SizedBox(
       height: 110,
       width: screenwidth,
