@@ -151,7 +151,7 @@ class _SingleCourseState extends State<SingleCourse> {
                           )
                         : Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => PackagePage(),
+                              builder: (context) => TestBkashPage(),
                             ),
                           );
                   },
