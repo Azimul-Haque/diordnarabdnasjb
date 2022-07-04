@@ -84,7 +84,7 @@ class _CourseExamState extends State<CourseExam> {
               questions.add(i);
             }
           });
-          print(questions);
+          print(questions.length);
         } else {}
       } else {
         // print(response.body);
