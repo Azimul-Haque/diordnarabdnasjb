@@ -23,7 +23,7 @@ class _CourseExamState extends State<CourseExam> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseexameid);
-    _getCoursesData();
+    _getExamData();
   }
 
   @override
@@ -64,7 +64,7 @@ class _CourseExamState extends State<CourseExam> {
     );
   }
 
-  void _getCoursesData() async {
+  void _getExamData() async {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
