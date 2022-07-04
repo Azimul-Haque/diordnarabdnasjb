@@ -150,7 +150,7 @@ class _SingleCourseState extends State<SingleCourse> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                    testconditional == true
+                    testpaymentconditional == true
                         ? Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (context) => CourseExam(courseexameid),
