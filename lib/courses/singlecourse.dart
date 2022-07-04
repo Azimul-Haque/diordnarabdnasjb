@@ -94,7 +94,7 @@ class _SingleCourseState extends State<SingleCourse> {
     }
   }
 
-  Widget _scrollCard(String title, int exameid, double screenwidth) {
+  Widget _scrollCard(String title, int courseexameid, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth,
@@ -125,7 +125,7 @@ class _SingleCourseState extends State<SingleCourse> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  courseid.toString(),
+                  courseexameid.toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
@@ -143,7 +143,7 @@ class _SingleCourseState extends State<SingleCourse> {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => CourseExam(courseid),
+                        builder: (context) => CourseExam(courseexameid),
                       ),
                     );
                   },
