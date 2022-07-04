@@ -16,7 +16,7 @@ class CourseExam extends StatefulWidget {
 class _CourseExamState extends State<CourseExam> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List exams = [];
+  List questions = [];
 
   @override
   void initState() {
@@ -39,16 +39,16 @@ class _CourseExamState extends State<CourseExam> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            exams.isNotEmpty
+            questions.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                     physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: exams.length,
+                    itemCount: questions.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(exams[index]["name"].toString(),
-                          exams[index]["exam_id"], screenwidth);
+                      return _scrollCard(questions[index]["name"].toString(),
+                          questions[index]["exam_id"], screenwidth);
                     },
                   )
                 : Center(
@@ -68,7 +68,7 @@ class _CourseExamState extends State<CourseExam> {
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
-          "/api/getcourses/exams/" +
+          "/api/getcourses/questions/" +
           _softToken +
           "/" +
           widget.courseexameid.toString();
@@ -77,13 +77,13 @@ class _CourseExamState extends State<CourseExam> {
         var body = json.decode(response.body);
         if (body["success"] == true) {
           // print("E PORJONTO");
-          var data = body["exams"];
+          var data = body["questions"];
           setState(() {
             for (var i in data) {
-              exams.add(i);
+              questions.add(i);
             }
           });
-          // print(exams.length);
+          // print(questions.length);
         } else {}
       } else {
         // print(response.body);
