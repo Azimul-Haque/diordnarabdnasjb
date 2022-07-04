@@ -115,7 +115,7 @@ class _CourseExamState extends State<CourseExam> {
                   width: double.infinity,
                 ),
                 Text(
-                  title,
+                  question['question'],
                   style: TextStyle(
                     color: Colors.black87,
                     fontSize: 14,
@@ -126,7 +126,7 @@ class _CourseExamState extends State<CourseExam> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  courseexameid.toString(),
+                  index.toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
@@ -144,7 +144,7 @@ class _CourseExamState extends State<CourseExam> {
                   onTap: () {
                     // Navigator.of(context).push(
                     //   MaterialPageRoute(
-                    //     builder: (context) => CourseExam(courseexameid),
+                    //     builder: (context) => CourseExam(index),
                     //   ),
                     // );
                   },
