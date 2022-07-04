@@ -77,7 +77,7 @@ class _CourseExamState extends State<CourseExam> {
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          print("E PORJONTO");
+          // print("E PORJONTO");
           var data = body["questions"];
           setState(() {
             for (var i in data) {
