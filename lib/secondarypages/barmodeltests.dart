@@ -33,7 +33,7 @@ class _BarModelTestsState extends State<BarModelTests> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Text("বিজেএস মডেল টেস্ট"),
+            child: Text("বার মডেল টেস্ট"),
           ),
         ],
       ),
