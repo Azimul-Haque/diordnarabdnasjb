@@ -221,15 +221,12 @@ class _DashboardState extends State<Dashboard> {
                   ),
                   Expanded(
                     child: TextButton(
-                      style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.all(Colors.white)),
                       child: Column(
                         children: <Widget>[
                           Image.asset(
                             "assets/images/examfree.png",
-                            height: 50,
-                            width: 50,
+                            height: 45,
+                            width: 45,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
