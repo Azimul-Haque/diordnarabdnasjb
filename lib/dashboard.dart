@@ -224,9 +224,9 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: <Widget>[
                           Image.asset(
-                            "assets/images/examfree.png",
-                            height: 45,
-                            width: 45,
+                            "assets/images/other-sharing.png",
+                            height: 40,
+                            width: 40,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
