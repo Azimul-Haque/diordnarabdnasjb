@@ -12,7 +12,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 const String baseAPIURL = "https://bjsexam.com";
-bool testpaymentconditional = false;
+bool testpaymentconditional = true;
 // appBarStyle() {
 //   return Ink( 192.168.186.39
 //     decoration: new BoxDecoration(
