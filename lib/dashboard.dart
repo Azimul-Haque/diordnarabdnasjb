@@ -5,7 +5,9 @@ import 'package:bjsandbarexam/globals.dart';
 import 'package:bjsandbarexam/secondarypages/barmodeltests.dart';
 import 'package:bjsandbarexam/secondarypages/bjsmodeltests.dart';
 import 'package:bjsandbarexam/secondarypages/freemodeltests.dart';
+import 'package:bjsandbarexam/secondarypages/lecturematerials.dart';
 import 'package:bjsandbarexam/secondarypages/questionbank.dart';
+import 'package:bjsandbarexam/secondarypages/topicwise.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -154,7 +156,7 @@ class _DashboardState extends State<Dashboard> {
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
                       child: _homeCard("subjectwise.png",
-                          "বিষয়ভিত্তিক\nঅনুশীলন", BJSModelTests()),
+                          "বিষয়ভিত্তিক\nঅনুশীলন", TopicWise()),
                     ),
                   ),
                   Expanded(
@@ -163,7 +165,7 @@ class _DashboardState extends State<Dashboard> {
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
                       child: _homeCard("lecturematerials.png",
-                          "লেকচার\nম্যাটেরিয়াল", BJSModelTests()),
+                          "লেকচার\nম্যাটেরিয়াল", LectureMaterials()),
                     ),
                   ),
                 ],
