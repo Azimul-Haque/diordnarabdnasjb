@@ -64,7 +64,7 @@ class _DashboardState extends State<Dashboard> {
             ),
             Text(
               "কোর্সসমূহ",
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+              style: TextStyle(fontSize: 16),
             ),
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
