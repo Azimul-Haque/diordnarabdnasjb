@@ -210,7 +210,7 @@ class _DashboardState extends State<Dashboard> {
                             height: 5,
                           ),
                           Text(
-                            'বার\nমডেল টেস্ট',
+                            'ফেসবুক\nকমিউনিটি',
                             style: TextStyle(fontSize: 13),
                             textAlign: TextAlign.center,
                           ),
