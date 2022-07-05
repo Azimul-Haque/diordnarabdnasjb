@@ -255,7 +255,7 @@ class _DashboardState extends State<Dashboard> {
                           Text(
                             'বন্ধুর সাথে\nশেয়ার করুন',
                             style:
-                                TextStyle(fontSize: 12, color: Colors.black54),
+                                TextStyle(fontSize: 13, color: Colors.black54),
                             textAlign: TextAlign.center,
                           ),
                         ],
