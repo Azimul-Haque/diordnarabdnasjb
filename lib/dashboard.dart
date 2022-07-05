@@ -234,7 +234,7 @@ class _DashboardState extends State<Dashboard> {
                           ),
                           Text(
                             'শেয়ার\nকরুন',
-                            style: TextStyle(fontSize: 13),
+                            style: TextStyle(fontSize: 12, color: Colors.black),
                             textAlign: TextAlign.center,
                           ),
                         ],
