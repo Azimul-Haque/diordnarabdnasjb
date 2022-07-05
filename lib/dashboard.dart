@@ -322,7 +322,7 @@ class _DashboardState extends State<Dashboard> {
                   title,
                   style: TextStyle(
                     color: Colors.black87,
-                    fontSize: 14,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Kalpurush',
                     height: 1,
