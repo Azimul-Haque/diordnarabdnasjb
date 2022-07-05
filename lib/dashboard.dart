@@ -233,7 +233,7 @@ class _DashboardState extends State<Dashboard> {
                             height: 5,
                           ),
                           Text(
-                            'ফ্রি\nপরীক্ষা',
+                            'শেয়ার\nকরুন',
                             style: TextStyle(fontSize: 13),
                             textAlign: TextAlign.center,
                           ),
