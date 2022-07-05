@@ -201,9 +201,9 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: <Widget>[
                           Image.asset(
-                            "assets/images/exambar.png",
-                            height: 60,
-                            width: 60,
+                            "assets/images/other-facebook.png",
+                            height: 50,
+                            width: 50,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
