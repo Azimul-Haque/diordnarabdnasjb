@@ -60,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(
-              height: 5,
+              height: 10,
             ),
             Text(
               "কোর্সসমূহ",
