@@ -179,8 +179,8 @@ class _DashboardState extends State<Dashboard> {
                         children: <Widget>[
                           Image.asset(
                             "assets/images/other-write.png",
-                            height: 50,
-                            width: 50,
+                            height: 45,
+                            width: 45,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
@@ -202,8 +202,8 @@ class _DashboardState extends State<Dashboard> {
                         children: <Widget>[
                           Image.asset(
                             "assets/images/other-facebook.png",
-                            height: 50,
-                            width: 50,
+                            height: 45,
+                            width: 45,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
