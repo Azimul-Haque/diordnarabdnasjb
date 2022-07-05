@@ -60,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "পরীক্ষাসমূহ",
+              "কোর্সসমূহ",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
