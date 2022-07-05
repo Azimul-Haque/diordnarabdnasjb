@@ -187,7 +187,7 @@ class _DashboardState extends State<Dashboard> {
                             height: 5,
                           ),
                           Text(
-                            'বিজেএস\nমডেল টেস্ট',
+                            'মতামত ও পরামর্শ\nলিখে পাঠান',
                             style: TextStyle(fontSize: 13),
                             textAlign: TextAlign.center,
                           ),
