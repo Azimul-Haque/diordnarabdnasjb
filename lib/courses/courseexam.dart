@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class CourseExam extends StatefulWidget {
-  final int courseexameid;
+  final String courseexameid;
   CourseExam(this.courseexameid);
   @override
   _CourseExamState createState() => _CourseExamState();
