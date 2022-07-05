@@ -383,12 +383,12 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.transparent,
               child: InkWell(
                 onTap: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => routename,
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => routename,
+                    ),
+                  );
                 },
                 borderRadius: BorderRadius.circular(5),
               ),
