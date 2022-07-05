@@ -116,7 +116,8 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child: _homeCard("exambar.png", "বার\nমডেল টেস্ট"),
+                      child: _homeCard(
+                          "exambar.png", "বার\nমডেল টেস্ট", BJSModelTests()),
                     ),
                   ),
                   Expanded(
@@ -124,7 +125,8 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child: _homeCard("examfree.png", "ফ্রি\nমডেল টেস্ট"),
+                      child: _homeCard(
+                          "examfree.png", "ফ্রি\nমডেল টেস্ট", BJSModelTests()),
                     ),
                   ),
                 ],
@@ -139,7 +141,8 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child: _homeCard("questionbank.png", "প্রশ্ন\nব্যাংক"),
+                      child: _homeCard("questionbank.png", "প্রশ্ন\nব্যাংক",
+                          BJSModelTests()),
                     ),
                   ),
                   Expanded(
@@ -147,8 +150,8 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child:
-                          _homeCard("subjectwise.png", "বিষয়ভিত্তিক\nঅনুশীলন"),
+                      child: _homeCard("subjectwise.png",
+                          "বিষয়ভিত্তিক\nঅনুশীলন", BJSModelTests()),
                     ),
                   ),
                   Expanded(
@@ -156,8 +159,8 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child: _homeCard(
-                          "lecturematerials.png", "লেকচার\nম্যাটেরিয়াল"),
+                      child: _homeCard("lecturematerials.png",
+                          "লেকচার\nম্যাটেরিয়াল", BJSModelTests()),
                     ),
                   ),
                 ],
