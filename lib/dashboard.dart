@@ -211,7 +211,8 @@ class _DashboardState extends State<Dashboard> {
                           ),
                           Text(
                             'ফেসবুক\nকমিউনিটি',
-                            style: TextStyle(fontSize: 13),
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.black54),
                             textAlign: TextAlign.center,
                           ),
                         ],
