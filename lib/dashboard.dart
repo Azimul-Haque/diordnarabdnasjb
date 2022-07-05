@@ -165,6 +165,10 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
+            Text(
+              "অন্যান্য",
+              style: TextStyle(fontSize: 16),
+            ),
             Container(
               padding: const EdgeInsets.all(10),
               child: Row(
