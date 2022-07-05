@@ -2,7 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-// import 'package:bjsandbarexam/globals.dart';
+import 'package:bjsandbarexam/globals.dart';
 
 class BJSModelTests extends StatefulWidget {
   @override
@@ -25,10 +25,10 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldkey,
-      // appBar: AppBar(
-      //   title: Text('রেজাল্ট'),
-      //   flexibleSpace: appBarStyle(),
-      // ),
+      appBar: AppBar(
+        title: Text('রেজাল্ট'),
+        flexibleSpace: appBarStyle(),
+      ),
       body: Column(
         children: [
           Container(
