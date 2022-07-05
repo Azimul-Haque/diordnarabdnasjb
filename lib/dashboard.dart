@@ -59,6 +59,10 @@ class _DashboardState extends State<Dashboard> {
           mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            Text(
+              "পরীক্ষাসমূহ",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
