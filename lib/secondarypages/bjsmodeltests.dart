@@ -26,14 +26,14 @@ class _BJSModelTestsState extends State<BJSModelTests> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('রেজাল্ট'),
+        title: Text('বিজেএস মডেল টেস্ট'),
         flexibleSpace: appBarStyle(),
       ),
       body: Column(
         children: [
           Container(
             margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Text("Result Page"),
+            child: Text("বিজেএস মডেল টেস্ট"),
           ),
         ],
       ),
