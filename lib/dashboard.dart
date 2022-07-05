@@ -188,7 +188,8 @@ class _DashboardState extends State<Dashboard> {
                           ),
                           Text(
                             'মতামত ও পরামর্শ\nলিখে পাঠান',
-                            style: TextStyle(fontSize: 13),
+                            style:
+                                TextStyle(fontSize: 12, color: Colors.black54),
                             textAlign: TextAlign.center,
                           ),
                         ],
