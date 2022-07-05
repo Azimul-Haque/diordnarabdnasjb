@@ -9,7 +9,7 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class SingleCourse extends StatefulWidget {
-  final int courseid;
+  final String courseid;
   SingleCourse(this.courseid);
   @override
   _SingleCourseState createState() => _SingleCourseState();
