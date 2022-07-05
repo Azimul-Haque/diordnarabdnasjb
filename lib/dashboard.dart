@@ -350,7 +350,7 @@ class _DashboardState extends State<Dashboard> {
     );
   }
 
-  Widget _homeCard(String image, String title) {
+  Widget _homeCard(String image, String title, Route routename) {
     return Card(
       child: Stack(
         children: <Widget>[
