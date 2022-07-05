@@ -131,7 +131,7 @@ class _DashboardState extends State<Dashboard> {
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
                           top: 5, left: 0, bottom: 2.5, right: 2.5),
-                      child: _homeCard("exambjs.png", "প্রশ্নব্যাংক"),
+                      child: _homeCard("exambjs.png", "প্রশ্ন\nব্যাংক"),
                     ),
                   ),
                   Expanded(
