@@ -4,6 +4,7 @@ import 'package:bjsandbarexam/courses/singlecourse.dart';
 import 'package:bjsandbarexam/globals.dart';
 import 'package:bjsandbarexam/secondarypages/barmodeltests.dart';
 import 'package:bjsandbarexam/secondarypages/bjsmodeltests.dart';
+import 'package:bjsandbarexam/secondarypages/contact.dart';
 import 'package:bjsandbarexam/secondarypages/freemodeltests.dart';
 import 'package:bjsandbarexam/secondarypages/lecturematerials.dart';
 import 'package:bjsandbarexam/secondarypages/questionbank.dart';
@@ -208,7 +209,7 @@ class _DashboardState extends State<Dashboard> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => routename,
+                            builder: (context) => Contact(),
                           ),
                         );
                       },
