@@ -130,7 +130,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Container(
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
+                          top: 5, left: 0, bottom: 2.5, right: 2.5),
                       child: _homeCard("exambjs.png", "বিজিএস\nমডেল টেস্ট"),
                     ),
                   ),
@@ -138,7 +138,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Container(
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
+                          top: 5, left: 0, bottom: 2.5, right: 2.5),
                       child: _homeCard("exambar.png", "বার\nমডেল টেস্ট"),
                     ),
                   ),
@@ -146,7 +146,7 @@ class _DashboardState extends State<Dashboard> {
                     child: Container(
                       // width: screenwidth * .1,
                       padding: EdgeInsets.only(
-                          top: 5, left: 0, bottom: 5, right: 2.5),
+                          top: 5, left: 0, bottom: 2.5, right: 2.5),
                       child: _homeCard("examfree.png", "ফ্রি\nমডেল টেস্ট"),
                     ),
                   ),
