@@ -74,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
                       itemCount: courses.length,
                       itemBuilder: (context, index) {
                         return _scrollCard(courses[index]["name"].toString(),
-                            courses[index]["id"], screenwidth);
+                            courses[index]["id"].toString(), screenwidth);
                       },
                     ))
                 : SizedBox(
