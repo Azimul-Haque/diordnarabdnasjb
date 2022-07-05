@@ -93,10 +93,9 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.grey,
               height: 20,
             ),
-            // ignore: avoid_unnecessary_containers
             Text(
               "পরীক্ষাসমূহ",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 16),
             ),
             Container(
               padding: EdgeInsets.only(left: 10, right: 10),
