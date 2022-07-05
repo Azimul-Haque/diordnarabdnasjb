@@ -246,41 +246,6 @@ class _DashboardState extends State<Dashboard> {
                 ],
               ),
             ),
-            Divider(
-              color: Colors.grey,
-              height: 20,
-            ),
-
-            ElevatedButton(
-              style: ButtonStyle(
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                  ),
-                ),
-                elevation: MaterialStateProperty.all(1),
-              ),
-              child: Text(
-                'Test Payment Gateway',
-                style: TextStyle(color: Colors.white),
-              ),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => TestBkashPage(),
-                  ),
-                );
-              },
-            ),
-            Center(
-              child: Text(userdata.toString()),
-            ),
-            Center(
-              child: Text(userdata.toString()),
-            ),
-            Center(
-              child: Text(userdata.toString()),
-            ),
           ],
         ),
       ),
