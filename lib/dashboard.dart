@@ -204,7 +204,14 @@ class _DashboardState extends State<Dashboard> {
                           ),
                         ],
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => routename,
+                          ),
+                        );
+                      },
                     ),
                   ),
                   Expanded(
