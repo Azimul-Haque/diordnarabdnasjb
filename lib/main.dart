@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'BJS & Bar Exam',
       theme: ThemeData(
-        // primarySwatch: Colors.green,
+        primarySwatch: Colors.green,
         fontFamily: 'Kalpurush',
       ),
       debugShowCheckedModeBanner: false,
