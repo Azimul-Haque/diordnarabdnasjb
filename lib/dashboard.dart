@@ -94,7 +94,7 @@ class _DashboardState extends State<Dashboard> {
               height: 20,
             ),
             Text(
-              "পরীক্ষাসমূহ",
+              "পরীক্ষা ও অধ্যয়ন",
               style: TextStyle(fontSize: 16),
             ),
             Container(
