@@ -71,7 +71,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             courses.isNotEmpty
                 ? SizedBox(
-                    height: 120,
+                    height: 125,
                     width: double.infinity,
                     child: ListView.builder(
                       padding: EdgeInsets.only(top: 5, left: 10, right: 10),
