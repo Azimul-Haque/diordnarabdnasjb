@@ -74,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
                     padding: EdgeInsets.all(10),
                     color: Colors.green[100],
                     child: InkWell(
-                      onTap: {},
+                      onTap: () {},
                       child: SizedBox(
                         width: double.infinity,
                         child: Text(
