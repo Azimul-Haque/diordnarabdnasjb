@@ -74,11 +74,6 @@ class _DashboardState extends State<Dashboard> {
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.resolveWith<Color>(
                         (Set<MaterialState> states) {
-                          if (states.contains(MaterialState.pressed))
-                            return Theme.of(context)
-                                .colorScheme
-                                .primary
-                                .withOpacity(0.5);
                           return Colors.red; // Use the component's default.
                         },
                       ),
