@@ -66,10 +66,12 @@ class _DashboardState extends State<Dashboard> {
           mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             Container(
               color: Colors.pink,
-              decoration: new BoxDecoration(
-                borderRadius: new BorderRadius.circular(16.0),
+              decoration: BoxDecoration(
                 color: Colors.green,
               ),
             ),
@@ -80,9 +82,7 @@ class _DashboardState extends State<Dashboard> {
               "কোর্সসমূহ",
               style: TextStyle(fontSize: 16),
             ),
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
+
             courses.isNotEmpty
                 ? SizedBox(
                     height: 125,
