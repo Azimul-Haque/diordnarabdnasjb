@@ -70,7 +70,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
-                ? InkWell(
+                ? TextButton(
                     onTap: () {}, // Handle your callback
                     child: Container(
                       padding: EdgeInsets.all(10),
