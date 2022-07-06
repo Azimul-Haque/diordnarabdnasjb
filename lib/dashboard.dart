@@ -66,6 +66,13 @@ class _DashboardState extends State<Dashboard> {
           mainAxisSize: MainAxisSize.min,
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            Container(
+              color: Colors.pink,
+              decoration: new BoxDecoration(
+                borderRadius: new BorderRadius.circular(16.0),
+                color: Colors.green,
+              ),
+            ),
             SizedBox(
               height: 10,
             ),
