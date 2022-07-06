@@ -69,8 +69,10 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            SizedBox(
-              child: Text('Test'),
+            Container(
+              child: SizedBox(
+                child: Text('Test'),
+              ),
             ),
             SizedBox(
               height: 10,
