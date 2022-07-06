@@ -71,6 +71,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             Container(
               color: Colors.pink,
+              child: Text('Test'),
             ),
             SizedBox(
               height: 10,
