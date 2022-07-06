@@ -245,8 +245,8 @@ class _DashboardState extends State<Dashboard> {
                         children: <Widget>[
                           Image.asset(
                             "assets/images/other-sharing.png",
-                            height: 40,
-                            width: 40,
+                            height: 35,
+                            width: 35,
                             alignment: Alignment.center,
                           ),
                           SizedBox(
