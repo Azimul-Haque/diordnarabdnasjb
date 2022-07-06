@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 // const String baseAPIURL = "http://192.168.122.39:8000";
 const String baseAPIURL = "http://192.168.0.102:8000";
 bool testpaymentconditional = false;
-bool noticemessage = true;
+bool noticemessage = false;
 // appBarStyle() {
 //   return Ink( 192.168.186.39
 //     decoration: new BoxDecoration(
