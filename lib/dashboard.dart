@@ -70,6 +70,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             Container(
+              padding: EdgeInsets.only(left: 10, right: 10),
               color: Colors.lightGreen,
               child: SizedBox(
                 width: double.infinity,
