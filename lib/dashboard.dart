@@ -69,14 +69,17 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-              Expanded(
-                child: TextButton(
-                  child: Text('Click'),
-                  onPressed: () {},
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Expanded(
+                  child: TextButton(
+                    child: Text('Click'),
+                    onPressed: () {},
+                  ),
                 ),
-              ),
-            ]),
+              ],
+            ),
             testpaymentconditional == false
                 ? TextButton(
                     onPressed: () {}, // Handle your callback
