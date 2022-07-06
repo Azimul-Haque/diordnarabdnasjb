@@ -70,14 +70,17 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
-                ? Container(
-                    padding: EdgeInsets.all(10),
-                    color: Colors.green[100],
-                    child: SizedBox(
-                      width: double.infinity,
-                      child: Text(
-                        'দুঃখিত! কোন প্যাকেজ কেনা নেই! প্যাকেজ কিনুন।',
-                        textAlign: TextAlign.center,
+                ? InkWell(
+                    onTap: () {}, // Handle your callback
+                    child: Container(
+                      padding: EdgeInsets.all(10),
+                      color: Colors.green[100],
+                      child: SizedBox(
+                        width: double.infinity,
+                        child: Text(
+                          'দুঃখিত! কোন প্যাকেজ কেনা নেই! প্যাকেজ কিনুন।',
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ),
                   )
