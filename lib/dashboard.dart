@@ -71,7 +71,9 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
                 ? InkWell(
-                    onTap: () {}, // Handle your callback
+                    onTap: () {
+                      print('Tapped!');
+                    }, // Handle your callback
                     child: Container(
                       padding: EdgeInsets.all(10),
                       color: Colors.green[100],
