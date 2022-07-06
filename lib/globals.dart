@@ -105,7 +105,7 @@ appBarStyle() {
 
 commonAppBar(String appbarname, BuildContext context) {
   return AppBar(
-    elevation: 4,
+    elevation: 2,
     title: Text(appbarname),
     automaticallyImplyLeading: true,
     flexibleSpace: appBarStyle(),
