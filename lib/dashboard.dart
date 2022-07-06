@@ -71,11 +71,12 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
                 ? 
-                    color: Colors.green[100],
-                    child: Material(
+                    
+                   Material(
                       child: InkWell(
                           onTap: () {},
                           child: Container(
+                            color: Colors.green[100],
                             padding: EdgeInsets.all(10),
                             child: SizedBox(
                               width: double.infinity,
