@@ -75,13 +75,13 @@ class _DashboardState extends State<Dashboard> {
                     color: Colors.green[100],
                     child: InkWell(
                       onTap: () {},
-                      child: child: Ink(
+                      child: Ink(
                         width: 200,
                         height: 200,
                         color: Colors.blue,
                       ),
-                      ),
-                    ))
+                    ),
+                  )
                 : Container(),
             SizedBox(
               height: 10,
