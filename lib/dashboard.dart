@@ -72,10 +72,10 @@ class _DashboardState extends State<Dashboard> {
             testpaymentconditional == false
                 ? Material(
                     color: Colors.green[50],
+                    padding: EdgeInsets.all(10),
                     child: InkWell(
                       onTap: () {},
                       child: Container(
-                        padding: EdgeInsets.all(10),
                         // color: Colors.green[100],
                         child: SizedBox(
                           width: double.infinity,
