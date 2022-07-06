@@ -82,7 +82,6 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   )
                 : Container(),
-
             SizedBox(
               height: 10,
             ),
