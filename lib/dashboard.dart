@@ -74,7 +74,7 @@ class _DashboardState extends State<Dashboard> {
               color: Colors.green[200],
               child: SizedBox(
                 width: double.infinity,
-                child: Text('Test'),
+                child: Text('দুঃখিত! কোন প্যাকেজ কেনা নেই!'),
               ),
             ),
             SizedBox(
