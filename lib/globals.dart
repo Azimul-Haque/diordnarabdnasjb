@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 
 // const String baseAPIURL = "https://bjsexam.com";
 // const String baseAPIURL = "http://192.168.122.39:8000";
-const String baseAPIURL = "http://http://192.168.0.102:8000";
+const String baseAPIURL = "http://192.168.0.102:8000";
 bool testpaymentconditional = true;
 // appBarStyle() {
 //   return Ink( 192.168.186.39
