@@ -75,12 +75,11 @@ class _DashboardState extends State<Dashboard> {
                     color: Colors.green[100],
                     child: InkWell(
                       onTap: () {},
-                      child: SizedBox(
-                        width: double.infinity,
-                        child: Text(
-                          'দুঃখিত! কোন প্যাকেজ কেনা নেই! প্যাকেজ কিনুন।',
-                          textAlign: TextAlign.center,
-                        ),
+                      child: child: Ink(
+                        width: 200,
+                        height: 200,
+                        color: Colors.blue,
+                      ),
                       ),
                     ))
                 : Container(),
