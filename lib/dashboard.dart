@@ -71,6 +71,18 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
                 ? TextButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                        (Set<MaterialState> states) {
+                          if (states.contains(MaterialState.pressed))
+                            return Theme.of(context)
+                                .colorScheme
+                                .primary
+                                .withOpacity(0.5);
+                          return Colors.red; // Use the component's default.
+                        },
+                      ),
+                    ),
                     onPressed: () {}, // Handle your callback
                     child: Text(
                       'দুঃখিত! কোন প্যাকেজ কেনা নেই! প্যাকেজ কিনুন।',
