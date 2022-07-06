@@ -70,9 +70,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             testpaymentconditional == false
-                ? 
-                    
-                   Material(
+                ? Material(
                       child: InkWell(
                           onTap: () {},
                           child: Container(
@@ -85,8 +83,8 @@ class _DashboardState extends State<Dashboard> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                          ),),
-                    ),
+                          
+                   
                 : Container(),
             SizedBox(
               height: 10,
