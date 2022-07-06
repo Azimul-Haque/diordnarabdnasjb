@@ -72,6 +72,7 @@ class _DashboardState extends State<Dashboard> {
             Container(
               color: Colors.lightGreen,
               child: SizedBox(
+                width: double.infinity,
                 child: Text('Test'),
               ),
             ),
