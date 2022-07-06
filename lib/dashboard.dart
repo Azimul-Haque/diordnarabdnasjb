@@ -87,6 +87,24 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   )
                 : Container(),
+            noticemessage == true
+                ? Material(
+                    color: Colors.green[50],
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Text(
+                            'দুঃখিত! কোন প্যাকেজ কেনা নেই! প্যাকেজ কিনুন।',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                : Container(),
             SizedBox(
               height: 10,
             ),
