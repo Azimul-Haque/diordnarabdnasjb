@@ -58,10 +58,16 @@ class _BarModelTestsState extends State<BarModelTests> {
                     },
                   )
                 : Center(
-                    child: SizedBox(
-                      width: 50.0,
-                      height: 50.0,
-                      child: (CircularProgressIndicator()),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        _showCircle == true
+                            ? CircularProgressIndicator()
+                            : Text("কোন নতুন পরীক্ষা নেই!"),
+                      ],
                     ),
                   ),
           ],
