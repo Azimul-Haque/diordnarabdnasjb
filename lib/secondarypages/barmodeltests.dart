@@ -32,7 +32,7 @@ class _BarModelTestsState extends State<BarModelTests> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('বার মডেল টেস্টসমূহ'),
+        title: Text('বার মডেল টেস্ট'),
         flexibleSpace: appBarStyle(),
       ),
       body: SingleChildScrollView(

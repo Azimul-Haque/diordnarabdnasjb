@@ -32,7 +32,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('বার মডেল টেস্টসমূহ'),
+        title: Text('ফ্রি মডেল টেস্ট'),
         flexibleSpace: appBarStyle(),
       ),
       body: SingleChildScrollView(
