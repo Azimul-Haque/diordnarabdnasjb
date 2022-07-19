@@ -61,7 +61,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                             : Container(),
                         Future.delayed(Duration(milliseconds: 500), () {
                           _delayedNotAvailableText(),
-                        })
+                        }),
                         
                       ],
                     ),
