@@ -17,7 +17,6 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
   List exams = [];
-  bool _showCircle = true;
 
   @override
   void initState() {
@@ -30,6 +29,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   @override
   Widget build(BuildContext context) {
     double screenwidth = MediaQuery.of(context).size.width;
+    bool _showCircle = true;
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
