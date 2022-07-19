@@ -97,9 +97,10 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
-  Future.delayed(const Duration(seconds: 2), () {setState(() {
+  
+   Future.delayed(Duration(milliseconds: 500), () {
     _showCircle == false;
-  });});
+  })
   Widget _delayedNotAvailableText() {
     
     
