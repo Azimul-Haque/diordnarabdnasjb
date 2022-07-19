@@ -62,7 +62,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         SizedBox(
-                          height: 50.0,
+                          height: 20.0,
                         ),
                         _showCircle == true
                             ? CircularProgressIndicator()
