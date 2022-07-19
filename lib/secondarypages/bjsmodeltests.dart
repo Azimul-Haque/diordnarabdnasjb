@@ -9,8 +9,6 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
 class BJSModelTests extends StatefulWidget {
-  final String courseid;
-  BJSModelTests(this.courseid);
   @override
   _BJSModelTestsState createState() => _BJSModelTestsState();
 }
