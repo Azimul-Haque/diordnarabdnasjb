@@ -61,7 +61,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                       children: [
                         _showCircle == true
                             ? CircularProgressIndicator()
-                            : Container(),
+                            : Text("কোন নতুন পরীক্ষা নেই!"),
                       ],
                     ),
                   ),
