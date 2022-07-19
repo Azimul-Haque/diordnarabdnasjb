@@ -95,10 +95,8 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   void delayedNotAvailableText() {
     CircularProgressIndicator();
     Future.delayed(const Duration(milliseconds: 500), () {
-      // Here you can write your code
-
       setState(() {
-        // Here you can write your code for open new view
+        Text("কোন নতুন পরীক্ষা নেই!");
       });
     });
   }
