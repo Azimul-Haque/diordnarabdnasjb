@@ -26,7 +26,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     // print(widget.courseid);
     _getCoursesData();
     Future.delayed(Duration(milliseconds: 2000), () {
-      _showCircle = false;
+      setState(() {
+        _showCircle = false;
+      });
     });
   }
 
