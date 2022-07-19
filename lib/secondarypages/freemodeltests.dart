@@ -53,9 +53,8 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                     },
                   )
                 : Center(
-                    child: SizedBox(
-                      width: 50.0,
-                      height: 50.0,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       child: _delayedNotAvailableText(),
                     ),
                   ),
