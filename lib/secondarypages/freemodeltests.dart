@@ -56,6 +56,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
+                        _showCircle == true
+                            ? CircularProgressIndicator()
+                            : Container(),
                         _delayedNotAvailableText(),
                       ],
                     ),
@@ -94,16 +97,13 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
+  Future.delayed(const Duration(seconds: 2), () {setState(() {
+    _showCircle == false;
+  });});
   Widget _delayedNotAvailableText() {
-    if (_showCircle == true) {
-      Future.delayed(const Duration(seconds: 2), () {});
-      setState(() {
-        _showCircle == false;
-      });
-      return CircularProgressIndicator();
-    } else {
-      return Text("কোন নতুন পরীক্ষা নেই!");
-    }
+    
+    
+    return Text("কোন নতুন পরীক্ষা নেই!");
   }
 
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
