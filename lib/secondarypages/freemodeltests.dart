@@ -27,7 +27,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     _getCoursesData();
     Future.delayed(Duration(milliseconds: 2000), () {
       _showCircle = false;
-    }),
+    });
   }
 
   @override
