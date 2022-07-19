@@ -98,8 +98,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
       setState(() {
         Text("কোন নতুন পরীক্ষা নেই!");
       });
-    });
-    );
+    }););
   }
 
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
