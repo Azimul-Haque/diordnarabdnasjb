@@ -18,7 +18,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   void initState() {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
-    // print(userdata);
+    _getCourses();
   }
 
   @override
