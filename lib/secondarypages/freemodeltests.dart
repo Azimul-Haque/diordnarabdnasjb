@@ -59,10 +59,6 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                         _showCircle == true
                             ? CircularProgressIndicator()
                             : Container(),
-                        Future.delayed(Duration(milliseconds: 500), () {
-                          _delayedNotAvailableText(),
-                        }),
-                        
                       ],
                     ),
                   ),
