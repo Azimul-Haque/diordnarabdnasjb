@@ -56,9 +56,6 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        _showCircle == true
-                            ? CircularProgressIndicator()
-                            : Container(),
                         _delayedNotAvailableText(),
                       ],
                     ),
