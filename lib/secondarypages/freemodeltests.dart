@@ -97,8 +97,8 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
-  Widget _delayedNotAvailableText() async {
-      await Future.delayed(const Duration(seconds: 2), (){});
+  Widget _delayedNotAvailableText()  {
+       Future.delayed(const Duration(seconds: 2), (){});
       setState(() {
         _showCircle == false;
         print("it works");
