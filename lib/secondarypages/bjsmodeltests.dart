@@ -17,6 +17,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
   List exams = [];
+  bool _showCircle = true;
 
   @override
   void initState() {
@@ -24,6 +25,11 @@ class _BJSModelTestsState extends State<BJSModelTests> {
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
     _getCoursesData();
+    Future.delayed(Duration(milliseconds: 2500), () {
+      setState(() {
+        _showCircle = false;
+      });
+    });
   }
 
   @override
@@ -52,10 +58,16 @@ class _BJSModelTestsState extends State<BJSModelTests> {
                     },
                   )
                 : Center(
-                    child: SizedBox(
-                      width: 50.0,
-                      height: 50.0,
-                      child: (CircularProgressIndicator()),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        _showCircle == true
+                            ? CircularProgressIndicator()
+                            : Text("কোন নতুন পরীক্ষা নেই!"),
+                      ],
                     ),
                   ),
           ],
