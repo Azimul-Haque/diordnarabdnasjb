@@ -13,6 +13,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
 
   late User userdata;
+  List courses = [];
 
   @override
   void initState() {
