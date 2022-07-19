@@ -32,7 +32,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
     return Scaffold(
       key: _scaffoldkey,
       appBar: AppBar(
-        title: Text('কোর্স'),
+        title: Text('বিজেএস মডেল টেস্টসমূহ'),
         flexibleSpace: appBarStyle(),
       ),
       body: SingleChildScrollView(
