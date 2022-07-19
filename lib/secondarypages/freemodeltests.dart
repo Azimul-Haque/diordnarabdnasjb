@@ -92,6 +92,10 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
+  void delayedNotAvailableText() {
+    CircularProgressIndicator();
+  }
+
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
     return SizedBox(
       height: 110,
