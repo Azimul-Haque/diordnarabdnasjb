@@ -55,7 +55,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                 : Center(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
-                      child: _delayedNotAvailableText(),
+                      children: [
+                        _delayedNotAvailableText(),
+                      ],
                     ),
                   ),
           ],
