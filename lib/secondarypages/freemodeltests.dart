@@ -55,7 +55,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                     child: SizedBox(
                       width: 50.0,
                       height: 50.0,
-                      child: (CircularProgressIndicator()),
+                      child: delayedNotAvailableText(),
                     ),
                   ),
           ],
