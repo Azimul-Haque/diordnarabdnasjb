@@ -17,6 +17,7 @@ class _BarModelTestsState extends State<BarModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
   List exams = [];
+  bool _showCircle = true;
 
   @override
   void initState() {
