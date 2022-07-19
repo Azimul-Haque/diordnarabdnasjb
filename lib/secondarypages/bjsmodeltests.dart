@@ -67,11 +67,8 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   void _getCoursesData() async {
     try {
       String _softToken = "Rifat.Admin.2022";
-      String serviceURL = baseAPIURL +
-          "/api/getcourses/exams/" +
-          _softToken +
-          "/" +
-          widget.courseid.toString();
+      String serviceURL =
+          baseAPIURL + "/api/getcourses/exams/" + _softToken + "/2";
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
