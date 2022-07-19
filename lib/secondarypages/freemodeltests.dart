@@ -97,10 +97,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   }
 
   Widget _delayedNotAvailableText() {
-    CircularProgressIndicator();
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
-        Text("কোন নতুন পরীক্ষা নেই!");
+        return Text("কোন নতুন পরীক্ষা নেই!");
       });
     });
   }
