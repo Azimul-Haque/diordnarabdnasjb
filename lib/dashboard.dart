@@ -314,7 +314,8 @@ class _DashboardState extends State<Dashboard> {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
           "/api/getcourses/" +
-          _softToken; // https://jsonplaceholder.typicode.com/posts
+          _softToken +
+          "/1"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
