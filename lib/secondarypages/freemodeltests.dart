@@ -61,6 +61,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
+                        SizedBox(
+                          height: 50.0,
+                        ),
                         _showCircle == true
                             ? CircularProgressIndicator()
                             : Text("কোন নতুন পরীক্ষা নেই!"),
