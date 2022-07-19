@@ -59,7 +59,10 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                         _showCircle == true
                             ? CircularProgressIndicator()
                             : Container(),
-                        _delayedNotAvailableText(),
+                        Future.delayed(Duration(milliseconds: 500), () {
+                          _delayedNotAvailableText(),
+                        })
+                        
                       ],
                     ),
                   ),
@@ -97,13 +100,10 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
-  
-  void Future.delayed(Duration(milliseconds: 500), () {
-    _showCircle == false;
-  })
+  // void Future.delayed(Duration(milliseconds: 500), () {
+  //   _showCircle == false;
+  // })
   Widget _delayedNotAvailableText() {
-    
-    
     return Text("কোন নতুন পরীক্ষা নেই!");
   }
 
