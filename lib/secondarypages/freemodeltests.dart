@@ -58,7 +58,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                       children: [
                         _showCircle == true
                             ? CircularProgressIndicator()
-                            : _delayedNotAvailableText(),
+                            : Container(),
                       ],
                     ),
                   ),
