@@ -94,6 +94,13 @@ class _FreeModelTestsState extends State<FreeModelTests> {
 
   void delayedNotAvailableText() {
     CircularProgressIndicator();
+    Future.delayed(const Duration(milliseconds: 500), () {
+      // Here you can write your code
+
+      setState(() {
+        // Here you can write your code for open new view
+      });
+    });
   }
 
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
