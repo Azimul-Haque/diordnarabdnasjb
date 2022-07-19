@@ -17,7 +17,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
   List exams = [];
-  bool _showCircle = true;
+  final _showCircle = true;
 
   @override
   void initState() {
