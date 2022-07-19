@@ -101,9 +101,9 @@ class _FreeModelTestsState extends State<FreeModelTests> {
         _showCircle == false;
       });
       return CircularProgressIndicator();
+    } else {
+      return Text("কোন নতুন পরীক্ষা নেই!");
     }
-
-    return Text("কোন নতুন পরীক্ষা নেই!");
   }
 
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
