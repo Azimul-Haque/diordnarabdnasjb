@@ -27,7 +27,7 @@ class _SingleCourseState extends State<SingleCourse> {
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
     _getCoursesData();
-    Future.delayed(Duration(milliseconds: 2000), () {
+    Future.delayed(Duration(milliseconds: 2500), () {
       setState(() {
         _showCircle = false;
       });
