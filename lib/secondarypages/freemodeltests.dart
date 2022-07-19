@@ -97,12 +97,11 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     }
   }
 
-  Widget _delayedNotAvailableText()  {
-       Future.delayed(const Duration(seconds: 2), (){});
-      setState(() {
-        _showCircle == false;
-        print("it works");
-      });
+  Widget _delayedNotAvailableText() {
+    Future.delayed(const Duration(seconds: 2), () {});
+    setState(() {
+      _showCircle == false;
+      print("it works");
     });
     return Text("কোন নতুন পরীক্ষা নেই!");
   }
