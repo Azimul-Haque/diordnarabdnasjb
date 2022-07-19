@@ -19,6 +19,7 @@ class _SingleCourseState extends State<SingleCourse> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
   List exams = [];
+  bool _showCircle = true;
 
   @override
   void initState() {
@@ -26,6 +27,11 @@ class _SingleCourseState extends State<SingleCourse> {
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
     _getCoursesData();
+    Future.delayed(Duration(milliseconds: 2000), () {
+      setState(() {
+        _showCircle = false;
+      });
+    });
   }
 
   @override
@@ -54,10 +60,16 @@ class _SingleCourseState extends State<SingleCourse> {
                     },
                   )
                 : Center(
-                    child: SizedBox(
-                      width: 50.0,
-                      height: 50.0,
-                      child: (CircularProgressIndicator()),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        _showCircle == true
+                            ? CircularProgressIndicator()
+                            : Text("কোন নতুন পরীক্ষা নেই!"),
+                      ],
                     ),
                   ),
           ],
