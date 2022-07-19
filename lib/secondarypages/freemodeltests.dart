@@ -59,6 +59,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                         _showCircle == true
                             ? CircularProgressIndicator()
                             : Container(),
+                        _delayedNotAvailableText()
                       ],
                     ),
                   ),
@@ -99,8 +100,8 @@ class _FreeModelTestsState extends State<FreeModelTests> {
   Widget _delayedNotAvailableText() {
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {});
-      return Text("কোন নতুন পরীক্ষা নেই!");
     });
+    return Text("কোন নতুন পরীক্ষা নেই!");
   }
 
   Widget _scrollCard(String title, String courseexameid, double screenwidth) {
