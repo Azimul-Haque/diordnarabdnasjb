@@ -172,7 +172,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
         print(response.body);
       }
     } catch (_) {
-      // print(_);
+      print(_);
     }
   }
 }
