@@ -61,6 +61,7 @@ class _TopicWiseState extends State<TopicWise> {
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
                         trailing: Icon(Icons.more_vert),
+                        onTap: () {},
                       );
                     },
                   )
