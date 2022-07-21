@@ -440,7 +440,7 @@ class _DashboardState extends State<Dashboard> {
         if (response.statusCode == 200) {
           var body = json.decode(response.body);
           if (body["success"] == true) {
-            print("HIT KORTESE...");
+            // print("HIT KORTESE...");
             var data = body["courses"];
             setState(() {
               for (var i in data) {
