@@ -31,7 +31,6 @@ class _DashboardState extends State<Dashboard> {
   @override
   void initState() {
     super.initState();
-    setState(() {});
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
   }
