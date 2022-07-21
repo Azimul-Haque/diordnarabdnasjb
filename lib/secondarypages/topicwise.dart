@@ -59,10 +59,9 @@ class _TopicWiseState extends State<TopicWise> {
                           //     topics[index]["id"].toString(), screenwidth);
                           Card(
                               child: ListTile(
-                        contentPadding: EdgeInsets.all(0),
-                        leading: Container(
-                            child: Image.asset('assets/images/law.png',
-                                fit: BoxFit.cover)),
+                        contentPadding: EdgeInsets.only,
+                        leading: Image.asset('assets/images/law.png',
+                            fit: BoxFit.cover),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
                         trailing: Icon(CupertinoIcons.arrow_right),
