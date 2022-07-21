@@ -59,7 +59,12 @@ class _TopicWiseState extends State<TopicWise> {
                           Card(
                               child: ListTile(
                         contentPadding: EdgeInsets.all(0),
-                        leading: FlutterLogo(size: 56.0),
+                        leading: Container(
+                            child: Image.network(
+                                (orientation == Orientation.portrait
+                                    ? image.portrait
+                                    : image.landscape),
+                                fit: BoxFit.cover)),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
                         trailing: Icon(Icons.more_vert),
