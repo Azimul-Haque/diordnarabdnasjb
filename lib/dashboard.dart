@@ -451,11 +451,11 @@ class _DashboardState extends State<Dashboard> {
           } else {}
         } else {
           // print(response.statusCode);
-          showSimpleSnackBar(context, 'সার্ভার এরর!');
+          showSimpleSnackBar(context, 'ইন্টারনেট কানেকশন নেই/ সার্ভার এরর!');
         }
       } catch (_) {
         // print(_);
-        showSimpleSnackBar(context, 'ইন্টারনেট কানেকশন নেই বা সার্ভার এরর!');
+        showSimpleSnackBar(context, 'ইন্টারনেট কানেকশন নেই/ সার্ভার এরর!');
       }
     }
   }
