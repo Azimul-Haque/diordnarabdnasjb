@@ -22,6 +22,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedItem = 0;
+  List courses = [];
   final _pages = [
     Dashboard(courses),
     PackagePage(),
@@ -31,7 +32,6 @@ class _HomeState extends State<Home> {
   final _pageController = PageController();
   late User userdata;
   int? get currentIndex => null;
-  List courses = [];
 
   @override
   void initState() {
