@@ -60,7 +60,7 @@ class _TopicWiseState extends State<TopicWise> {
                               child: ListTile(
                         contentPadding: EdgeInsets.all(0),
                         leading: Container(
-                            child: Image.asset(name),
+                            child: Image.asset('law.png'),
                                 fit: BoxFit.cover)),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
