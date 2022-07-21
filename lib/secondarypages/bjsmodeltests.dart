@@ -82,7 +82,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
       String serviceURL = baseAPIURL +
           "/api/getothercourses/exams/" +
           _softToken +
-          "/2"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+          "/2"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);

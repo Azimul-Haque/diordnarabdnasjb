@@ -82,7 +82,7 @@ class _BarModelTestsState extends State<BarModelTests> {
       String serviceURL = baseAPIURL +
           "/api/getothercourses/exams/" +
           _softToken +
-          "/3"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+          "/3"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
       var response = await http.get(Uri.parse(serviceURL));
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
