@@ -152,7 +152,7 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       'name': name,
       'softtoken': 'Rifat.Admin.2022',
     };
-    print(data);
+    // print(data);
     try {
       http.Response response = await http.post(
         Uri.parse(baseAPIURL + '/api/updateuser'),
@@ -166,13 +166,13 @@ class _ProfileEditPageState extends State<ProfileEditPage> {
       if (response.statusCode == 200) {
         var body = json.decode(response.body);
         if (body["success"] == true) {
-          print(body);
+          // print(body);
         }
       } else {
-        print(response.body);
+        // print(response.body);
       }
     } catch (_) {
-      print(_);
+      // print(_);
     }
   }
 }
