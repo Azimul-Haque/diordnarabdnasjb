@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
   final _pageController = PageController();
   late User userdata;
   int? get currentIndex => null;
+  List courses = [];
 
   @override
   void initState() {
