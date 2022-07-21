@@ -450,7 +450,7 @@ class _DashboardState extends State<Dashboard> {
             // print(courses);
           } else {}
         } else {
-          print(response.body);
+          print(response);
         }
       } catch (_) {
         // print(_);
