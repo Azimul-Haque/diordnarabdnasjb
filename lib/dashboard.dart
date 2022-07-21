@@ -454,7 +454,7 @@ class _DashboardState extends State<Dashboard> {
         }
       } catch (_) {
         // print(_);
-        showSimpleSnackBar('ইন্টারনেট কানেকশন নেই বা সার্ভার এরর!');
+        showSimpleSnackBar(context, 'ইন্টারনেট কানেকশন নেই বা সার্ভার এরর!');
       }
     }
   }
