@@ -58,6 +58,7 @@ class _TopicWiseState extends State<TopicWise> {
                           //     topics[index]["id"].toString(), screenwidth);
                           Card(
                               child: ListTile(
+                        contentPadding: EdgeInsets.all(0),
                         leading: FlutterLogo(size: 56.0),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
