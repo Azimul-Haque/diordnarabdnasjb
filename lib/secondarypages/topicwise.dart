@@ -65,9 +65,6 @@ class _TopicWiseState extends State<TopicWise> {
                         onTap: () {},
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5),
-                          side: const BorderSide(
-                            color: Colors.black,
-                          ),
                         ),
                       );
                     },
