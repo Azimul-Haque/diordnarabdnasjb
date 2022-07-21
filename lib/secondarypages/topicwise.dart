@@ -58,8 +58,8 @@ class _TopicWiseState extends State<TopicWise> {
                           //     topics[index]["id"].toString(), screenwidth);
                           ListTile(
                         leading: FlutterLogo(size: 56.0),
-                        title: Text('Two-line ListTile'),
-                        subtitle: Text('Here is a second line'),
+                        title: Text(topics[index]["name"]),
+                        subtitle: Text(topics[index]["name"]),
                         trailing: Icon(Icons.more_vert),
                       );
                     },
