@@ -53,8 +53,15 @@ class _TopicWiseState extends State<TopicWise> {
                     scrollDirection: Axis.vertical,
                     itemCount: topics.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(topics[index]["name"].toString(),
-                          topics[index]["id"].toString(), screenwidth);
+                      return
+                          // _scrollCard(topics[index]["name"].toString(),
+                          //     topics[index]["id"].toString(), screenwidth);
+                          ListTile(
+                        leading: FlutterLogo(size: 56.0),
+                        title: Text('Two-line ListTile'),
+                        subtitle: Text('Here is a second line'),
+                        trailing: Icon(Icons.more_vert),
+                      );
                     },
                   )
                 : Center(
