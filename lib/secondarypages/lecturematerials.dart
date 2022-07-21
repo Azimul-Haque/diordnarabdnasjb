@@ -33,7 +33,7 @@ class _LectureMaterialsState extends State<LectureMaterials> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 10, bottom: 10, left: 15, right: 15),
-            child: Text("লেকচার ম্যাটেরিয়াল"),
+            child: Text("শীঘ্রই আসছে..."),
           ),
         ],
       ),
