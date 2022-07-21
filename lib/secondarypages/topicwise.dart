@@ -5,6 +5,7 @@ import 'package:bjsandbarexam/bkash/testbkash.dart';
 import 'package:bjsandbarexam/courses/courseexam.dart';
 import 'package:bjsandbarexam/globals.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
@@ -63,7 +64,7 @@ class _TopicWiseState extends State<TopicWise> {
                             child: Image.asset('law.png', fit: BoxFit.cover)),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
-                        trailing: Icon(Icons.more_vert),
+                        trailing: Icon(CupertinoIcons.arrow_right),
                         onTap: () {},
                       ));
                     },
