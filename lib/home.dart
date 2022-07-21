@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   int _selectedItem = 0;
   List courses = [];
   final _pages = [
-    Dashboard(asdasdsa),
+    Dashboard(coursess),
     PackagePage(),
     ResultPage(),
     SettingsPage()
