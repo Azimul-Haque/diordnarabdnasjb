@@ -18,33 +18,6 @@ bool testpaymentconditional = true;
 bool noticemessage = false;
 List courses = [];
 
-void _getCourses() async {
-  try {
-    String _softToken = "Rifat.Admin.2022";
-    String serviceURL = baseAPIURL +
-        "/api/getcourses/" +
-        _softToken +
-        "/1"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
-    var response = await http.get(Uri.parse(serviceURL));
-    if (response.statusCode == 200) {
-      var body = json.decode(response.body);
-      if (body["success"] == true) {
-        // print("E PORJONTO");
-        var data = body["courses"];
-        setState(() {
-          for (var i in data) {
-            courses.add(i);
-          }
-        });
-        // print(courses);
-      } else {}
-    } else {
-      // print(response.body);
-    }
-  } catch (_) {
-    // print(_);
-  }
-}
 // appBarStyle() {
 //   return Ink( 192.168.186.39
 //     decoration: new BoxDecoration(
