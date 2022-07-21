@@ -59,7 +59,7 @@ class _TopicWiseState extends State<TopicWise> {
                           //     topics[index]["id"].toString(), screenwidth);
                           Card(
                               child: ListTile(
-                        contentPadding: EdgeInsets.only(right: 10),
+                        // contentPadding: EdgeInsets.only(right: 10),
                         leading: Image.asset('assets/images/law.png',
                             fit: BoxFit.cover),
                         title: Text(topics[index]["name"]),
