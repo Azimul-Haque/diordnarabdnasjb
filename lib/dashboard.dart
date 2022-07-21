@@ -18,7 +18,7 @@ import 'package:http/http.dart' as http;
 // import 'package:bjsandbarexam/bkash/testbkash.dart';
 
 class Dashboard extends StatefulWidget {
-  Dashboard();
+  Dashboard({Key? key}) : super(key: key);
   @override
   _DashboardState createState() => _DashboardState();
 }
