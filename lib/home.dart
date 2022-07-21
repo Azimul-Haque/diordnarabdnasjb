@@ -23,7 +23,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _selectedItem = 0;
   final _pages = [
-    const Dashboard(courses),
+    Dashboard(courses),
     PackagePage(),
     ResultPage(),
     SettingsPage()
