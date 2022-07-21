@@ -110,7 +110,7 @@ class _DashboardState extends State<Dashboard> {
               style: TextStyle(fontSize: 16),
             ),
 
-            courses.isNotEmpty
+            widget.courses.isNotEmpty
                 ? SizedBox(
                     height: 125,
                     width: double.infinity,
@@ -119,10 +119,12 @@ class _DashboardState extends State<Dashboard> {
                       // physics: ClampingScrollPhysics(),
                       // shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
-                      itemCount: courses.length,
+                      itemCount: widget.courses.length,
                       itemBuilder: (context, index) {
-                        return _scrollCard(courses[index]["name"].toString(),
-                            courses[index]["id"].toString(), screenwidth);
+                        return _scrollCard(
+                            widget.courses[index]["name"].toString(),
+                            widget.courses[index]["id"].toString(),
+                            screenwidth);
                       },
                     ))
                 : SizedBox(
