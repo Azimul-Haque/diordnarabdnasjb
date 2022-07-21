@@ -19,7 +19,7 @@ import 'package:http/http.dart' as http;
 
 class Dashboard extends StatefulWidget {
   final String courses;
-  Dashboard(this.courses);
+  const Dashboard(this.courses);
 
   @override
   _DashboardState createState() => _DashboardState();
