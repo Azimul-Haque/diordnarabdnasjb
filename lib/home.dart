@@ -22,7 +22,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedItem = 0;
-  List courses = [];
+  static List courses = [];
   final _pages = [
     Dashboard(courses),
     PackagePage(),
