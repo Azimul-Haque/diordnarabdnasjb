@@ -56,14 +56,14 @@ class _TopicWiseState extends State<TopicWise> {
                       return
                           // _scrollCard(topics[index]["name"].toString(),
                           //     topics[index]["id"].toString(), screenwidth);
-                          ListTile(
-                        tileColor: Colors.white,
+                          Card(
+                              child: ListTile(
                         leading: FlutterLogo(size: 56.0),
                         title: Text(topics[index]["name"]),
                         subtitle: Text(topics[index]["name"]),
                         trailing: Icon(Icons.more_vert),
                         onTap: () {},
-                      );
+                      ));
                     },
                   )
                 : Center(
