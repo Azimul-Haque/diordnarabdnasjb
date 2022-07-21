@@ -97,11 +97,10 @@ class _BJSModelTestsState extends State<BJSModelTests> {
           // print(exams.length);
         } else {}
       } else {
-        print(response);
+        // print(response);
       }
     } catch (_) {
       // print(_);
-      // print("_ KHAISE");
     }
   }
 
