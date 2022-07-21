@@ -63,9 +63,6 @@ class _TopicWiseState extends State<TopicWise> {
                         subtitle: Text(topics[index]["name"]),
                         trailing: Icon(Icons.more_vert),
                         onTap: () {},
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
                       );
                     },
                   )
