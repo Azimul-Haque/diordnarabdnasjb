@@ -100,7 +100,8 @@ class _BJSModelTestsState extends State<BJSModelTests> {
         print(response);
       }
     } catch (_) {
-      // print(_);
+      print(_);
+      print("_ KHAISE");
     }
   }
 
