@@ -33,6 +33,7 @@ class _DashboardState extends State<Dashboard> {
     super.initState();
     uid = FirebaseAuth.instance.currentUser!.uid;
     userdata = FirebaseAuth.instance.currentUser!;
+    _getCourses();
   }
 
   @override
@@ -426,5 +427,33 @@ class _DashboardState extends State<Dashboard> {
       ),
       elevation: 2,
     );
+  }
+
+  void _getCourses() async {
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = baseAPIURL +
+          "/api/getcourses/" +
+          _softToken +
+          "/1"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print("E PORJONTO");
+          var data = body["courses"];
+          setState(() {
+            for (var i in data) {
+              courses.add(i);
+            }
+          });
+          // print(courses);
+        } else {}
+      } else {
+        // print(response.body);
+      }
+    } catch (_) {
+      // print(_);
+    }
   }
 }
