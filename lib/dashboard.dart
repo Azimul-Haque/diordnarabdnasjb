@@ -429,6 +429,7 @@ class _DashboardState extends State<Dashboard> {
   }
 
   void _getCourses() async {
+    if (courses.length == 0) {}
     try {
       String _softToken = "Rifat.Admin.2022";
       String serviceURL = baseAPIURL +
