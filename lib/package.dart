@@ -199,7 +199,9 @@ class _PackagePageState extends State<PackagePage> {
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
         elevation: package['suggested'] == 1 ? 5 : 2,
-        color: package['suggested'] == 1 ? Colors.blueAccent : Colors.white,
+        color: package['suggested'] == 1
+            ? Colors.lightBlueAccent[100]
+            : Colors.white,
       ),
     );
   }
