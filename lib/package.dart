@@ -142,7 +142,6 @@ class _PackagePageState extends State<PackagePage> {
                   padding:
                       const EdgeInsets.only(left: 15, bottom: 10, right: 15),
                   child: Row(
-                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         '৳' + banglaNumber(package['price'].toString()),
@@ -208,14 +207,16 @@ class _PackagePageState extends State<PackagePage> {
             ),
           ],
         ),
-        margin: package['suggested'] == 1
+        margin: int.parse(package['suggested']) == 1
             ? EdgeInsets.only(top: 5, bottom: 5, left: 2, right: 2)
             : EdgeInsets.all(7),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
-        elevation: package['suggested'] == 1 ? 3 : 1,
-        color: package['suggested'] == 1 ? Colors.lightBlue[50] : Colors.white,
+        elevation: int.parse(package['suggested']) == 1 ? 3 : 1,
+        color: int.parse(package['suggested']) == 1
+            ? Colors.lightBlue[50]
+            : Colors.white,
       ),
     );
   }
