@@ -227,7 +227,9 @@ bangla(var str) {
   List en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
 
-  en.forEach((element) {});
+  en.forEach((element) {
+    original.replaceAll(find, replaceWith);
+  });
   // str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
   return str;
 }
