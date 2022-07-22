@@ -231,11 +231,7 @@ bangla(var str) {
 
   String txt = "HOT was the best until GM took over"; //input text
 
-  void main() {
-    final result =
-        map.entries.fold(txt, (prev, e) => prev.replaceAll(e.key, e.value));
-    print(result);
-  }
+  str = map.entries.fold(str, (prev, e) => prev.replaceAll(e.key, e.value));
 
   var en = [
     'January',
