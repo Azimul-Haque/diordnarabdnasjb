@@ -16,7 +16,6 @@ class FreeModelTests extends StatefulWidget {
 class _FreeModelTestsState extends State<FreeModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List freemodeltests = [];
   bool _showCircle = true;
 
   @override
