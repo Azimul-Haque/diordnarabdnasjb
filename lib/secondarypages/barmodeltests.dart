@@ -16,7 +16,7 @@ class BarModelTests extends StatefulWidget {
 class _BarModelTestsState extends State<BarModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List exams = [];
+  List barmodeltests = [];
   bool _showCircle = true;
 
   @override
@@ -45,16 +45,18 @@ class _BarModelTestsState extends State<BarModelTests> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            exams.isNotEmpty
+            barmodeltests.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                     physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: exams.length,
+                    itemCount: barmodeltests.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(exams[index]["name"].toString(),
-                          exams[index]["exam_id"].toString(), screenwidth);
+                      return _scrollCard(
+                          barmodeltests[index]["name"].toString(),
+                          barmodeltests[index]["exam_id"].toString(),
+                          screenwidth);
                     },
                   )
                 : Center(
@@ -91,10 +93,10 @@ class _BarModelTestsState extends State<BarModelTests> {
           var data = body["exams"];
           setState(() {
             for (var i in data) {
-              exams.add(i);
+              barmodeltests.add(i);
             }
           });
-          // print(exams.length);
+          // print(barmodeltests.length);
         } else {}
       } else {
         // print(response.body);
