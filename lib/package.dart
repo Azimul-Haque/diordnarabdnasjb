@@ -199,7 +199,7 @@ class _PackagePageState extends State<PackagePage> {
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
         elevation: 2,
-        color: Colors.red,
+        color: Colors.white,
       ),
     );
   }
