@@ -230,6 +230,9 @@ bangla(var str) {
   en.forEach((element) {
     str.replaceAll(en[index], replaceWith);
   });
+  for (var en in en) {
+    _images.add(await getImageFileFromAssets(imageAsset));
+  }
   // str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
   return str;
 }
