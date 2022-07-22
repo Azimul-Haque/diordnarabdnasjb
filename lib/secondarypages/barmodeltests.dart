@@ -78,7 +78,7 @@ class _BarModelTestsState extends State<BarModelTests> {
   }
 
   void _getCoursesData() async {
-    if (bjsmodeltests.isEmpty) {
+    if (barmodeltests.isEmpty) {
       try {
         String _softToken = "Rifat.Admin.2022";
         String serviceURL = baseAPIURL +
