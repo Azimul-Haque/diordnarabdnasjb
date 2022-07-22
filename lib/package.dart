@@ -100,7 +100,7 @@ class _PackagePageState extends State<PackagePage> {
 
   Widget _scrollCard(String title, String packageId, double screenwidth) {
     return SizedBox(
-      height: 110,
+      // height: 110,
       width: screenwidth,
       child: Card(
         child: Stack(
