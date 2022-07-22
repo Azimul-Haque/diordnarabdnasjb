@@ -229,9 +229,7 @@ bangla(var str) {
   // var str = str_replace(en, bn, str);
   Map map = Map.fromIterables(en, bn);
 
-  String txt = "HOT was the best until GM took over"; //input text
-
-  str = map.entries.fold(str, (prev, e) => prev.replaceAll(e.key, e.value));
+  str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
 
   var en = [
     'January',
