@@ -111,7 +111,9 @@ class _PackagePageState extends State<PackagePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 15, top: 15, bottom: 10),
                   child: Text(
-                    package['name'].toString(),
+                    package['name'].toString() +
+                        " | " +
+                        package['name'].toString(),
                     style: TextStyle(
                       color: Colors.black87,
                       fontSize: 18,
