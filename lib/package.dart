@@ -145,17 +145,17 @@ class _PackagePageState extends State<PackagePage> {
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                    testpaymentconditional == true
-                        ? Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => CourseExam(courseexameid),
-                            ),
-                          )
-                        : Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => TestBkashPage(),
-                            ),
-                          );
+                    // testpaymentconditional == true
+                    //     ? Navigator.of(context).push(
+                    //         MaterialPageRoute(
+                    //           builder: (context) => CourseExam(courseexameid),
+                    //         ),
+                    //       )
+                    //     : Navigator.of(context).push(
+                    //         MaterialPageRoute(
+                    //           builder: (context) => TestBkashPage(),
+                    //         ),
+                    //       );
                   },
                   borderRadius: BorderRadius.circular(10),
                 ),
