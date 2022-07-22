@@ -78,32 +78,30 @@ class _BJSModelTestsState extends State<BJSModelTests> {
   }
 
   void _getCoursesData() async {
-    if (bjsmodeltests.isEmpty) {
-      try {
-        String _softToken = "Rifat.Admin.2022";
-        String serviceURL = baseAPIURL +
-            "/api/getothercourses/exams/" +
-            _softToken +
-            "/2"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
-        var response = await http.get(Uri.parse(serviceURL));
-        if (response.statusCode == 200) {
-          var body = json.decode(response.body);
-          if (body["success"] == true) {
-            // print("E PORJONTO");
-            var data = body["exams"];
-            setState(() {
-              for (var i in data) {
-                bjsmodeltests.add(i);
-              }
-            });
-            // print(bjsmodeltests.length);
-          } else {}
-        } else {
-          // print(response);
-        }
-      } catch (_) {
-        // print(_);
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = baseAPIURL +
+          "/api/getothercourses/exams/" +
+          _softToken +
+          "/2"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print("E PORJONTO");
+          var data = body["exams"];
+          setState(() {
+            for (var i in data) {
+              bjsmodeltests.add(i);
+            }
+          });
+          // print(bjsmodeltests.length);
+        } else {}
+      } else {
+        // print(response);
       }
+    } catch (_) {
+      // print(_);
     }
   }
 
