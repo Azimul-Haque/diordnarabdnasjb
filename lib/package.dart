@@ -73,29 +73,27 @@ class _PackagePageState extends State<PackagePage> {
   }
 
   void _getPackagesData() async {
-    if (packages.isEmpty) {
-      try {
-        String _softToken = "Rifat.Admin.2022";
-        String serviceURL = baseAPIURL + "/api/getpackages/" + _softToken;
-        var response = await http.get(Uri.parse(serviceURL));
-        if (response.statusCode == 200) {
-          var body = json.decode(response.body);
-          if (body["success"] == true) {
-            // print("E PORJONTO");
-            var data = body["packages"];
-            setState(() {
-              for (var i in data) {
-                packages.add(i);
-              }
-            });
-            // print(packages.length);
-          } else {}
-        } else {
-          // print(response.body);
-        }
-      } catch (_) {
-        // print(_);
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = baseAPIURL + "/api/getpackages/" + _softToken;
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print("E PORJONTO");
+          var data = body["packages"];
+          setState(() {
+            for (var i in data) {
+              packages.add(i);
+            }
+          });
+          // print(packages.length);
+        } else {}
+      } else {
+        // print(response.body);
       }
+    } catch (_) {
+      // print(_);
     }
   }
 
