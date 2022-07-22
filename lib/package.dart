@@ -153,6 +153,10 @@ class _PackagePageState extends State<PackagePage> {
                         ),
                         // textAlign: TextAlign.center,
                       ),
+                      SizedBox(
+                        height: 9,
+                        width: double.infinity,
+                      ),
                       Text(
                         '৳' + banglaNumber(package['price'].toString()),
                         style: TextStyle(
