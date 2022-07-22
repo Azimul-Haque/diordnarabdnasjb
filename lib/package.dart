@@ -140,15 +140,19 @@ class _PackagePageState extends State<PackagePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 15, bottom: 10),
-                  child: Text(
-                    package['tagline'].toString(),
-                    style: TextStyle(
-                      color: Colors.black45,
-                      fontSize: 13,
-                      fontFamily: 'Kalpurush',
-                      height: 1,
-                    ),
-                    // textAlign: TextAlign.center,
+                  child: Row(
+                    children: [
+                      Text(
+                        package['price'].toString(),
+                        style: TextStyle(
+                          color: Colors.black45,
+                          fontSize: 13,
+                          fontFamily: 'Kalpurush',
+                          height: 1,
+                        ),
+                        // textAlign: TextAlign.center,
+                      ),
+                    ],
                   ),
                 ),
               ],
