@@ -19,6 +19,7 @@ bool noticemessage = false;
 List packages = [];
 List courses = [];
 List bjsmodeltests = [];
+List barmodeltests = [];
 
 // appBarStyle() {
 //   return Ink( 192.168.186.39

@@ -16,7 +16,6 @@ class BarModelTests extends StatefulWidget {
 class _BarModelTestsState extends State<BarModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List barmodeltests = [];
   bool _showCircle = true;
 
   @override
