@@ -236,19 +236,8 @@ Map banglaNumberMap = {
   '৯': '9'
 };
 
-String convertPersianNumberToEnglish(String number) {
+String banglaNumber(String number) {
   String converted = number;
   banglaNumberMap.forEach((key, value) => converted.replaceAll(key, value));
   return converted;
-}
-
-bangla(String str) {
-  List<int> en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  List<String> bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
-  for (var i = 0; i <= en.length; i++) {
-    if (str == en[i].toString()) {
-      str = bn[i].toString();
-    }
-  }
-  return str;
 }
