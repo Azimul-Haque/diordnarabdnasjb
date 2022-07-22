@@ -38,7 +38,7 @@ class _PackagePageState extends State<PackagePage> {
       key: _scaffoldkey,
       body: SingleChildScrollView(
         child: Column(
-          // mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.min,
           children: [
             packages.isNotEmpty
                 ? ListView.builder(
