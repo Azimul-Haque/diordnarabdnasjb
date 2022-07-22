@@ -143,7 +143,7 @@ class _PackagePageState extends State<PackagePage> {
                   child: Row(
                     children: [
                       Text(
-                        bangla(package['price'].toString()),
+                        bangla(package['price']),
                         style: TextStyle(
                           color: Colors.black45,
                           fontSize: 13,
