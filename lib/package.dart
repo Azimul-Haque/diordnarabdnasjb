@@ -171,7 +171,7 @@ class _PackagePageState extends State<PackagePage> {
                       ),
                       Spacer(),
                       Text(
-                        'কিনুন',
+                        'প্যাকেজটি কিনুন',
                         style: TextStyle(
                           color: Colors.black45,
                           fontSize: 15,
