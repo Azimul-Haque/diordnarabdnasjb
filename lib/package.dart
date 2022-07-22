@@ -43,7 +43,7 @@ class _PackagePageState extends State<PackagePage> {
             packages.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
-                    // physics: ClampingScrollPhysics(),
+                    physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
                     itemCount: packages.length,
