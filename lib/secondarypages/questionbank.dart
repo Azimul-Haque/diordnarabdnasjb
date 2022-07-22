@@ -90,7 +90,7 @@ class _QuestionBankState extends State<QuestionBank> {
         var body = json.decode(response.body);
         if (body["success"] == true) {
           // print("E PORJONTO");
-          var data = body["questionbankexams"];
+          var data = body["exams"];
           setState(() {
             for (var i in data) {
               questionbankexams.add(i);
