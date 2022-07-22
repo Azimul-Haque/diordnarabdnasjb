@@ -231,7 +231,7 @@ bangla(var str) {
     str.replaceAll(en[index], replaceWith);
   });
   for (var ensingle in en) {
-    str.replaceAll(ensingle, replaceWith);
+    str.replaceAll(ensingle, bn);
   }
   // str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
   return str;
