@@ -129,7 +129,6 @@ class _PackagePageState extends State<PackagePage> {
                     style: TextStyle(
                       color: Colors.black87,
                       fontSize: 15,
-                      fontWeight: FontWeight.bold,
                       fontFamily: 'Kalpurush',
                       height: 1,
                     ),
