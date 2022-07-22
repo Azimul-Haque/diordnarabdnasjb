@@ -225,9 +225,9 @@ commonAppBar(String appbarname, BuildContext context) {
 
 bangla(var str) {
   List en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  List en = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
+  List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
   // var str = str_replace(en, bn, str);
-  Map map = Map.fromIterables(en, en);
+  Map map = Map.fromIterables(en, bn);
 
   String txt = "HOT was the best until GM took over"; //input text
 
