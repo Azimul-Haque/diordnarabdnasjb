@@ -223,7 +223,7 @@ commonAppBar(String appbarname, BuildContext context) {
   );
 }
 
-Map persianNumberMap = {
+Map banglaNumberMap = {
   '০': '0',
   '১': '1',
   '২': '2',
@@ -238,7 +238,7 @@ Map persianNumberMap = {
 
 String convertPersianNumberToEnglish(String number) {
   String converted = number;
-  persianNumberMap.forEach((key, value) => converted.replaceAll(key, value));
+  banglaNumberMap.forEach((key, value) => converted.replaceAll(key, value));
   return converted;
 }
 
