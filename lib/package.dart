@@ -141,6 +141,7 @@ class _PackagePageState extends State<PackagePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 15, bottom: 10),
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
                         '৳' + banglaNumber(package['price'].toString()),
