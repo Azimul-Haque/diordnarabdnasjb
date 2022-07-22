@@ -16,7 +16,7 @@ class FreeModelTests extends StatefulWidget {
 class _FreeModelTestsState extends State<FreeModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List exams = [];
+  List freemodeltests = [];
   bool _showCircle = true;
 
   @override
@@ -45,16 +45,18 @@ class _FreeModelTestsState extends State<FreeModelTests> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            exams.isNotEmpty
+            freemodeltests.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                     physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: exams.length,
+                    itemCount: freemodeltests.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(exams[index]["name"].toString(),
-                          exams[index]["exam_id"].toString(), screenwidth);
+                      return _scrollCard(
+                          freemodeltests[index]["name"].toString(),
+                          freemodeltests[index]["exam_id"].toString(),
+                          screenwidth);
                     },
                   )
                 : Center(
@@ -91,10 +93,10 @@ class _FreeModelTestsState extends State<FreeModelTests> {
           var data = body["exams"];
           setState(() {
             for (var i in data) {
-              exams.add(i);
+              freemodeltests.add(i);
             }
           });
-          // print(exams.length);
+          // print(freemodeltests.length);
         } else {}
       } else {
         // print(response.body);
