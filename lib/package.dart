@@ -110,7 +110,7 @@ class _PackagePageState extends State<PackagePage> {
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  packageId.toString(),
+                  packageId.toString() + "asd ",
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
