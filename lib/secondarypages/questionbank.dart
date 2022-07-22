@@ -16,7 +16,7 @@ class QuestionBank extends StatefulWidget {
 class _QuestionBankState extends State<QuestionBank> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List questionbankexams = [];
+
   bool _showCircle = true;
 
   @override
