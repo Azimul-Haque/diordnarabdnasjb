@@ -48,7 +48,7 @@ class _PackagePageState extends State<PackagePage> {
                     scrollDirection: Axis.vertical,
                     itemCount: packages.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(packages[index]screenwidth);
+                      return _scrollCard(packages[index], screenwidth);
                     },
                   )
                 : Center(
@@ -97,7 +97,7 @@ class _PackagePageState extends State<PackagePage> {
     }
   }
 
-  Widget _scrollCard(String title, String packageId, double screenwidth) {
+  Widget _scrollCard(Object package, double screenwidth) {
     return SizedBox(
       // height: 110,
       width: screenwidth,
