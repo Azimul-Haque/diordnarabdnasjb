@@ -98,7 +98,7 @@ class _PackagePageState extends State<PackagePage> {
     }
   }
 
-  Widget _scrollCard(String title, String courseexameid, double screenwidth) {
+  Widget _scrollCard(String title, String package_id, double screenwidth) {
     return SizedBox(
       height: 110,
       width: screenwidth,
@@ -129,7 +129,7 @@ class _PackagePageState extends State<PackagePage> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  courseexameid.toString(),
+                  package_id.toString(),
                   style: TextStyle(
                     color: Colors.blueGrey,
                     fontSize: 13,
@@ -148,7 +148,7 @@ class _PackagePageState extends State<PackagePage> {
                     // testpaymentconditional == true
                     //     ? Navigator.of(context).push(
                     //         MaterialPageRoute(
-                    //           builder: (context) => CourseExam(courseexameid),
+                    //           builder: (context) => CourseExam(package_id),
                     //         ),
                     //       )
                     //     : Navigator.of(context).push(
