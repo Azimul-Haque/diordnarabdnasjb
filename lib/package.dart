@@ -145,7 +145,6 @@ class _PackagePageState extends State<PackagePage> {
                     fontFamily: 'Kalpurush',
                     height: 1.1,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ],
             ),
