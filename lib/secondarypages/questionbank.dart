@@ -23,12 +23,14 @@ class _QuestionBankState extends State<QuestionBank> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData();
-    Future.delayed(Duration(milliseconds: 2500), () {
-      setState(() {
-        _showCircle = false;
+    if (questionbankexams.isEmpty) {
+      _getCoursesData();
+      Future.delayed(Duration(milliseconds: 2500), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
@@ -78,32 +80,30 @@ class _QuestionBankState extends State<QuestionBank> {
   }
 
   void _getCoursesData() async {
-    if (questionbankexams.isEmpty) {
-      try {
-        String _softToken = "Rifat.Admin.2022";
-        String serviceURL = baseAPIURL +
-            "/api/getothercourses/exams/" +
-            _softToken +
-            "/5"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
-        var response = await http.get(Uri.parse(serviceURL));
-        if (response.statusCode == 200) {
-          var body = json.decode(response.body);
-          if (body["success"] == true) {
-            // print("E PORJONTO");
-            var data = body["exams"];
-            setState(() {
-              for (var i in data) {
-                questionbankexams.add(i);
-              }
-            });
-            // print(questionbankexams.length);
-          } else {}
-        } else {
-          // print(response.body);
-        }
-      } catch (_) {
-        // print(_);
+    try {
+      String _softToken = "Rifat.Admin.2022";
+      String serviceURL = baseAPIURL +
+          "/api/getothercourses/exams/" +
+          _softToken +
+          "/5"; // 1 = Course, 2 = BJS MT, 3 = Bar MT, 4 = Free MT, 5 = QB
+      var response = await http.get(Uri.parse(serviceURL));
+      if (response.statusCode == 200) {
+        var body = json.decode(response.body);
+        if (body["success"] == true) {
+          // print("E PORJONTO");
+          var data = body["exams"];
+          setState(() {
+            for (var i in data) {
+              questionbankexams.add(i);
+            }
+          });
+          // print(questionbankexams.length);
+        } else {}
+      } else {
+        // print(response.body);
       }
+    } catch (_) {
+      // print(_);
     }
   }
 
