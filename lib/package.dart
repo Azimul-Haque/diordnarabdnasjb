@@ -112,16 +112,19 @@ class _PackagePageState extends State<PackagePage> {
                 SizedBox(
                   height: 15,
                 ),
-                Text(
-                  title,
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Kalpurush',
-                    height: 1,
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Kalpurush',
+                      height: 1,
+                    ),
+                    // textAlign: TextAlign.center,
                   ),
-                  // textAlign: TextAlign.center,
                 ),
                 Text(
                   packageId.toString(),
