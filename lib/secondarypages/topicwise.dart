@@ -78,7 +78,7 @@ class _TopicWiseState extends State<TopicWise> {
                         ),
                         _showCircle == true
                             ? CircularProgressIndicator()
-                            : Text("কোন নতুন পরীক্ষা নেই!"),
+                            : Text("টপিক পাওয়া যায়নি!"),
                       ],
                     ),
                   ),
