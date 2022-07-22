@@ -24,7 +24,7 @@ class _PackagePageState extends State<PackagePage> {
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
     _getPackagesData();
-    Future.delayed(Duration(milliseconds: 2500), () {
+    Future.delayed(Duration(milliseconds: 2000), () {
       setState(() {
         _showCircle = false;
       });
