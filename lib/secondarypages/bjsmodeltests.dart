@@ -94,7 +94,7 @@ class _BJSModelTestsState extends State<BJSModelTests> {
               exams.add(i);
             }
           });
-          // print(exams.length);
+          print(exams.length);
         } else {}
       } else {
         // print(response);
