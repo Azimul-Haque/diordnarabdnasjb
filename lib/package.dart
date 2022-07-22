@@ -139,7 +139,8 @@ class _PackagePageState extends State<PackagePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, bottom: 10),
+                  padding:
+                      const EdgeInsets.only(left: 15, bottom: 10, right: 15),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
