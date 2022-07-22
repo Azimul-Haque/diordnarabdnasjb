@@ -223,6 +223,25 @@ commonAppBar(String appbarname, BuildContext context) {
   );
 }
 
+Map persianNumberMap = {
+  '০': '0',
+  '১': '1',
+  '২': '2',
+  '৩': '3',
+  '৪': '4',
+  '৫': '5',
+  '৬': '6',
+  '৭': '7',
+  '৮': '8',
+  '৯': '9'
+};
+
+String convertPersianNumberToEnglish(String number) {
+  String converted = number;
+  persianNumberMap.forEach((key, value) => converted.replaceAll(key, value));
+  return converted;
+}
+
 bangla(String str) {
   List<int> en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   List<String> bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
