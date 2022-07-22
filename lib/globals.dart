@@ -223,21 +223,13 @@ commonAppBar(String appbarname, BuildContext context) {
   );
 }
 
-Map banglaNumberMap = {
-  '০': '0',
-  '১': '1',
-  '২': '2',
-  '৩': '3',
-  '৪': '4',
-  '৫': '5',
-  '৬': '6',
-  '৭': '7',
-  '৮': '8',
-  '৯': '9'
-};
+String banglaNumber(String input) {
+  const english = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const farsi = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
 
-String banglaNumber(String number) {
-  String converted = number;
-  banglaNumberMap.forEach((key, value) => converted.replaceAll(key, value));
-  return converted;
+  for (int i = 0; i < english.length; i++) {
+    input = input.replaceAll(english[i], farsi[i]);
+  }
+
+  return input;
 }
