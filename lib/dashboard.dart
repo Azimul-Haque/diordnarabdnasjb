@@ -72,7 +72,7 @@ class _DashboardState extends State<Dashboard> {
                     child: InkWell(
                       onTap: () {
                         setState(() {
-                          selectedItem = 2;
+                          selectedItem = 1;
                         });
                       },
                       child: Container(
