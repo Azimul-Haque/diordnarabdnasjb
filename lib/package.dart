@@ -145,7 +145,7 @@ class _PackagePageState extends State<PackagePage> {
                       Text(
                         banglaNumber(package['price'].toString()),
                         style: TextStyle(
-                          color: Colors.black54,
+                          color: Colors.black45,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Kalpurush',
