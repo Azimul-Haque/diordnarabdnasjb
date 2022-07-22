@@ -97,7 +97,7 @@ class _PackagePageState extends State<PackagePage> {
     }
   }
 
-  Widget _scrollCard(Object package, double screenwidth) {
+  Widget _scrollCard(package, double screenwidth) {
     return SizedBox(
       // height: 110,
       width: screenwidth,
