@@ -196,7 +196,7 @@ class _PackagePageState extends State<PackagePage> {
         ),
         margin: package['suggested'] == 1
             ? EdgeInsets.only(top: 5, bottom: 5, left: 1, right: 1)
-            : EdgeInsets.all(5),
+            : EdgeInsets.all(10),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
