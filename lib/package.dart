@@ -166,6 +166,16 @@ class _PackagePageState extends State<PackagePage> {
                             decoration: TextDecoration.lineThrough),
                         // textAlign: TextAlign.center,
                       ),
+                      Text(
+                        'কিনুন',
+                        style: TextStyle(
+                          color: Colors.black45,
+                          fontSize: 15,
+                          fontFamily: 'Kalpurush',
+                          height: 1,
+                        ),
+                        // textAlign: TextAlign.center,
+                      ),
                     ],
                   ),
                 ),
