@@ -111,7 +111,6 @@ class _PackagePageState extends State<PackagePage> {
               children: <Widget>[
                 SizedBox(
                   height: 15,
-                  width: double.infinity,
                 ),
                 Text(
                   title,
