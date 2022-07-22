@@ -16,7 +16,7 @@ class BJSModelTests extends StatefulWidget {
 class _BJSModelTestsState extends State<BJSModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List exams = [];
+  List bjsmodeltests = [];
   bool _showCircle = true;
 
   @override
@@ -45,16 +45,18 @@ class _BJSModelTestsState extends State<BJSModelTests> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            exams.isNotEmpty
+            bjsmodeltests.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                     physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: exams.length,
+                    itemCount: bjsmodeltests.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(exams[index]["name"].toString(),
-                          exams[index]["exam_id"].toString(), screenwidth);
+                      return _scrollCard(
+                          bjsmodeltests[index]["name"].toString(),
+                          bjsmodeltests[index]["exam_id"].toString(),
+                          screenwidth);
                     },
                   )
                 : Center(
@@ -91,10 +93,10 @@ class _BJSModelTestsState extends State<BJSModelTests> {
           var data = body["exams"];
           setState(() {
             for (var i in data) {
-              exams.add(i);
+              bjsmodeltests.add(i);
             }
           });
-          print(exams.length);
+          print(bjsmodeltests.length);
         } else {}
       } else {
         // print(response);
