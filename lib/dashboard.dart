@@ -66,7 +66,7 @@ class _DashboardState extends State<Dashboard> {
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
             // WIDGET FOR PACKAGES AND HIDDEN API MESSGES
-            testpaymentconditional == false
+            testpaymentconditional == true
                 ? Material(
                     color: Colors.green[50],
                     child: InkWell(
