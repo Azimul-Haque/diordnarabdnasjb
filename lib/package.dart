@@ -159,11 +159,12 @@ class _PackagePageState extends State<PackagePage> {
                       Text(
                         '৳' + banglaNumber(package['strike_price'].toString()),
                         style: TextStyle(
-                            color: Colors.black45,
-                            fontSize: 15,
-                            fontFamily: 'Kalpurush',
-                            height: 1,
-                            decoration: TextDecoration.lineThrough),
+                          color: Colors.black45,
+                          fontSize: 15,
+                          fontFamily: 'Kalpurush',
+                          height: 1,
+                          decoration: TextDecoration.lineThrough,
+                        ),
                         // textAlign: TextAlign.center,
                       ),
                       Text(
