@@ -109,11 +109,8 @@ class _PackagePageState extends State<PackagePage> {
               // mainAxisAlignment: MainAxisAlignment.center,
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                SizedBox(
-                  height: 15,
-                ),
                 Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(20.0),
                   child: Text(
                     title,
                     style: TextStyle(
