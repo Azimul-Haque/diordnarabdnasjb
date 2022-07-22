@@ -73,6 +73,9 @@ class _DashboardState extends State<Dashboard> {
                       onTap: () {
                         setState(() {
                           selectedItem = 1;
+                          pageController.animateToPage(selectedItem,
+                              duration: const Duration(milliseconds: 200),
+                              curve: Curves.linear);
                         });
                       },
                       child: Container(

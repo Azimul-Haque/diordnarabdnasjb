@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
             selectedItem = index;
           });
         },
-        controller: _pageController,
+        controller: pageController,
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(CupertinoIcons.checkmark_shield),
@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         selectedItem = 0;
-                        _pageController.animateToPage(selectedItem,
+                        pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         selectedItem = 1;
-                        _pageController.animateToPage(selectedItem,
+                        pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -150,7 +150,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         selectedItem = 2;
-                        _pageController.animateToPage(selectedItem,
+                        pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -181,7 +181,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         selectedItem = 3;
-                        _pageController.animateToPage(selectedItem,
+                        pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
