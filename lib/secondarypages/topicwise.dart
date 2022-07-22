@@ -24,12 +24,14 @@ class _TopicWiseState extends State<TopicWise> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getTopicsData();
-    Future.delayed(Duration(milliseconds: 2500), () {
-      setState(() {
-        _showCircle = false;
+    if (topics.isEmpty) {
+      _getTopicsData();
+      Future.delayed(Duration(milliseconds: 2500), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
