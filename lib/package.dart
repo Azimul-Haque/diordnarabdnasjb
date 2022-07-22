@@ -109,15 +109,6 @@ class _PackagePageState extends State<PackagePage> {
               // mainAxisAlignment: MainAxisAlignment.center,
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  packageId.toString() + "asd ",
-                  style: TextStyle(
-                    color: Colors.blueGrey,
-                    fontSize: 13,
-                    fontFamily: 'Kalpurush',
-                    height: 1.1,
-                  ),
-                ),
                 Padding(
                   padding: const EdgeInsets.all(15.0),
                   child: Text(
