@@ -96,7 +96,7 @@ class _BarModelTestsState extends State<BarModelTests> {
               barmodeltests.add(i);
             }
           });
-          // print(barmodeltests.length);
+          print(barmodeltests.length);
         } else {}
       } else {
         // print(response.body);
