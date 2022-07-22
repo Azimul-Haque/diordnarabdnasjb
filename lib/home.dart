@@ -21,7 +21,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  // int _selectedItem = 0;
+  // int selectedItem = 0;
   final _pages = [Dashboard(), PackagePage(), ResultPage(), SettingsPage()];
 
   final _pageController = PageController();
@@ -42,11 +42,11 @@ class _HomeState extends State<Home> {
       appBar: commonAppBar(
           selectedItem == 0
               ? 'বিজেএস ও বার এক্সাম'
-              : _selectedItem == 1
+              : selectedItem == 1
                   ? 'প্যাকেজ'
-                  : _selectedItem == 2
+                  : selectedItem == 2
                       ? 'ফলাফল'
-                      : _selectedItem == 3
+                      : selectedItem == 3
                           ? 'সেটিংস'
                           : '',
           this.context),
@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
         children: _pages,
         onPageChanged: (index) {
           setState(() {
-            _selectedItem = index;
+            selectedItem = index;
           });
         },
         controller: _pageController,
@@ -83,8 +83,8 @@ class _HomeState extends State<Home> {
                     minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
-                        _selectedItem = 0;
-                        _pageController.animateToPage(_selectedItem,
+                        selectedItem = 0;
+                        _pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -95,14 +95,14 @@ class _HomeState extends State<Home> {
                         Icon(
                           CupertinoIcons.home,
                           // Icons.dashboard,
-                          color: _selectedItem == 0
+                          color: selectedItem == 0
                               ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'নীড়',
                           style: TextStyle(
-                              color: _selectedItem == 0
+                              color: selectedItem == 0
                                   ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
@@ -114,8 +114,8 @@ class _HomeState extends State<Home> {
                     minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
-                        _selectedItem = 1;
-                        _pageController.animateToPage(_selectedItem,
+                        selectedItem = 1;
+                        _pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -126,14 +126,14 @@ class _HomeState extends State<Home> {
                         Icon(
                           CupertinoIcons.list_bullet_indent,
                           // Icons.format_list_numbered_sharp,
-                          color: _selectedItem == 1
+                          color: selectedItem == 1
                               ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'প্যাকেজ',
                           style: TextStyle(
-                              color: _selectedItem == 1
+                              color: selectedItem == 1
                                   ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
@@ -150,8 +150,8 @@ class _HomeState extends State<Home> {
                     minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
-                        _selectedItem = 2;
-                        _pageController.animateToPage(_selectedItem,
+                        selectedItem = 2;
+                        _pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -162,14 +162,14 @@ class _HomeState extends State<Home> {
                         Icon(
                           CupertinoIcons.calendar_today,
                           // Icons.calendar_today_outlined,
-                          color: _selectedItem == 2
+                          color: selectedItem == 2
                               ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'ফলাফল',
                           style: TextStyle(
-                              color: _selectedItem == 2
+                              color: selectedItem == 2
                                   ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
@@ -181,8 +181,8 @@ class _HomeState extends State<Home> {
                     minWidth: screenwidth * .2,
                     onPressed: () {
                       setState(() {
-                        _selectedItem = 3;
-                        _pageController.animateToPage(_selectedItem,
+                        selectedItem = 3;
+                        _pageController.animateToPage(selectedItem,
                             duration: const Duration(milliseconds: 200),
                             curve: Curves.linear);
                       });
@@ -193,14 +193,14 @@ class _HomeState extends State<Home> {
                         Icon(
                           CupertinoIcons.person,
                           // Icons.person,
-                          color: _selectedItem == 3
+                          color: selectedItem == 3
                               ? Colors.blue
                               : Colors.grey[600],
                         ),
                         Text(
                           'সেটিংস',
                           style: TextStyle(
-                              color: _selectedItem == 3
+                              color: selectedItem == 3
                                   ? Colors.blue
                                   : Colors.grey[600],
                               fontSize: 11),
