@@ -124,7 +124,7 @@ class _PackagePageState extends State<PackagePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(15.0),
+                  padding: const EdgeInsets.all(0.0),
                   child: Text(
                     title,
                     style: TextStyle(
