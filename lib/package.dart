@@ -200,7 +200,7 @@ class _PackagePageState extends State<PackagePage> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
-        elevation: package['suggested'] == 1 ? 3 : 1.5,
+        elevation: package['suggested'] == 1 ? 3 : 1,
         color: package['suggested'] == 1 ? Colors.lightBlue[50] : Colors.white,
       ),
     );
