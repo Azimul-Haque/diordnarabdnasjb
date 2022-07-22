@@ -23,12 +23,14 @@ class _PackagePageState extends State<PackagePage> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getPackagesData();
-    Future.delayed(Duration(milliseconds: 2000), () {
-      setState(() {
-        _showCircle = false;
+    if (packages.isEmpty) {
+      _getPackagesData();
+      Future.delayed(Duration(milliseconds: 2000), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
