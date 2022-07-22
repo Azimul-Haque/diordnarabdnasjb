@@ -142,7 +142,7 @@ class _PackagePageState extends State<PackagePage> {
                   padding:
                       const EdgeInsets.only(left: 15, bottom: 10, right: 15),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
                         '৳' + banglaNumber(package['price'].toString()),
@@ -169,6 +169,7 @@ class _PackagePageState extends State<PackagePage> {
                         ),
                         // textAlign: TextAlign.center,
                       ),
+                      Spacer(),
                       Text(
                         'কিনুন',
                         style: TextStyle(
