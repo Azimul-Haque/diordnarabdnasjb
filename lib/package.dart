@@ -123,6 +123,20 @@ class _PackagePageState extends State<PackagePage> {
                     // textAlign: TextAlign.center,
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      color: Colors.black87,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Kalpurush',
+                      height: 1,
+                    ),
+                    // textAlign: TextAlign.center,
+                  ),
+                ),
                 Text(
                   packageId.toString(),
                   style: TextStyle(
