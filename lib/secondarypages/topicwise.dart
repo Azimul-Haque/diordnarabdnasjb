@@ -17,7 +17,7 @@ class TopicWise extends StatefulWidget {
 class _TopicWiseState extends State<TopicWise> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List topics = [];
+
   bool _showCircle = true;
 
   @override
