@@ -228,7 +228,9 @@ bangla(String str) {
   List<String> bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
   print(en.length);
   for (var i = 0; i <= en.length; i++) {
-    str.replaceAll(en[i].toString(), bn[i].toString());
+    if (str == en[i].toString()) {
+      str = bn[i].toString();
+    }
   }
   return str;
 }
