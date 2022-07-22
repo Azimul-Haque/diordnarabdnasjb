@@ -229,7 +229,7 @@ bangla(var str) {
   // var str = str_replace(en, bn, str);
   List<String> coded = ["GM", "HOT", "YAH"]; //ABV list
   List<String> decoded = ["Gmail", "Hotmail", "Yahoo"]; //corresponding list
-  Map<String, String> map = new Map.fromIterables(en, en);
+  Map map = Map.fromIterables(en, en);
 
   String txt = "HOT was the best until GM took over"; //input text
 
