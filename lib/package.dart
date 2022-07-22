@@ -153,6 +153,17 @@ class _PackagePageState extends State<PackagePage> {
                         ),
                         // textAlign: TextAlign.center,
                       ),
+                      Text(
+                        '৳' + banglaNumber(package['price'].toString()),
+                        style: TextStyle(
+                          color: Colors.black45,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Kalpurush',
+                          height: 1,
+                        ),
+                        // textAlign: TextAlign.center,
+                      ),
                     ],
                   ),
                 ),
