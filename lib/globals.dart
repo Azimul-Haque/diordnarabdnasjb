@@ -224,7 +224,7 @@ commonAppBar(String appbarname, BuildContext context) {
 }
 
 bangla(var str) {
-  var en = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 0);
+  var en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   bn = array('১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০');
   str = str_replace(en, bn, str);
   en = array('January', 'February', 'March', 'April', 'May', 'June', 'July',
