@@ -16,7 +16,7 @@ class QuestionBank extends StatefulWidget {
 class _QuestionBankState extends State<QuestionBank> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List exams = [];
+  List questionbankexams = [];
   bool _showCircle = true;
 
   @override
@@ -45,16 +45,18 @@ class _QuestionBankState extends State<QuestionBank> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            exams.isNotEmpty
+            questionbankexams.isNotEmpty
                 ? ListView.builder(
                     padding: EdgeInsets.only(top: 10, left: 10, right: 10),
                     physics: ClampingScrollPhysics(),
                     shrinkWrap: true,
                     scrollDirection: Axis.vertical,
-                    itemCount: exams.length,
+                    itemCount: questionbankexams.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(exams[index]["name"].toString(),
-                          exams[index]["exam_id"].toString(), screenwidth);
+                      return _scrollCard(
+                          questionbankexams[index]["name"].toString(),
+                          questionbankexams[index]["exam_id"].toString(),
+                          screenwidth);
                     },
                   )
                 : Center(
@@ -88,13 +90,13 @@ class _QuestionBankState extends State<QuestionBank> {
         var body = json.decode(response.body);
         if (body["success"] == true) {
           // print("E PORJONTO");
-          var data = body["exams"];
+          var data = body["questionbankexams"];
           setState(() {
             for (var i in data) {
-              exams.add(i);
+              questionbankexams.add(i);
             }
           });
-          // print(exams.length);
+          // print(questionbankexams.length);
         } else {}
       } else {
         // print(response.body);
