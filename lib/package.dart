@@ -126,7 +126,7 @@ class _PackagePageState extends State<PackagePage> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, bottom: 15),
+                  padding: const EdgeInsets.only(left: 15, bottom: 10),
                   child: Text(
                     package['tagline'].toString(),
                     style: TextStyle(
