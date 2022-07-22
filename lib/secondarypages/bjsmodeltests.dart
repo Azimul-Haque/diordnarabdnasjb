@@ -23,12 +23,14 @@ class _BJSModelTestsState extends State<BJSModelTests> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData();
-    Future.delayed(Duration(milliseconds: 2500), () {
-      setState(() {
-        _showCircle = false;
+    if (bjsmodeltests.isEmpty) {
+      _getCoursesData();
+      Future.delayed(Duration(milliseconds: 2500), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
