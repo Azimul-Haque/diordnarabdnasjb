@@ -227,7 +227,8 @@ bangla(var str) {
   List en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
   // var str = str_replace(en, bn, str);
-  rresponding list
+  List<String> coded = ["GM", "HOT", "YAH"]; //ABV list
+  List<String> decoded = ["Gmail", "Hotmail", "Yahoo"]; //corresponding list
   Map<String, String> map = new Map.fromIterables(coded, decoded);
 
   String txt = "HOT was the best until GM took over"; //input text
