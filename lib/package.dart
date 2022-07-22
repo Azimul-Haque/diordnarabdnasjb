@@ -48,8 +48,7 @@ class _PackagePageState extends State<PackagePage> {
                     scrollDirection: Axis.vertical,
                     itemCount: packages.length,
                     itemBuilder: (context, index) {
-                      return _scrollCard(packages[index]["name"].toString(),
-                          packages[index]["id"].toString(), screenwidth);
+                      return _scrollCard(packages[index]screenwidth);
                     },
                   )
                 : Center(
