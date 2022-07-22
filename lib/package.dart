@@ -109,14 +109,6 @@ class _PackagePageState extends State<PackagePage> {
               // mainAxisAlignment: MainAxisAlignment.center,
               // crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                SizedBox(
-                  height: 9,
-                  width: double.infinity,
-                ),
-                SizedBox(
-                  height: 8,
-                  width: double.infinity,
-                ),
                 Text(
                   title,
                   style: TextStyle(
@@ -126,6 +118,7 @@ class _PackagePageState extends State<PackagePage> {
                     fontFamily: 'Kalpurush',
                     height: 1,
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Text(
                   packageId.toString(),
