@@ -23,12 +23,14 @@ class _BarModelTestsState extends State<BarModelTests> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData();
-    Future.delayed(Duration(milliseconds: 2500), () {
-      setState(() {
-        _showCircle = false;
+    if (barmodeltests.isEmpty) {
+      _getCoursesData();
+      Future.delayed(Duration(milliseconds: 2500), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
