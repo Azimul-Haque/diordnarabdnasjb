@@ -228,6 +228,6 @@ bangla(var str) {
   List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
 
   en.forEach((element) {});
-  str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
+  // str = map.entries.fold(str, (prev, e) => prev!.replaceAll(e.key, e.value));
   return str;
 }
