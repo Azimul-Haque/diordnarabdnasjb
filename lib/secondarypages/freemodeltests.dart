@@ -96,7 +96,7 @@ class _FreeModelTestsState extends State<FreeModelTests> {
                 freemodeltests.add(i);
               }
             });
-            // print(freemodeltests.length);
+            print(freemodeltests.length);
           } else {}
         } else {
           // print(response.body);
