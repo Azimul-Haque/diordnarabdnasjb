@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
     var screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: commonAppBar(
-          _selectedItem == 0
+          selectedItem == 0
               ? 'বিজেএস ও বার এক্সাম'
               : _selectedItem == 1
                   ? 'প্যাকেজ'
