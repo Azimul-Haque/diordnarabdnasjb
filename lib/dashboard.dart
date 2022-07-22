@@ -70,7 +70,11 @@ class _DashboardState extends State<Dashboard> {
                 ? Material(
                     color: Colors.green[50],
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {
+                          _selectedItem = index;
+                        });
+                      },
                       child: Container(
                         padding: EdgeInsets.all(10),
                         child: SizedBox(
