@@ -16,7 +16,7 @@ class BJSModelTests extends StatefulWidget {
 class _BJSModelTestsState extends State<BJSModelTests> {
   final GlobalKey<ScaffoldState> _scaffoldkey = GlobalKey<ScaffoldState>();
   late User userdata;
-  List bjsmodeltests = [];
+
   bool _showCircle = true;
 
   @override
