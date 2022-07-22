@@ -224,8 +224,8 @@ commonAppBar(String appbarname, BuildContext context) {
 }
 
 bangla(String str) {
-  List en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
+  List<int> en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  List<String> bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
 
   for (var i = 0; i <= en.length; i++) {
     str.replaceAll(en[i].toString(), bn[i].toString());
