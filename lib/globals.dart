@@ -18,6 +18,7 @@ bool testpaymentconditional = true;
 bool noticemessage = false;
 
 int selectedItem = 0;
+final _pageController = PageController();
 
 List packages = [];
 List courses = [];
