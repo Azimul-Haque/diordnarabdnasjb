@@ -224,9 +224,20 @@ commonAppBar(String appbarname, BuildContext context) {
 }
 
 bangla(var str) {
-  var en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  var bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
-  var str = str_replace(en, bn, str);
+  List en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  List bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
+  // var str = str_replace(en, bn, str);
+  rresponding list
+  Map<String, String> map = new Map.fromIterables(coded, decoded);
+
+  String txt = "HOT was the best until GM took over"; //input text
+
+  void main() {
+    final result =
+        map.entries.fold(txt, (prev, e) => prev.replaceAll(e.key, e.value));
+    print(result);
+  }
+
   var en = [
     'January',
     'February',
