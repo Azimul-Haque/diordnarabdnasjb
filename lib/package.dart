@@ -128,7 +128,7 @@ class _PackagePageState extends State<PackagePage> {
                     package['tagline'].toString(),
                     style: TextStyle(
                       color: Colors.black87,
-                      fontSize: 15,
+                      fontSize: 13,
                       fontFamily: 'Kalpurush',
                       height: 1,
                     ),
