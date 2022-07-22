@@ -23,12 +23,14 @@ class _FreeModelTestsState extends State<FreeModelTests> {
     super.initState();
     userdata = FirebaseAuth.instance.currentUser!;
     // print(widget.courseid);
-    _getCoursesData();
-    Future.delayed(Duration(milliseconds: 2500), () {
-      setState(() {
-        _showCircle = false;
+    if (freemodeltests.isEmpty) {
+      _getCoursesData();
+      Future.delayed(Duration(milliseconds: 2500), () {
+        setState(() {
+          _showCircle = false;
+        });
       });
-    });
+    }
   }
 
   @override
