@@ -105,8 +105,8 @@ class _PackagePageState extends State<PackagePage> {
         child: Stack(
           children: <Widget>[
             Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
-              // crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(left: 15, top: 15, bottom: 10),
