@@ -16,6 +16,9 @@ import 'package:flutter/material.dart';
 const String baseAPIURL = "http://192.168.150.39:8000";
 bool testpaymentconditional = true;
 bool noticemessage = false;
+
+int _selectedItem = 0;
+
 List packages = [];
 List courses = [];
 List bjsmodeltests = [];

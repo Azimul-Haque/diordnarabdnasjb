@@ -21,7 +21,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _selectedItem = 0;
+  // int _selectedItem = 0;
   final _pages = [Dashboard(), PackagePage(), ResultPage(), SettingsPage()];
 
   final _pageController = PageController();
