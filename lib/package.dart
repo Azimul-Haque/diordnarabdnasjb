@@ -60,7 +60,7 @@ class _PackagePageState extends State<PackagePage> {
                         ),
                         _showCircle == true
                             ? CircularProgressIndicator()
-                            : Text("প্যাকেজ পাওয়া যায়নি!"),
+                            : Text("প্যাকেজ পাওয়া যায়নি! আবার চেষ্টা করুন।"),
                       ],
                     ),
                   ),
