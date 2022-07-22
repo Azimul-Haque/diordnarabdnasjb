@@ -226,7 +226,6 @@ commonAppBar(String appbarname, BuildContext context) {
 bangla(String str) {
   List<int> en = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   List<String> bn = ['১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '০'];
-  print(en.length);
   for (var i = 0; i <= en.length; i++) {
     if (str == en[i].toString()) {
       str = bn[i].toString();
